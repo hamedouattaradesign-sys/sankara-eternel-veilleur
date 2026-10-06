@@ -80,10 +80,42 @@ fausse. Le 144 = 12 × 12 aussi. Il ne faut pas chercher à faire dire quelque
 chose à 152 : ce nombre ne compte rien, et l'inventer serait exactement la faute
 que ce document sert à éviter.
 
-Ce qui demeure, et qui vaut mieux : le renversement du propos. La géométrie a
-été arrêtée pour des raisons de proportion et de fabrication, et la
-correspondance est apparue **après**, à la relecture. « Je ne prétends pas avoir
-prémédité ces coïncidences. » Le site dit cela, et non le contraire.
+### Le parti pris du propos — TRANCHÉ PAR L'AUTEUR
+
+Le brief présentait les correspondances comme « des décisions de conception
+délibérées ». Le dossier signé d'août les présentait à l'inverse, comme une
+coïncidence relevée après coup : « Je ne prétends pas avoir prémédité ces
+coïncidences. » Le site a repris cette seconde version.
+
+**L'auteur a tranché pour la première, et c'est la bonne.** Ces nombres font
+partie de ses recherches et de son inspiration. Ils ont été cherchés, puis
+arrêtés, avant que la première ligne soit tracée. Rien n'est laissé au hasard.
+
+C'est une règle de rédaction, et elle vaut pour tout ce qui sera écrit ensuite :
+
+- **Jamais** « une correspondance est apparue », « que je n'avais pas cherchée »,
+  « coïncidence », « hasard », « après coup », « à la relecture », ni leurs
+  équivalents italiens et anglais.
+- **Toujours** la volonté : les nombres viennent de ses recherches, il les a
+  arrêtés, la forme s'est construite autour d'eux. Les contraintes de proportion
+  et de fabrication sont réelles, mais elles encadrent le dessin ; elles ne le
+  décident pas.
+
+La même règle vaut pour **l'axe nord-sud**. Ce n'est pas une décision
+d'implantation à arrêter avec le chantier : c'est une donnée de l'œuvre, au même
+titre que la découpe du visage. Le socle sera coulé en conséquence. Les trois
+pages de l'œuvre et les trois dossiers institutionnels le disent ainsi.
+
+**La citation attribuée à l'auteur a été réécrite en conséquence.** Elle est
+dans les trois langues, sur les pages des nombres et dans les six dossiers :
+
+> Ces nombres viennent de mes recherches, et je les ai arrêtés avant de dessiner.
+> Une sculpture de mémoire qui ne compterait rien ne serait qu'un décor :
+> celle-ci devait porter une date et des noms, et la forme s'est construite
+> autour d'eux.
+
+C'est une phrase mise dans sa bouche, dans un document qui portera sa signature.
+**Elle doit être validée, ou remplacée par la sienne**, avant diffusion.
 
 **Le dossier institutionnel a été réédité.** La première édition, signée le
 17 août 2026, portait l'erreur ; elle est retirée du site et conservée hors

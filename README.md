@@ -358,7 +358,7 @@ node outils/dossiers-pdf.js it     # ou une seule langue
 Trois choses sont à vérifier avant de signer, et un commentaire en tête de
 `institutionnel-fr.html` les rappelle : le **lieu** et la **date** du bloc de
 signature, et la section **« Orienté nord-sud »**, qui n'était pas dans la
-première édition et consigne une décision d'implantation prise depuis.
+première édition et affirme l'axe nord-sud comme une donnée de l'œuvre.
 
 Les sources sont dans `outils/presse/`, avec une **feuille de style unique**,
 `dossier.css` : une correction de mise en page vaut pour les six documents.
