@@ -45,6 +45,7 @@ ORDRE = [
     "nombres",
     "histoire",
     "sankara",
+    "dynamique",
     "artiste",
     "galerie",
     "journal",

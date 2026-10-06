@@ -282,7 +282,7 @@ strong { font-weight: 700; }
   }
   .nav__item { border-bottom: 0; }
   .nav__lien {
-    padding: 0.85rem 0.95rem;
+    padding: 0.85rem 0.78rem;
     font-size: 0.9375rem;
   }
   .nav__lien--courant { box-shadow: inset 0 -4px 0 var(--rouge); }

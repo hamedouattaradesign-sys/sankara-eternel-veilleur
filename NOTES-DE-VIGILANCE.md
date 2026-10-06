@@ -178,7 +178,34 @@ Elle n'est inscrite nulle part sur le site : elle n'était pas dans le brief.
 À fournir pour l'annoncer, et pour accorder les temps des verbes — plusieurs
 pages sont rédigées au présent de l'œuvre installée.
 
-### 7. Les chiffres de la Révolution
+### 7. La page « La dynamique Sankara » — à faire valider
+
+Cette page présente le Mémorial Thomas Sankara, le Mausolée et la campagne
+« Ma brique pour Sankara ». Ce sont des sujets qui ne vous appartiennent pas :
+ils appartiennent au Mémorial et au Comité International du Mémorial Thomas
+Sankara. Les présenter de travers serait plus coûteux que de ne pas les
+présenter du tout.
+
+**Ce que j'ai écrit, et d'où ça vient.** Le lancement de la campagne le
+17 octobre 2025 à Ouagadougou par le Comité International, l'implantation du
+Mémorial sur le site du Conseil de l'Entente, le financement du Mausolée par
+l'État, et la conception par l'architecte Francis Kéré : tout cela vient de la
+presse burkinabè, pas d'une source officielle que j'aurais pu consulter
+directement.
+
+**Ce que je n'ai pas écrit, volontairement.** Aucun montant. Aucun compte de
+collecte. Aucun décompte d'infrastructures chiffré. Un encart signale que le
+canal officiel de contribution sera indiqué dès qu'il sera communiqué.
+
+**À faire avant mise en ligne.**
+1. Faire relire cette page par le Mémorial ou par le Comité International.
+2. Obtenir le canal officiel de contribution, et lui seul. Publier une adresse
+   de collecte approximative sur un sujet pareil serait la faute la plus grave
+   que ce site puisse commettre.
+3. Demander l'autorisation de relayer la campagne, et la façon dont ils veulent
+   qu'elle soit nommée et présentée.
+
+### 8. Les chiffres de la Révolution
 
 La notice historique ne donne **aucun chiffre** de bilan : ni vaccinations, ni
 arbres plantés, ni taux d'alphabétisation. Ces chiffres existent et sont
