@@ -169,9 +169,16 @@ contenu/fr/00-accueil.html   contenu/it/00-accueil.html   contenu/en/00-accueil.
 contenu/fr/03-nombres.html   contenu/it/03-nombres.html   contenu/en/03-nombres.html
 contenu/fr/02-oeuvre.html    contenu/it/02-oeuvre.html    contenu/en/02-oeuvre.html
 outils/planche-faces.py      (les assertions, et les trois dictionnaires)
-outils/presse/               (les deux PDF, à régénérer)
+outils/presse/presse-fr.html         -it.html         -en.html
+outils/presse/institutionnel-it.html                  -en.html
+puis  node outils/dossiers-pdf.js    (les cinq PDF générés)
 CHOIX-DE-REDACTION.md        NOTES-DE-VIGILANCE.md        README.md
 ```
+
+Le **dossier institutionnel français est l'original signé** : il porte lui aussi
+le chiffre, et il ne peut pas être régénéré sans perdre la signature. Si le
+compte changeait, c'est à l'auteur de reprendre et de resigner ce document-là.
+C'est la raison la plus sérieuse de trancher la question avant toute diffusion.
 
 Les trois planches SVG sont incluses en dur dans les pages des nombres : il
 faut les retracer avec `outils/planche-faces.py` et les recoller. Et la lecture

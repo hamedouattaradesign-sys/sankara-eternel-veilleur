@@ -74,7 +74,7 @@ l'inauguration est dans trois semaines.
 | Schéma des faces et comptage des bossages | fait |
 | Référencement, JSON-LD, Open Graph, sitemap | fait |
 | Accessibilité : contrastes, clavier, HTML sémantique | fait, contrôlé |
-| Dossier de presse (PDF) | fait |
+| **Les six dossiers PDF, trois langues** | **faits** |
 | Visite virtuelle | prête, en attente de vues — `_phase2/` |
 | Photographies de l'œuvre, du parc et de l'atelier | installées |
 | **Version italienne, 12 pages** | **faite** |
@@ -141,7 +141,8 @@ JavaScript et en économie de données. Nécessite Playwright.
 ```bash
 python3 outils/emplacements-photo.py       # régénère les emplacements de visuels
 python3 outils/vues-de-substitution.py     # régénère les 36 vues provisoires
-node outils/dossier-de-presse.js           # régénère le PDF du dossier de presse
+node outils/dossiers-pdf.js                # régénère les cinq dossiers PDF
+node outils/dossiers-pdf.js en             # ou une seule langue
 outils/optimiser-images.sh galerie  <dossier>   # vos images → WebP
 outils/optimiser-images.sh rotation <dossier>   # 36 vues → WebP (phase 2)
 ```
@@ -161,7 +162,10 @@ Mesuré en gzip, ce que paie réellement un visiteur en données :
 |---|---|
 | Accueil | ~10 Ko |
 | Les autres pages | 7 à 11 Ko |
-| Site publié, tout compris | 516 Ko, dossier de presse inclus |
+| Site publié, tout compris | 4,4 Mo |
+| dont les six dossiers PDF | 1,9 Mo, jamais chargés sans clic |
+| dont les images | 1,8 Mo, servies au besoin |
+| dont les pages, le CSS et le JS | 588 Ko pour les trente-trois pages |
 
 Aucune police n'est téléchargée : la typographie est celle du système. Aucune
 requête n'est faite hors du domaine du site.
@@ -306,6 +310,57 @@ refuse de produire le dessin si le compte ne tombe pas juste : 4 × 11 = 44,
 ```bash
 python3 outils/planche-faces.py fr    # ou it, ou en
 ```
+
+---
+
+## 8 bis. Les six dossiers PDF
+
+Deux documents, trois langues.
+
+| Document | Français | Italien | Anglais |
+|---|---|---|---|
+| Dossier institutionnel, 6 à 7 pages | **original signé** | traduction | traduction |
+| Dossier de presse, 4 pages | généré | généré | généré |
+
+Le **dossier institutionnel français est l'original signé de la main de
+l'auteur**, daté de Ouagadougou le 17 août 2026, déposé tel quel dans
+`statique/assets/presse/`. Il n'est pas régénéré, et il ne doit pas l'être :
+une régénération perdrait la signature.
+
+Les versions italienne et anglaise en sont des **traductions**, et le disent
+trois fois — dans un encadré en première page, dans le bloc de signature, et
+sur la page institutionnelle du site. En cas de divergence d'interprétation,
+c'est l'original français qui fait foi. La signature autographe n'est pas
+reproduite sur les traductions : c'est la règle usuelle, et c'est ce qui
+protège l'auteur si un texte traduit était un jour opposé au sien.
+
+```bash
+node outils/dossiers-pdf.js        # les cinq sorties
+node outils/dossiers-pdf.js it     # ou une seule langue
+```
+
+Les sources sont dans `outils/presse/`, avec une **feuille de style unique**,
+`dossier.css` : une correction de mise en page vaut pour les six documents.
+La planche des faces n'est pas collée dans les sources — elle est **tracée à
+la demande** par `outils/planche-faces.py` et injectée à la place du
+commentaire `<!--PLANCHE-->`. Elle ne peut donc pas se désynchroniser des
+cotes.
+
+Les noms de fichiers sont dans la langue du lecteur, pour que le document
+arrive dans son dossier de téléchargement sous un nom qu'il comprend :
+
+```
+dossier-institutionnel-sankara-eternel-veilleur.pdf       fr, signé
+dossier-de-presse-sankara-eternel-veilleur.pdf            fr
+dossier-istituzionale-sankara-eternel-veilleur-it.pdf     it
+dossier-stampa-sankara-eternel-veilleur-it.pdf            it
+institutional-dossier-sankara-eternel-veilleur-en.pdf     en
+press-kit-sankara-eternel-veilleur-en.pdf                 en
+```
+
+`outils/verifier.py` exige les six : un lien de page institutionnelle vers un
+PDF absent serait invisible à la relecture, et c'est exactement le genre
+d'oubli qui se découvre après la mise en ligne.
 
 ---
 

@@ -143,9 +143,13 @@ exemple :
   associations de la diaspora, presse ?
 - Faut-il une **version italienne de la communication** ? *(Le site est déjà
   entièrement bilingue, français et italien.)*
-- La **version anglaise** est faite, douze pages, en ligne sous `/en/`. Reste
-  à savoir si les **deux dossiers PDF** doivent être traduits eux aussi : ils
-  sont aujourd'hui en français, et les pages anglaise et italienne le signalent.
+- La **version anglaise** est faite, douze pages sous `/en/`, et les **deux
+  dossiers PDF existent dans les trois langues**. Reste une question de forme :
+  faut-il **reproduire la signature autographe** sur les traductions italienne
+  et anglaise du dossier institutionnel ? Elles ne la portent pas aujourd'hui,
+  et renvoient à l'original français signé. C'est l'usage, et c'est ce qui
+  protège l'auteur ; mais si une institution réclame une version signée dans sa
+  langue, il faut le savoir avant de la transmettre.
 
 ---
 

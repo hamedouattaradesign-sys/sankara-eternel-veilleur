@@ -190,7 +190,16 @@ def verifier_fichiers_annexes():
                     "assets/css/site.css", "assets/js/site.js",
                     "assets/img/favicon.svg",
                     "assets/img/partage/og-sankara-eternel-veilleur.png",
-                    "assets/presse/dossier-de-presse-sankara-eternel-veilleur.pdf"):
+                    # Les six dossiers PDF. L'institutionnel français est l'original
+                    # signé de l'auteur ; les cinq autres sortent de
+                    # outils/dossiers-pdf.js. Un lien de page institutionnelle
+                    # vers un PDF absent serait invisible à la relecture.
+                    "assets/presse/dossier-de-presse-sankara-eternel-veilleur.pdf",
+                    "assets/presse/dossier-stampa-sankara-eternel-veilleur-it.pdf",
+                    "assets/presse/press-kit-sankara-eternel-veilleur-en.pdf",
+                    "assets/presse/dossier-institutionnel-sankara-eternel-veilleur.pdf",
+                    "assets/presse/dossier-istituzionale-sankara-eternel-veilleur-it.pdf",
+                    "assets/presse/institutional-dossier-sankara-eternel-veilleur-en.pdf"):
         if not os.path.isfile(os.path.join(PUBLIC, attendu)):
             anomalies.append("fichier attendu absent — %s" % attendu)
 
