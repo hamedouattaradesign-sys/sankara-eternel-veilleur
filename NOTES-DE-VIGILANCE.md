@@ -204,29 +204,41 @@ nord-sud », qui n'était pas dans la première édition.
 Enfin, ne pas chercher à faire dire quelque chose à 152. Ce nombre ne compte
 rien. L'inventer serait exactement la faute que ces notes servent à éviter.
 
-### 4 bis. Les citations du Camarade Président
+### 4 bis. Les citations du Camarade Président — ARRÊTÉES
 
-La page de notice historique publie **quatre passages**, chacun avec son lieu et
-sa date : l'Assemblée générale des Nations unies (New York, 4 octobre 1984), le
-discours sur l'émancipation des femmes (Ouagadougou, 8 mars 1987), le discours
-sur la dette au sommet de l'Organisation de l'unité africaine (Addis-Abeba,
-29 juillet 1987) et l'entretien avec Jean-Philippe Rapp (1985).
+La page de notice historique en publie **cinq**, et elles ne sont pas de même
+nature. La page le dit, et la mise en forme les distingue.
 
-**Elles ont été relevées sur des reprises concordantes du texte des discours**,
-non sur les enregistrements ni sur une édition critique. Il faut les faire
-valider mot à mot auprès du Mémorial Thomas Sankara avant la mise en ligne.
+**Les quatre premières portent leur lieu et leur date** : l'Assemblée générale
+des Nations unies (New York, 4 octobre 1984), le discours sur l'émancipation des
+femmes (Ouagadougou, 8 mars 1987), le discours sur la dette au sommet de
+l'Organisation de l'unité africaine (Addis-Abeba, 29 juillet 1987) et l'entretien
+avec Jean-Philippe Rapp (1985). Elles ont été relevées sur des reprises
+concordantes du texte des discours, non sur une édition critique. **Validées par
+l'auteur.**
 
-**Une citation a été volontairement écartée** : « On peut tuer un homme, mais on
-ne peut pas tuer ses idées. » C'est la phrase la plus citée de toutes, et elle
-dirait admirablement ce qu'est un monument intitulé *L'éternel veilleur*. Mais
-**aucune source primaire ne l'établit** — ni discours daté, ni entretien
+**La cinquième — « On peut tuer un homme, mais on ne peut pas tuer ses
+idées » — n'a pas de source primaire.** Ni discours daté, ni entretien
 identifié, ni enregistrement. La recherche universitaire le signale elle-même.
 
-Sur un site institutionnel, une citation apocryphe fragilise les quatre autres :
-il suffit qu'un lecteur la conteste pour que tout le reste devienne suspect. Si
-une référence exacte est retrouvée — discours, date, lieu — elle pourra être
-ajoutée. Pas avant. Un commentaire le rappelle dans les trois versions de la
-page.
+Je l'avais écartée pour cette raison. **L'auteur a décidé de la publier**, en
+attestant que le Mémorial Thomas Sankara la reprend constamment. C'est un motif
+suffisant : si l'institution qui porte cette mémoire l'emploie, le site peut
+l'employer.
+
+Elle est donc publiée, mais **jamais comme les autres** :
+
+- elle ne porte **ni lieu ni date**, mais la mention « Parole transmise, reprise
+  par le Mémorial Thomas Sankara » ;
+- le chapeau de la section la distingue explicitement des quatre autres ;
+- elle est mise à part visuellement, détachée et sur le filet rouge, là où les
+  citations sourcées sont sur l'or.
+
+**Ce qu'il ne faut jamais faire** : lui attribuer un discours, une date ou un
+lieu. Ce serait inventer un fait historique, et c'est précisément ce que ces
+notes servent à empêcher. Si une référence exacte est un jour établie par le
+Mémorial, elle pourra remonter avec les quatre autres. Un commentaire le
+rappelle dans les trois versions de la page.
 
 ### 5. L'image d'archive du Camarade Président Thomas Sankara
 

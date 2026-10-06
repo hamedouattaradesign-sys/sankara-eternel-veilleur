@@ -72,7 +72,7 @@ l'inauguration est dans trois semaines.
 | Les douze pages, en français | fait, à relire par l'auteur |
 | Journal du projet | fait, à enrichir au fil des étapes |
 | **Page « Visiter », trois langues** | **faite** |
-| **Citations sourcées du Camarade Président** | **faites, à faire valider** |
+| **Citations du Camarade Président, cinq** | **faites et validées** |
 | Schéma des faces et comptage des bossages | fait |
 | Référencement, JSON-LD, Open Graph, sitemap | fait |
 | Accessibilité : contrastes, clavier, HTML sémantique | fait, contrôlé |

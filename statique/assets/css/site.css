@@ -155,6 +155,22 @@ blockquote {
 }
 blockquote footer { font-family: var(--sans); color: var(--encre-douce); font-size: 0.9rem; }
 
+/* La phrase que tout le monde connaît. Elle n'a ni discours ni date — elle
+   est transmise — et c'est elle que le titre de l'œuvre reprend. On la
+   distingue des quatre citations sourcées : plus grande, détachée, sur le
+   rouge plutôt que sur l'or. */
+blockquote.citation--maitresse {
+  border-left-color: var(--rouge);
+  border-left-width: 4px;
+  margin-top: 2rem;
+  padding: 0.9rem 0 0.9rem 1.5rem;
+  font-size: 1.3rem;
+  line-height: 1.45;
+}
+@media (min-width: 46em) {
+  blockquote.citation--maitresse { font-size: 1.45rem; }
+}
+
 abbr[title] { text-decoration: underline dotted; cursor: help; }
 strong { font-weight: 700; }
 

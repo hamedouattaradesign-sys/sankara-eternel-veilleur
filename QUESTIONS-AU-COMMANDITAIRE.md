@@ -182,17 +182,12 @@ Deux choses restent, et aucune ne peut être faite ici :
 
 ## IV. À faire valider, maintenant que le site les publie
 
-**Les quatre citations du Camarade Président.** La page de notice historique en
-publie quatre, chacune avec son lieu et sa date&nbsp;: Nations unies (4 octobre
-1984), émancipation des femmes (8 mars 1987), dette à l'OUA (29 juillet 1987),
-entretien avec Jean-Philippe Rapp (1985). Elles viennent de reprises
-concordantes du texte des discours, non d'une édition critique. **À faire
-valider mot à mot auprès du Mémorial Thomas Sankara.**
-
-J'ai écarté « On peut tuer un homme, mais on ne peut pas tuer ses idées » —
-la plus citée, et celle qui irait le mieux à un monument appelé *L'éternel
-veilleur*. Aucune source primaire ne l'établit. Si le Mémorial en détient la
-référence exacte, elle sera ajoutée.
+**Les citations du Camarade Président sont arrêtées.** Cinq, sur la page de
+notice historique&nbsp;: quatre avec leur lieu et leur date, et « On peut tuer un
+homme, mais on ne peut pas tuer ses idées », publiée sans source primaire parce
+que le Mémorial Thomas Sankara la reprend constamment. Voir
+`NOTES-DE-VIGILANCE.md`, §4 bis, pour la manière dont elle est présentée — et
+pour ce qu'il ne faut jamais en faire.
 
 **Les informations pratiques de la page « Visiter ».** Adresse, équipements du
 parc, lignes 90 et 80, arrêt «&nbsp;Della Seta&nbsp;», parc de stationnement de
