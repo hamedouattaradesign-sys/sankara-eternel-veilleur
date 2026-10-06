@@ -150,41 +150,49 @@ donnerait à lire une mémoire burkinabè hébergée par une puissance européen
 citées, et les porter en une ligne sobre dans l'espace institutionnel — un
 crédit, non un remerciement appuyé.
 
-### 4. Le comptage des bossages — CORRIGÉ, ET À CONFIRMER UNE DERNIÈRE FOIS
+### 4. Le comptage des bossages — TRANCHÉ SUR L'OBJET
 
-Le site affirmait, d'après le brief, 48 bossages par face de texture et 152 au
-total. Le dossier signé et le plan coté donnent **44 par face de texture et 144 au
-total**. Le site a été corrigé, et la lecture des nombres avec lui.
+**Douze rangées, 48 bossages par face de texture, 152 au total.** Compté sur une
+photographie du monument achevé, en octobre 2026. Le site est à jour.
 
-C'est l'affirmation la plus facilement vérifiable du site : n'importe quel
-visiteur peut compter. L'œuvre étant achevée, **comptez les rangées sur une face
-de texture avant la mise en ligne** — onze rangées de quatre. Si l'objet s'écarte
-du plan, c'est le site qu'il faut corriger, jamais le contraire.
+Il faut garder trace de la façon dont l'erreur est passée, parce qu'elle est
+instructive.
 
-**Si le compte est de douze**, les fichiers à reprendre, tous en une seule
-passe, sont :
+Le brief donnait 12 rangées. Le **dossier institutionnel signé du 17 août 2026**
+donnait 11, avec une lecture superbe — quatre ans, deux mois, onze jours, la
+durée exacte de la Révolution Démocratique et Populaire, calendrier vérifié. La
+planche des faces du Studio, elle, donnait 12 et les douze compagnons.
 
-```
-contenu/fr/00-accueil.html   contenu/it/00-accueil.html   contenu/en/00-accueil.html
-contenu/fr/03-nombres.html   contenu/it/03-nombres.html   contenu/en/03-nombres.html
-contenu/fr/02-oeuvre.html    contenu/it/02-oeuvre.html    contenu/en/02-oeuvre.html
-outils/planche-faces.py      (les assertions, et les trois dictionnaires)
-outils/presse/presse-fr.html         -it.html         -en.html
-outils/presse/institutionnel-it.html                  -en.html
-puis  node outils/dossiers-pdf.js    (les cinq PDF générés)
-CHOIX-DE-REDACTION.md        NOTES-DE-VIGILANCE.md        README.md
-```
+Un document signé l'emporte normalement sur les autres. C'est le raisonnement
+qui a été suivi, et c'est lui qui était faux : **le dossier signé portait une
+erreur de comptage**. Pire, j'ai écrit dans `CHOIX-DE-REDACTION.md` qu'il ne
+fallait pas diffuser l'infographie du Studio parce qu'elle portait « encore »
+les 12 rangées. C'était elle qui avait raison.
 
-Le **dossier institutionnel français est l'original signé** : il porte lui aussi
-le chiffre, et il ne peut pas être régénéré sans perdre la signature. Si le
-compte changeait, c'est à l'auteur de reprendre et de resigner ce document-là.
-C'est la raison la plus sérieuse de trancher la question avant toute diffusion.
+**Ce qui aurait permis de trancher sans voir l'objet**, et qui n'a pas été fait :
 
-Les trois planches SVG sont incluses en dur dans les pages des nombres : il
-faut les retracer avec `outils/planche-faces.py` et les recoller. Et la lecture
-elle-même change : douze rangées ne donnent plus « quatre ans, deux mois, onze
-jours », le total devient 152, et le 12 × 12 tombe. Ne rien reformuler avant
-d'avoir le chiffre.
+1. *Vérifier que la trame tient dans la face.* Entraxe vertical 165 mm, bossage
+   de 139 mm, face de 2000 mm. Douze rangées laissent 23 mm de marge en haut et
+   en bas ; onze en laisseraient 105, contre 30 mm de marge latérale. Une trame
+   dont les marges divergent d'un facteur trois et demi n'est pas un dessin
+   d'atelier.
+2. *Croiser les deux faces.* Tous les documents donnent 28 sur la face portrait,
+   soit 4 + six rangées de 4. Avec le visage sur quatre rangées et le nom sur
+   une : 1 + 4 + 1 + 6 = douze. Le 28 et le 11 ne pouvaient pas coexister.
+
+**Les deux contrôles sont maintenant dans `outils/planche-faces.py`**, en
+assertions qui arrêtent le script. Le premier n'existait pas ; il est le seul
+qui aurait attrapé l'erreur. Le second non plus : `48 - 28 == 20 == 4*4 + 1*4`.
+
+**Il reste une chose à faire, et elle n'appartient qu'à l'auteur.** Le dossier
+institutionnel français est l'original signé de sa main : il porte encore 11
+rangées, 44 et 144. Il ne peut pas être régénéré sans perdre la signature.
+**C'est à lui de le reprendre et de le resigner** avant toute transmission à une
+institution. Les traductions italienne et anglaise ont été corrigées, et les
+trois dossiers de presse aussi.
+
+Enfin, ne pas chercher à faire dire quelque chose à 152. Ce nombre ne compte
+rien. L'inventer serait exactement la faute que ces notes servent à éviter.
 
 ### 5. L'image d'archive du Camarade Président Thomas Sankara
 

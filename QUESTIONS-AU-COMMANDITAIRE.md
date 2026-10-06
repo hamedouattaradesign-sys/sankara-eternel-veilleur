@@ -153,20 +153,18 @@ exemple :
 
 ---
 
-## III. Une vérification à faire sur l'objet
+## III. La vérification faite sur l'objet — close
 
-Elle ne concerne pas le Camarade Madi Sakandé, mais elle est urgente et doit
-être faite devant le monument, avant toute mise en ligne.
+**Le comptage est tranché : douze rangées, 48 bossages par face de texture,
+152 au total.** Il n'y a plus rien à demander sur ce point, et le site est à
+jour dans les trois langues.
 
-**Compter les rangées de bossages sur une face de texture.**
+Il reste une conséquence, et elle n'appartient qu'à l'auteur :
 
-Deux documents du Studio se contredisent : la planche des faces donne
-**douze rangées, 48 bossages** par face de texture, pour les douze compagnons ;
-le dossier institutionnel signé du 17 août 2026 donne **onze rangées,
-44 bossages**, et la lecture « quatre ans, deux mois, onze jours ».
+- Le **dossier institutionnel français signé du 17 août 2026** porte encore
+  l'ancien comptage — onze rangées, 44, 144 — et la lecture « quatre ans, deux
+  mois, onze jours ». Il ne peut pas être régénéré sans perdre la signature.
+  **Il doit être repris et resigné avant d'être transmis à une institution.**
+  Les traductions italienne et anglaise, elles, ont été corrigées, ainsi que les
+  trois dossiers de presse.
 
-La face portrait, elle, est confirmée à **28** par les deux documents et par les
-photographies : une rangée haute de quatre, puis six rangées de quatre.
-
-C'est l'affirmation la plus facilement vérifiable du site : n'importe quel
-visiteur peut compter. Le site publie aujourd'hui la version du dossier signé.

@@ -24,35 +24,70 @@ Thomas Sankara — partout ailleurs, comme le fait le dossier lui-même.
 « (1949 - 1987) » entre parenthèses. C'est une version antérieure. Si ce rendu est
 publié, sa légende doit préciser qu'il précède la fabrication.*
 
-### La lecture des nombres — CORRIGÉE
+### La lecture des nombres — CORRIGÉE DEUX FOIS
 
-Le brief donnait : 4 colonnes, 4 faces, 12 rangées, 48 bossages par face,
-152 au total, et présentait ces correspondances comme « des décisions de
-conception délibérées ».
+Cette section a été écrite trois fois. Elle mérite d'être lue en entier, parce
+qu'elle montre comment une erreur peut traverser un document signé.
 
-Le dossier signé donne tout autre chose, et de bien plus fort :
+**Premier état.** Le brief donnait : 4 colonnes, 4 faces, 12 rangées,
+48 bossages par face de texture, 152 au total, et présentait ces
+correspondances comme « des décisions de conception délibérées ».
+
+**Deuxième état — une erreur.** Le dossier institutionnel signé du 17 août 2026
+donnait 11 rangées, 44 par face de texture, 144 au total, et la lecture
+« quatre ans, deux mois, onze jours » — la durée exacte de la Révolution
+Démocratique et Populaire. La correspondance était belle, le calendrier
+vérifié, et le document était signé. Le site a publié cela. J'ai même écrit, à
+tort, qu'il ne fallait pas diffuser l'infographie du Studio parce qu'elle
+portait « encore » 12 rangées et les douze compagnons. **C'était l'infographie
+qui avait raison.**
+
+**Troisième état — l'objet.** Une photographie du monument achevé, en octobre
+2026, a permis de compter : **douze rangées**. Le dossier signé portait une
+erreur de comptage, et le site l'a reprise.
+
+Deux vérifications le confirment, et aucune ne demande de voir l'œuvre :
+
+- *La géométrie.* Entraxe vertical 165 mm, bossage de 139 mm, face de 2000 mm.
+  Douze rangées laissent 23 mm de marge en haut et en bas ; onze en laisseraient
+  105, soit trois fois et demie la marge latérale de 30 mm. Aucun atelier ne
+  dessine une trame aussi déséquilibrée.
+- *La face portrait.* Tous les documents s'accordent sur 28 bossages, soit une
+  rangée haute plus six rangées de quatre. Avec le visage sur quatre rangées et
+  le bloc du nom sur une, cela fait 1 + 4 + 1 + 6 = **douze rangées**. Le chiffre
+  28 ne peut pas coexister avec une trame de onze rangées.
+
+Le site publie désormais :
 
 | Élément | Ce qu'il compte |
 |---|---|
-| 4 colonnes de bossages | les 4 **années** |
-| 2 faces portant le visage | les 2 **mois** |
-| 11 rangées sur les faces de texture | les 11 **jours** |
+| 12 rangées sur chaque face | les douze **compagnons** tombés avec lui |
+| 4 colonnes de bossages | le **4 août 1983**, l'ouverture de la Révolution |
+| 2 faces portant le visage | les deux **directions**, le nord et le sud |
 
-La Révolution Démocratique et Populaire a duré du 4 août 1983 au 15 octobre 1987,
-soit **quatre ans, deux mois et onze jours**. Le calcul a été vérifié.
+Comptage réel : **48 par face de texture** (4 colonnes × 12 rangées),
+**28 par face portrait**, **152 au total**.
 
-Comptage réel : **28 par face portrait** (4 en rangée haute + 24 en partie basse),
-**44 par face de texture** (4 colonnes × 11 rangées), **144 au total** — soit
-douze fois douze.
+La trame est la même partout : quarante-huit emplacements par face. Sur les
+faces portrait, vingt sont rendus au vide — seize pour le visage, quatre pour le
+bloc du nom. Cette identité, 48 − 28 = 20 = 4×4 + 4, est maintenant vérifiée par
+une assertion du script de la planche, avec le contrôle de marges. L'erreur ne
+peut plus repasser.
 
-Et surtout, le renversement du propos : la géométrie a été arrêtée pour des
-raisons de proportion et de fabrication, et la correspondance est apparue
-**après**, à la relecture. « Je ne prétends pas avoir prémédité ces coïncidences. »
-Le site dit maintenant cela, et non le contraire.
+**Ce qui a été perdu, et qu'il ne faut pas tenter de rattraper.** La lecture
+« quatre ans, deux mois, onze jours » était la plus belle des trois. Elle est
+fausse. Le 144 = 12 × 12 aussi. Il ne faut pas chercher à faire dire quelque
+chose à 152 : ce nombre ne compte rien, et l'inventer serait exactement la faute
+que ce document sert à éviter.
 
-**L'infographie « LA LECTURE DES NOMBRES » que vous m'avez envoyée porte encore
-les anciens chiffres** — 12 rangées, 48 bossages, les 12 compagnons. Elle est
-antérieure au dossier signé. Il ne faut ni la publier ni la diffuser en l'état.
+Ce qui demeure, et qui vaut mieux : le renversement du propos. La géométrie a
+été arrêtée pour des raisons de proportion et de fabrication, et la
+correspondance est apparue **après**, à la relecture. « Je ne prétends pas avoir
+prémédité ces coïncidences. » Le site dit cela, et non le contraire.
+
+**Le dossier institutionnel français signé porte toujours l'erreur.** Il ne peut
+pas être régénéré sans perdre la signature : c'est à l'auteur de le reprendre et
+de le resigner. Les traductions italienne et anglaise, elles, ont été corrigées.
 
 ---
 

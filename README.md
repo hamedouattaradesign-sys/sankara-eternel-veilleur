@@ -302,10 +302,22 @@ python3 outils/build.py && python3 outils/verifier.py
 ### La planche des faces
 
 Elle est tracée par `outils/planche-faces.py`, aux cotes réelles du plan
-FACE PORTRAIT INDICE E, avec un dictionnaire de libellés par langue. Le script
-refuse de produire le dessin si le compte ne tombe pas juste : 4 × 11 = 44,
-4 + 24 = 28, 144 = 12 × 12, et la durée du 4 août 1983 au 15 octobre 1987
-égale bien quatre ans, deux mois et onze jours.
+FACE PORTRAIT INDICE E, avec un dictionnaire de libellés par langue.
+
+Le script **refuse de produire le dessin** si le compte ne tombe pas juste. Il
+contrôle trois choses, dans cet ordre :
+
+1. **Les marges.** Avec un entraxe vertical de 165 mm et des bossages de
+   139 mm, douze rangées laissent 23 mm en haut et en bas d'une face de
+   2000 mm, à comparer aux 30 mm de marge latérale. Si les deux marges
+   divergent, le nombre de rangées est faux et le script s'arrête.
+2. **Le compte des faces** : 4 × 12 = 48, 4 + 24 = 28, 2 × 48 + 2 × 28 = 152.
+3. **Le lien entre les deux** : 48 − 28 = 20 = 4 × 4 + 4, soit ce que le visage
+   et le bloc du nom rendent au vide.
+
+Le premier de ces contrôles n'existait pas, et c'est lui qui aurait évité de
+publier onze rangées pendant plusieurs jours sur la foi d'un document signé qui
+se trompait. Voir `NOTES-DE-VIGILANCE.md`, §4.
 
 ```bash
 python3 outils/planche-faces.py fr    # ou it, ou en

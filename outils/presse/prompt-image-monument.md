@@ -11,6 +11,13 @@ Pour produire un rendu photoréaliste du monument conforme à la
 > Avec ces trois références, le résultat est sans comparaison. Sans elles, le
 > modèle inventera le visage et l'inscription.
 
+> **Le comptage est tranché.** Douze rangées de quatre sur les faces de texture,
+> soit 48 bossages ; 28 sur chaque face portrait ; 152 en tout. Compté sur
+> l'œuvre achevée, et confirmé par les cotes : avec un entraxe vertical de
+> 165 mm sur une face de 2000 mm, douze rangées laissent 23 mm de marge en haut
+> et en bas, à comparer aux 30 mm de marge latérale. Ce prompt portait déjà le
+> bon chiffre ; c'est le site qui a été corrigé.
+
 ---
 
 ## Prompt principal — français
@@ -44,8 +51,11 @@ LA FACE AU VISAGE (deux faces opposées). De haut en bas :
   centrée, horizontale.
 
 LA FACE DE TEXTURE (les deux autres faces opposées). Aucune découpe. Une trame
-régulière de 4 colonnes sur 12 rangées, soit 48 bossages hémisphériques,
-couvrant toute la hauteur de la face.
+régulière de 4 colonnes sur 12 rangées, soit 48 bossages hémisphériques. La
+trame couvre la face d'un bord à l'autre : la rangée du haut touche presque
+l'arête supérieure et celle du bas presque l'arête inférieure, en ne laissant
+qu'une bande d'acier lisse très étroite, de l'ordre du sixième d'un bossage.
+Compter douze rangées, pas neuf ni dix.
 
 LES BOSSAGES. Des calottes hémisphériques bombées, de même diamètre sur toutes
 les faces, larges et peu profondes — environ 14 cm de diamètre pour 2 cm de
@@ -106,7 +116,10 @@ THE PORTRAIT FACE (two opposite faces), from top to bottom:
   centred, horizontal.
 
 THE TEXTURE FACE (the other two opposite faces). No cuts at all. A regular grid
-of 4 columns by 12 rows, 48 hemispherical bosses, covering the full height.
+of 4 columns by 12 rows, 48 hemispherical bosses. The grid covers the face edge
+to edge: the top row almost touches the upper arris and the bottom row almost
+touches the lower one, leaving only a very narrow band of smooth steel, about
+one sixth of a boss. Count twelve rows, not nine or ten.
 
 THE BOSSES. Hemispherical domes, same diameter on every face, wide and shallow —
 roughly 14 cm across and 2 cm deep. Pressed out of the thickness of the plate,
@@ -144,9 +157,14 @@ comptages. Avant de retenir une image, contrôler dans cet ordre :
    sans parenthèses. C'est le point qui échoue le plus souvent.
 2. **Le visage se lit-il comme un vide ?** S'il ressemble à une peinture noire
    posée sur la tôle, l'image est fausse et il faut recommencer.
-3. **Le nombre de rangées** sur la face de texture.
-4. **Les bandes lisses** de chaque côté du visage : pas de bossage dessus.
-5. **La forme des bossages** : des calottes, pas des pointes.
+3. **Douze rangées** sur la face de texture, comptées une par une. Les modèles
+   en dessinent volontiers neuf ou dix, parce que c'est ce qui « fait joli ».
+   Le repère rapide : si une bande d'acier lisse large comme un demi-bossage
+   apparaît en haut ou en bas de la face, le compte est faux.
+4. **Six rangées** sous le bloc du nom, sur la face portrait, et une seule
+   au-dessus du visage.
+5. **Les bandes lisses** de chaque côté du visage : pas de bossage dessus.
+6. **La forme des bossages** : des calottes, pas des pointes.
 
 Si le modèle n'arrive pas à écrire l'inscription correctement après trois ou
 quatre essais, lui demander de **laisser le bandeau de texte vide** : le texte
