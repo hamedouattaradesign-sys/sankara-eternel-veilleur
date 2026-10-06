@@ -35,10 +35,9 @@ SITE = "https://sankara.hamedouattara.com"
 # présente le projet, ses maquettes, ses plans et sa fabrication.
 #
 # PHASE 2, après l'inauguration : réintégrer "visite" juste après "accueil", et
-# "galerie" juste après "maquettes". Les deux pages attendent dans
-# contenu/_phase2/ ; il suffit de les remettre dans contenu/fr/ et de les
-# déclarer ici. Rien d'autre à changer : adresses, gabarit et mécanique des
-# langues sont inchangés.
+# juste après "accueil". La page attend dans _phase2/ ; il suffit de la remettre
+# dans contenu/fr/ et de la déclarer ici. Rien d'autre à changer : adresses,
+# gabarit et mécanique des langues sont inchangés.
 ORDRE = [
     "accueil",
     # "visite",        ← phase 2
@@ -47,9 +46,8 @@ ORDRE = [
     "histoire",
     "sankara",
     "artiste",
-    "maquettes",
+    "galerie",
     "journal",
-    # "galerie",       ← phase 2
     "institutionnel",
     "contact",
 ]

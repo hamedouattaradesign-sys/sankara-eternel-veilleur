@@ -1,7 +1,62 @@
-# Choix de rédaction à arbitrer
+# Choix de rédaction
 
-Trois points attendent une décision de Hamed Ouattara. Tant qu'ils ne sont pas
-tranchés, le site publie la version indiquée comme « retenue par défaut ».
+**Mise à jour du 6 octobre 2026.** Le dossier institutionnel signé du 17 août 2026
+et le plan coté FACE PORTRAIT INDICE E ont tranché deux des trois points, et
+corrigé la lecture des nombres. Ce qui suit tient compte de ces documents, qui
+font autorité sur le brief initial.
+
+## Ce que les documents officiels ont tranché
+
+### L'ordre des prénoms — RÉGLÉ
+
+Le plan coté et les photographies de l'œuvre achevée montrent l'inscription telle
+qu'elle est découpée dans l'acier :
+
+> ISIDORE NOEL
+> THOMAS SANKARA
+> 1949 - 1987
+
+Sans accent sur NOEL, sans parenthèses autour des dates. Le site cite désormais
+cette inscription à l'identique, et emploie l'usage courant — Camarade Président
+Thomas Sankara — partout ailleurs, comme le fait le dossier lui-même.
+
+*Réserve : le rendu de synthèse du monument porte « ISIDORE NOËL » avec tréma et
+« (1949 - 1987) » entre parenthèses. C'est une version antérieure. Si ce rendu est
+publié, sa légende doit préciser qu'il précède la fabrication.*
+
+### La lecture des nombres — CORRIGÉE
+
+Le brief donnait : 4 colonnes, 4 faces, 12 rangées, 48 bossages par face,
+152 au total, et présentait ces correspondances comme « des décisions de
+conception délibérées ».
+
+Le dossier signé donne tout autre chose, et de bien plus fort :
+
+| Élément | Ce qu'il compte |
+|---|---|
+| 4 colonnes de bossages | les 4 **années** |
+| 2 faces portant le visage | les 2 **mois** |
+| 11 rangées sur les faces de texture | les 11 **jours** |
+
+La Révolution Démocratique et Populaire a duré du 4 août 1983 au 15 octobre 1987,
+soit **quatre ans, deux mois et onze jours**. Le calcul a été vérifié.
+
+Comptage réel : **28 par face portrait** (4 en rangée haute + 24 en partie basse),
+**44 par face de texture** (4 colonnes × 11 rangées), **144 au total** — soit
+douze fois douze.
+
+Et surtout, le renversement du propos : la géométrie a été arrêtée pour des
+raisons de proportion et de fabrication, et la correspondance est apparue
+**après**, à la relecture. « Je ne prétends pas avoir prémédité ces coïncidences. »
+Le site dit maintenant cela, et non le contraire.
+
+**L'infographie « LA LECTURE DES NOMBRES » que vous m'avez envoyée porte encore
+les anciens chiffres** — 12 rangées, 48 bossages, les 12 compagnons. Elle est
+antérieure au dossier signé. Il ne faut ni la publier ni la diffuser en l'état.
+
+---
+
+## Ce qui attend encore une décision
 
 ---
 
@@ -41,36 +96,28 @@ prise.
 **Ce qu'elle retire.** Un peu de chaleur, et la clarté de la raison pour
 laquelle ce sont ces deux hommes-là.
 
-**Recommandation.** Conserver la formulation A. Elle est vraie, elle honore le
+**Ce que dit le dossier signé.** Il ne mentionne aucune amitié d'enfance. Il
+décrit une commande du Camarade Madi Sakandé, « de la Diaspora Burkinabè en
+Italie, ancien pionnier de la RDP », qui « entend par ce geste honorer la mémoire
+de son père spirituel ». Le site suit désormais cette formulation, qui est plus
+forte et plus sûre : elle donne au commanditaire un titre politique — pionnier de
+la Révolution — plutôt qu'un lien privé.
+
+**Recommandation révisée.** Garder la formulation du dossier, et n'ajouter
+l'amitié d'enfance que si vous y tenez. Elle n'apporte plus grand-chose depuis que
+le lien est établi par le compagnonnage révolutionnaire, et elle reste le seul
+point du site qui prête le flanc.
+
+**Recommandation initiale, pour mémoire.** Conserver la formulation A. Elle est vraie, elle honore le
 Camarade Madi Sakandé, et le projet ne repose sur aucun financement public : la
 transparence est ici une force. Si une reprise institutionnelle large est
 attendue, la formulation B est le repli sûr, et ne coûte presque rien.
 
 ---
 
-## 2. La note d'intention de l'auteur
+## La note d'intention — RÉGLÉE
 
-`contenu/fr/08-institutionnel.html` contient une note d'intention rédigée à
-partir du brief, à la première personne. **Elle engage l'auteur et ne doit pas
-être publiée sans sa relecture.** Elle est signalée par un commentaire dans le
-code source.
-
----
-
-## 3. L'ordre des prénoms
-
-Le brief donne l'inscription du monument dans l'ordre
-**ISIDORE NOEL THOMAS SANKARA**, et nomme de même le Projet de Construction des
-Infrastructures du Mémorial Isidore Noël Thomas Sankara. L'usage courant donne
-**Thomas Isidore Noël Sankara**.
-
-Le site reprend aujourd'hui l'ordre du brief pour tout ce qui concerne
-l'inscription portée sur l'acier et le nom du Mémorial, et l'usage courant
-ailleurs. Il faut confirmer :
-
-1. l'ordre exact et les accents **découpés dans l'acier** — c'est ce que le
-   visiteur lira sur place, et le site doit le citer à l'identique ;
-2. l'ordre à retenir dans la notice historique.
-
-Les deux emplacements portent un commentaire `À VÉRIFIER` dans le code
-(`contenu/fr/02-oeuvre.html` et `contenu/fr/05-sankara.html`).
+La note que j'avais rédigée à partir du brief est retirée. L'espace institutionnel
+cite désormais des extraits de **votre** note d'intention, celle du dossier signé,
+avec la mention de sa date et de son lieu. Le dossier complet est téléchargeable
+depuis le site.

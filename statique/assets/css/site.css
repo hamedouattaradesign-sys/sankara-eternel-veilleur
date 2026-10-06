@@ -296,52 +296,39 @@ strong { font-weight: 700; }
 
 /* ---------- Bannière d'accueil ---------- */
 
-.banniere {
-  position: relative;
-  background: var(--pied-fond);
-  color: var(--papier);
-  overflow: hidden;
-}
-.banniere__image {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.42;
-}
-.banniere__voile {
-  position: relative;
+/* La photographie du monument est verticale : plutôt que de la recadrer en
+   bandeau, on la pose à côté du texte sur écran large, et au-dessus sur
+   téléphone. L'œuvre reste entière. */
+.banniere { background: var(--pied-fond); color: var(--papier); }
+.banniere__grille {
+  display: grid;
+  gap: clamp(1.75rem, 4vw, 3rem);
+  align-items: center;
   max-width: var(--large);
   margin-inline: auto;
-  padding: clamp(2.5rem, 6vw, 4.5rem) var(--gouttiere);
-  background: linear-gradient(to right,
-              rgba(31, 28, 24, 0.86) 0%,
-              rgba(31, 28, 24, 0.72) 55%,
-              rgba(31, 28, 24, 0.45) 100%);
+  padding: clamp(2.25rem, 5vw, 3.75rem) var(--gouttiere);
+}
+@media (min-width: 58em) {
+  .banniere__grille { grid-template-columns: 1.15fr 0.85fr; }
+}
+.banniere__figure { margin: 0; }
+.banniere__image {
+  width: 100%;
+  max-height: 68vh;
+  object-fit: contain;
+  border-radius: 3px;
+}
+.banniere__credit {
+  margin: 0.7rem 0 0;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #a39c90;
 }
 .banniere h1 { color: var(--papier); margin-bottom: 1.1rem; }
 .banniere h1::after { display: none; }
 .banniere .surtitre { color: var(--or); }
 .banniere .chapeau { color: #ece6db; max-width: 40rem; }
-.banniere__credit {
-  position: relative;
-  max-width: var(--large);
-  margin-inline: auto;
-  padding: 0 var(--gouttiere) 0.9rem;
-  font-size: 0.78rem;
-  font-style: italic;
-  color: #a39c90;
-}
 
-@media (min-width: 62em) {
-  .banniere__voile {
-    background: linear-gradient(to right,
-                rgba(31, 28, 24, 0.9) 0%,
-                rgba(31, 28, 24, 0.78) 45%,
-                rgba(31, 28, 24, 0.2) 100%);
-  }
-}
 
 /* ---------- État du projet ---------- */
 

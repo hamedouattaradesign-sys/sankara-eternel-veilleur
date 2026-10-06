@@ -112,7 +112,25 @@ politique précis. Elle est juste aujourd'hui. Il faut simplement savoir qu'elle
 existe, et où elle est, pour pouvoir la relire si le contexte évolue :
 `contenu/fr/05-sankara.html`, section « La restauration de la mémoire ».
 
-### 3. Les autorités italiennes ne sont pas créditées
+### 3. Les institutions — LARGEMENT RÉSOLU
+
+Les photographies du Parco Thomas Sankara montrent que l'**Ambassade du Burkina
+Faso à Rome** porte l'événement, « en collaboration avec le Camarade Ministre de
+la Communication, de la Culture, des Arts et du Tourisme », avec la participation
+des délégués du **Haut Conseil des Burkinabè de l'Étranger**. La tutelle
+institutionnelle est donc établie, et du bon côté : ce sont les autorités
+burkinabè qui portent, et non une institution étrangère qui héberge.
+
+**À faire.** Me transmettre les intitulés exacts à citer — nom de la Camarade
+Ambassadrice, intitulé officiel du Ministre — pour les porter dans l'espace
+institutionnel. Et me dire si la campagne « Ma brique pour Sankara » doit
+apparaître sur le site.
+
+**Reste ouvert, mais secondaire.** Le III<sup>e</sup> Municipio de Rome a bien dû
+autoriser l'implantation. Une ligne de crédit sobre à son endroit éviterait toute
+friction au moment de l'inauguration.
+
+### 3 bis. Les autorités italiennes ne sont pas créditées
 
 Le parc se trouve dans le III<sup>e</sup> Municipio de Rome. Un espace public
 nommé et aménagé suppose une décision municipale, et une œuvre installée suppose
@@ -127,15 +145,16 @@ donnerait à lire une mémoire burkinabè hébergée par une puissance européen
 citées, et les porter en une ligne sobre dans l'espace institutionnel — un
 crédit, non un remerciement appuyé.
 
-### 4. Le comptage des bossages doit être vérifié sur l'objet
+### 4. Le comptage des bossages — CORRIGÉ, ET À CONFIRMER UNE DERNIÈRE FOIS
 
-Le site affirme un comptage exact : 28 par face portrait, 48 par face de
-texture, 152 au total, et en fait un élément de sens. C'est l'affirmation la plus
-facilement vérifiable du site : n'importe quel visiteur peut compter.
+Le site affirmait, d'après le brief, 48 bossages par face de texture et 152 au
+total. Le dossier signé et le plan coté donnent **44 par face de texture et 144 au
+total**. Le site a été corrigé, et la lecture des nombres avec lui.
 
-**Proposition.** Faire compter les bossages sur le monument installé, avant la
-mise en ligne. Si l'objet fabriqué s'écarte du dessin, c'est le site qu'il faut
-corriger, jamais le contraire.
+C'est l'affirmation la plus facilement vérifiable du site : n'importe quel
+visiteur peut compter. L'œuvre étant achevée, **comptez les rangées sur une face
+de texture avant la mise en ligne** — onze rangées de quatre. Si l'objet s'écarte
+du plan, c'est le site qu'il faut corriger, jamais le contraire.
 
 ### 5. L'image d'archive du Camarade Président Thomas Sankara
 
