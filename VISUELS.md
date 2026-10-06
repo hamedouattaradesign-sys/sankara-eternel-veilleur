@@ -65,6 +65,45 @@ disparaissent.
 ne doit pas être publiée sans sa ligne de crédit exacte. Un commentaire le
 rappelle dans les trois versions de `05-sankara.html`.
 
+#### Les cinq images transmises en octobre 2026 — non publiées
+
+Cinq images d'archive restaurées ont été transmises. **Aucune n'est publiée**,
+et il faut deux feux verts distincts pour chacune : les droits, et la lecture
+politique. Ce ne sont pas la même question.
+
+**Les droits.** Restaurer ou agrandir une photographie n'en change pas le
+propriétaire : le résultat est une œuvre dérivée, qui reste soumise aux droits
+de l'original. Les cinq ont l'allure de photographies d'agence ou de presse — on
+en trouve plusieurs centaines dans les fonds commerciaux. Une réclamation
+d'agence tombant la semaine de l'inauguration coûterait plus que l'image ne
+rapporte.
+
+**La lecture politique**, qui est une question à part et parfois plus lourde :
+
+| Image | Droits | Lecture |
+|---|---|---|
+| Portrait assis, treillis et béret | à établir | **aucune réserve** — il est seul, c'est le portrait que tout le monde reconnaît |
+| Avec François Mitterrand, sur un tarmac | agence, à établir | **à peser.** Une image souriante aux côtés d'un président français, aujourd'hui, se lira comme une proximité avec la France. Le face-à-face de Ouagadougou en novembre 1986 est un motif de fierté ; cette photographie-ci ne le montre pas. |
+| Avec quatre militaires, près d'une jeep | agence, à établir | **à identifier avant tout usage.** Je ne sais pas qui sont ces hommes. Parmi les compagnons de l'époque, certains ont pris ensuite des chemins très différents. Publier sans nommer, c'est publier sans savoir. |
+| La tombe, avec des enfants | à établir | digne, et historiquement juste. Mais le Camarade Président repose désormais au Mausolée : une légende devra le dire, sans quoi l'image paraîtra datée. |
+| En tenue de sortie, avec trois civils | à établir | **à identifier**, même remarque que pour la jeep. |
+
+**Si une seule doit être retenue, c'est le portrait assis.** Il est seul dessus,
+il n'y a rien à expliquer, et c'est l'image qui vient à l'esprit quand on dit son
+nom.
+
+#### La bonne source est le Mémorial
+
+Le Mémorial Thomas Sankara détient des archives et porte cette mémoire. Une
+image obtenue de lui, et créditée à lui, règle les deux questions d'un coup : les
+droits sont nets, et le choix du cliché a été fait par l'institution compétente.
+
+Et c'est mieux ainsi. Le site affirme partout que le monument de Rome est
+*complémentaire et distinct* du Mémorial. Une image prêtée par Ouagadougou pour
+la page de notice historique rend ce lien visible, au lieu de le laisser à
+l'état de déclaration. Une demande prête à envoyer est dans
+`outils/presse/demande-image-memorial.md`.
+
 #### Trois images libres de droits, à vérifier
 
 Le conteneur de travail n'a pas accès à Wikimedia : je ne peux ni les
