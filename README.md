@@ -331,25 +331,34 @@ Deux documents, trois langues.
 
 | Document | Français | Italien | Anglais |
 |---|---|---|---|
-| Dossier institutionnel, 6 à 7 pages | **original signé** | traduction | traduction |
-| Dossier de presse, 4 pages | généré | généré | généré |
+| Dossier institutionnel, 6 à 7 pages | référence | traduction | traduction |
+| Dossier de presse, 4 pages | référence | traduction | traduction |
 
-Le **dossier institutionnel français est l'original signé de la main de
-l'auteur**, daté de Ouagadougou le 17 août 2026, déposé tel quel dans
-`statique/assets/presse/`. Il n'est pas régénéré, et il ne doit pas l'être :
-une régénération perdrait la signature.
+Les six sont générés. Le français est la référence ; en cas de divergence
+d'interprétation, c'est lui qui fait foi, et les deux traductions le disent en
+tête et au pied.
 
-Les versions italienne et anglaise en sont des **traductions**, et le disent
-trois fois — dans un encadré en première page, dans le bloc de signature, et
-sur la page institutionnelle du site. En cas de divergence d'interprétation,
-c'est l'original français qui fait foi. La signature autographe n'est pas
-reproduite sur les traductions : c'est la règle usuelle, et c'est ce qui
-protège l'auteur si un texte traduit était un jour opposé au sien.
+Le dossier institutionnel français en est la **deuxième édition**, datée du
+6 octobre 2026. La première, signée le 17 août 2026, portait un comptage faux —
+onze rangées, 144 bossages — et a été **retirée du site**. Elle est conservée,
+non publiée, dans `outils/presse/archive/`, parce qu'elle fait foi de ce qui a
+été soumis aux autorités burkinabè en août : si une institution en détient un
+exemplaire, c'est celui-là. Voir `NOTES-DE-VIGILANCE.md`, §4.
+
+La deuxième édition **attend la signature de l'auteur** : une zone de paraphe
+lui est réservée en fin de document. La signature autographe n'est reproduite
+sur aucune traduction — c'est la règle usuelle, et c'est ce qui protège l'auteur
+si un texte traduit lui était un jour opposé.
 
 ```bash
-node outils/dossiers-pdf.js        # les cinq sorties
+node outils/dossiers-pdf.js        # les six sorties
 node outils/dossiers-pdf.js it     # ou une seule langue
 ```
+
+Trois choses sont à vérifier avant de signer, et un commentaire en tête de
+`institutionnel-fr.html` les rappelle : le **lieu** et la **date** du bloc de
+signature, et la section **« Orienté nord-sud »**, qui n'était pas dans la
+première édition et consigne une décision d'implantation prise depuis.
 
 Les sources sont dans `outils/presse/`, avec une **feuille de style unique**,
 `dossier.css` : une correction de mise en page vaut pour les six documents.
@@ -362,7 +371,7 @@ Les noms de fichiers sont dans la langue du lecteur, pour que le document
 arrive dans son dossier de téléchargement sous un nom qu'il comprend :
 
 ```
-dossier-institutionnel-sankara-eternel-veilleur.pdf       fr, signé
+dossier-institutionnel-sankara-eternel-veilleur.pdf       fr, 2e édition
 dossier-de-presse-sankara-eternel-veilleur.pdf            fr
 dossier-istituzionale-sankara-eternel-veilleur-it.pdf     it
 dossier-stampa-sankara-eternel-veilleur-it.pdf            it
@@ -373,6 +382,10 @@ press-kit-sankara-eternel-veilleur-en.pdf                 en
 `outils/verifier.py` exige les six : un lien de page institutionnelle vers un
 PDF absent serait invisible à la relecture, et c'est exactement le genre
 d'oubli qui se découvre après la mise en ligne.
+
+La planche des faces de chaque dossier est tracée au moment de produire le PDF,
+par `outils/planche-faces.py`. Les six documents ne peuvent donc pas porter un
+comptage différent de celui du site, ni l'un de l'autre.
 
 ---
 

@@ -159,12 +159,19 @@ exemple :
 152 au total.** Il n'y a plus rien à demander sur ce point, et le site est à
 jour dans les trois langues.
 
-Il reste une conséquence, et elle n'appartient qu'à l'auteur :
+Le dossier institutionnel a été réédité : **deuxième édition, 6 octobre 2026**,
+à jour du comptage et de l'état achevé de l'œuvre. Les six dossiers PDF portent
+désormais le même chiffre. La première édition a été retirée du site et
+conservée hors ligne.
 
-- Le **dossier institutionnel français signé du 17 août 2026** porte encore
-  l'ancien comptage — onze rangées, 44, 144 — et la lecture « quatre ans, deux
-  mois, onze jours ». Il ne peut pas être régénéré sans perdre la signature.
-  **Il doit être repris et resigné avant d'être transmis à une institution.**
-  Les traductions italienne et anglaise, elles, ont été corrigées, ainsi que les
-  trois dossiers de presse.
+Deux choses restent, et aucune des deux ne peut être faite ici :
+
+- **La signature.** La deuxième édition réserve une zone de paraphe en fin de
+  document. Vérifier avant de signer : le lieu et la date du bloc de signature,
+  et la section « Orienté nord-sud », qui n'était pas dans la première édition
+  et consigne une décision d'implantation prise depuis.
+- **À qui la première édition a-t-elle déjà été transmise ?** Si un exemplaire
+  signé du 17 août circule dans une institution, il porte onze rangées et
+  144 bossages, et il sera démenti par l'objet. Il faut savoir auprès de qui
+  rectifier, et leur adresser la deuxième édition.
 

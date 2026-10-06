@@ -62,3 +62,11 @@ blockquote footer { font-style: normal; font-size: 9pt; color: #6d665c; margin-t
 .planche svg { max-width: 118mm; height: auto; }
 
 .saut { break-before: page; page-break-before: always; }
+
+/* Zone de paraphe, sur le dossier institutionnel français : l'auteur signe
+   l'exemplaire imprimé, ou dépose sa signature ici avant diffusion. */
+.paraphe { height: 22mm; border-bottom: 0.6pt solid #c9c2b6; margin: 6pt 0 8pt;
+           position: relative; }
+.paraphe span { position: absolute; bottom: 2pt; left: 0;
+                font-size: 8pt; color: #9b958a; letter-spacing: 0.12em;
+                text-transform: uppercase; }

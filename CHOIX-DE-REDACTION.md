@@ -85,9 +85,10 @@ Ce qui demeure, et qui vaut mieux : le renversement du propos. La géométrie a
 correspondance est apparue **après**, à la relecture. « Je ne prétends pas avoir
 prémédité ces coïncidences. » Le site dit cela, et non le contraire.
 
-**Le dossier institutionnel français signé porte toujours l'erreur.** Il ne peut
-pas être régénéré sans perdre la signature : c'est à l'auteur de le reprendre et
-de le resigner. Les traductions italienne et anglaise, elles, ont été corrigées.
+**Le dossier institutionnel a été réédité.** La première édition, signée le
+17 août 2026, portait l'erreur ; elle est retirée du site et conservée hors
+ligne dans `outils/presse/archive/`. La deuxième, du 6 octobre 2026, est
+générée comme les cinq autres dossiers et attend la signature de l'auteur.
 
 ---
 

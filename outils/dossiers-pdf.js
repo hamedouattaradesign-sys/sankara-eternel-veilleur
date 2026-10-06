@@ -3,11 +3,15 @@
    Usage :  node outils/dossiers-pdf.js          toutes les sorties
             node outils/dossiers-pdf.js it       une seule langue
 
-   Le dossier institutionnel français n'est PAS produit ici : c'est l'original
-   signé de la main de l'auteur, daté du 17 août 2026, déposé tel quel dans
-   statique/assets/presse/. Les versions italienne et anglaise en sont des
-   traductions, et le disent en tête et en pied : en cas de divergence, c'est
-   l'original français qui fait foi.
+   Les six dossiers sont produits ici. Le dossier institutionnel français en est
+   la deuxième édition : la première, signée le 17 août 2026, portait un
+   comptage faux — onze rangées, 144 bossages — et a été retirée du site. Elle
+   est conservée, non publiée, dans outils/presse/archive/. La deuxième édition
+   attend la signature de l'auteur : une zone de paraphe lui est réservée.
+
+   Les versions italienne et anglaise sont des traductions de cette deuxième
+   édition, et le disent en tête : en cas de divergence, c'est le français qui
+   fait foi.
 
    La planche des faces est tracée à la demande par outils/planche-faces.py et
    injectée à la place du commentaire <!--PLANCHE-->. Elle ne peut donc pas se
@@ -31,6 +35,7 @@ const sortie = path.join(racine, "statique", "assets", "presse");
    dans son dossier sous un nom qu'il comprend. Les deux documents français
    gardent leur nom d'origine, déjà cité ailleurs. */
 const DOSSIERS = [
+  { source: "institutionnel-fr.html",  cible: "dossier-institutionnel-sankara-eternel-veilleur.pdf",  langue: "fr" },
   { source: "presse-fr.html",          cible: "dossier-de-presse-sankara-eternel-veilleur.pdf",       langue: "fr" },
   { source: "presse-it.html",          cible: "dossier-stampa-sankara-eternel-veilleur-it.pdf",      langue: "it" },
   { source: "presse-en.html",          cible: "press-kit-sankara-eternel-veilleur-en.pdf",            langue: "en" },

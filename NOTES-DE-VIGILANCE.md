@@ -184,12 +184,22 @@ les 12 rangées. C'était elle qui avait raison.
 assertions qui arrêtent le script. Le premier n'existait pas ; il est le seul
 qui aurait attrapé l'erreur. Le second non plus : `48 - 28 == 20 == 4*4 + 1*4`.
 
-**Il reste une chose à faire, et elle n'appartient qu'à l'auteur.** Le dossier
-institutionnel français est l'original signé de sa main : il porte encore 11
-rangées, 44 et 144. Il ne peut pas être régénéré sans perdre la signature.
-**C'est à lui de le reprendre et de le resigner** avant toute transmission à une
-institution. Les traductions italienne et anglaise ont été corrigées, et les
-trois dossiers de presse aussi.
+**Le dossier institutionnel a été réédité.** La première édition, signée le
+17 août 2026, portait l'erreur. Elle a été **retirée du site** et conservée,
+non publiée, dans `outils/presse/archive/`, avec une note qui dit pourquoi.
+
+Elle n'est pas supprimée, et elle ne doit pas l'être : c'est elle qui fait foi
+de ce qui a été soumis aux autorités burkinabè en août 2026. **Si une
+institution en détient déjà un exemplaire, c'est cette version-là qu'elle a**,
+avec onze rangées et 144 bossages. Il faut savoir à qui elle a été transmise
+pour pouvoir rectifier auprès des bonnes personnes. C'est la seule part de
+cette affaire qui n'est pas réglée par du code.
+
+La deuxième édition, du 6 octobre 2026, est générée comme les cinq autres
+dossiers et **attend la signature de l'auteur**. Trois points sont à vérifier
+avant qu'il signe, et un commentaire en tête de `institutionnel-fr.html` les
+rappelle : le lieu et la date du bloc de signature, et la section « Orienté
+nord-sud », qui n'était pas dans la première édition.
 
 Enfin, ne pas chercher à faire dire quelque chose à 152. Ce nombre ne compte
 rien. L'inventer serait exactement la faute que ces notes servent à éviter.
