@@ -125,6 +125,22 @@ Deux états ont été transmis : une version tramée, scannée du journal, et un
 version nette. **C'est la nette qui est en ligne.** La tramée reste utilisable
 si l'on veut montrer le document de presse pour ce qu'il est.
 
+#### La photographie de tribune — PUBLIÉE, mais non datée
+
+`03-tribune` ferme la section sur la Révolution Démocratique et Populaire, dans
+les trois langues. Format paysage, 1000 et 620 pixels de large, 110 et 46 Ko.
+
+Un état colorisé en avait d'abord été transmis ; **c'est l'original en noir et
+blanc qui est en ligne**, et c'est la bonne décision : les couleurs d'une
+colorisation ne sont pas celles du jour, ce sont celles qu'un modèle a devinées.
+Sur une notice historique, cela se serait vu et se serait retourné.
+
+**Elle n'a ni lieu ni date établis.** La légende ne dit donc que ce que l'image
+montre, et un encadré « lieu et date à établir » le signale au lecteur. Le béret
+à l'étoile et les pattes d'épaule la distinguent de la photographie de Harlem,
+où le béret est nu : ce sont deux occasions différentes, et il ne faut pas
+dater l'une d'après l'autre. La demande au Mémorial la joint.
+
 #### Trois images libres de droits, à vérifier
 
 Le conteneur de travail n'a pas accès à Wikimedia : je ne peux ni les

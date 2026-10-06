@@ -26,6 +26,17 @@ Camarade Président sur cette page, et, si le Mémorial le juge utile, qu'il
 désigne lui-même le cliché. Nous nous engageons à porter la ligne de crédit
 exacte que vous indiquerez, sur la page et dans tout usage dérivé.
 
+La page porte également **deux autres photographies d'archive**, et nous
+sollicitons votre aide sur l'une d'elles :
+
+- *Le Camarade Président prenant la parole à Harlem, New York, en 1984* —
+  domaine public, crédit Ernest Harsch / *The Militant*. Nous n'attendons rien,
+  sinon votre avis si ce crédit vous paraît devoir être formulé autrement.
+- *Le Camarade Président à une tribune, un interprète à ses côtés*, en treillis,
+  pattes d'épaule et béret à l'étoile. **Nous n'avons ni le lieu, ni la date, ni
+  le nom de l'interprète**, et la légende ne dit donc aujourd'hui que ce que
+  l'image montre. Si le Mémorial peut l'identifier, nous compléterons.
+
 Nous vous serions reconnaissants de nous confirmer également :
 
 1. **La ligne de crédit** à porter sous l'image, mot pour mot.
@@ -61,6 +72,7 @@ Studio Hamed Ouattara, Route du SIAO, Ouagadougou
 | Réponse attendue | Ce qu'elle débloque |
 |---|---|
 | L'image et sa ligne de crédit | la notice historique, dans les trois langues |
+| Lieu, date et interprète de la photographie de tribune | sa légende, aujourd'hui limitée à ce qui est visible |
 | Validation des quatre citations | la mention de validation dans les notes |
 | Référence de la cinquième, le cas échéant | elle rejoint les quatre autres, avec lieu et date |
 | Canal de « Ma brique pour Sankara » | l'encadré « Contribuer », aujourd'hui en attente |
