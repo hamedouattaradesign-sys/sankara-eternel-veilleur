@@ -179,3 +179,29 @@ Deux choses restent, et aucune ne peut être faite ici :
   144 bossages, et il sera démenti par l'objet. Il faut savoir auprès de qui
   rectifier, et leur adresser la deuxième édition.
 
+
+## IV. À faire valider, maintenant que le site les publie
+
+**Les quatre citations du Camarade Président.** La page de notice historique en
+publie quatre, chacune avec son lieu et sa date&nbsp;: Nations unies (4 octobre
+1984), émancipation des femmes (8 mars 1987), dette à l'OUA (29 juillet 1987),
+entretien avec Jean-Philippe Rapp (1985). Elles viennent de reprises
+concordantes du texte des discours, non d'une édition critique. **À faire
+valider mot à mot auprès du Mémorial Thomas Sankara.**
+
+J'ai écarté « On peut tuer un homme, mais on ne peut pas tuer ses idées » —
+la plus citée, et celle qui irait le mieux à un monument appelé *L'éternel
+veilleur*. Aucune source primaire ne l'établit. Si le Mémorial en détient la
+référence exacte, elle sera ajoutée.
+
+**Les informations pratiques de la page « Visiter ».** Adresse, équipements du
+parc, lignes 90 et 80, arrêt «&nbsp;Della Seta&nbsp;», parc de stationnement de
+Jonio&nbsp;: tout cela vient des sources publiques romaines. Le **temps de
+marche depuis le métro Jonio — 25 minutes — est une estimation calculée sur la
+distance**, pas un relevé. Quelqu'un qui se rend au parc peut le vérifier en une
+fois.
+
+Restent à relever sur place, après l'installation&nbsp;: l'emplacement exact du
+monument dans le parc, l'entrée la plus proche, et l'accès en fauteuil depuis
+cette entrée. La page réserve l'encadré.
+

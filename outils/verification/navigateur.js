@@ -20,14 +20,14 @@ const BASE = process.env.BASE || "http://127.0.0.1:8765";
 // Phase 1 : la visite virtuelle et la galerie attendent l'inauguration.
 // Les contrôles de la visite ne s'exécutent que si la page est publiée.
 const PAGES = ["/", "/oeuvre/", "/nombres/", "/histoire/", "/thomas-sankara/",
-               "/dynamique/", "/artiste/", "/galerie/", "/journal/", "/institutionnel/",
+               "/dynamique/", "/artiste/", "/galerie/", "/visiter/", "/journal/", "/institutionnel/",
                "/contact/", "/404.html",
                "/it/", "/it/opera/", "/it/numeri/", "/it/storia/", "/it/thomas-sankara/",
-               "/it/dinamica/", "/it/artista/", "/it/galleria/", "/it/diario/",
+               "/it/dinamica/", "/it/artista/", "/it/galleria/", "/it/visitare/", "/it/diario/",
                "/it/istituzionale/", "/it/contatti/",
                "/en/", "/en/the-work/", "/en/the-numbers/", "/en/history/",
                "/en/thomas-sankara/", "/en/the-movement/", "/en/the-artist/",
-               "/en/gallery/", "/en/diary/", "/en/institutional/", "/en/contact/"];
+               "/en/gallery/", "/en/visit/", "/en/diary/", "/en/institutional/", "/en/contact/"];
 
 let echecs = 0;
 function verifie(nom, condition, detail) {

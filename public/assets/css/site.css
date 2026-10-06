@@ -517,7 +517,13 @@ figcaption .credit { display: block; font-style: italic; margin-top: 0.15rem; co
   padding: 1.5rem;
   box-shadow: var(--ombre);
 }
-.schema svg { width: 100%; height: auto; }
+/* Les schémas portent du texte de 8 à 11 px. Réduits à la largeur d'un
+   téléphone, ils deviendraient illisibles : on leur garde une largeur minimale
+   et c'est le cadre qui défile. Le texte reste à sa taille, et la page, elle,
+   ne déborde pas. Le <desc> de chaque schéma porte l'équivalent lu à voix
+   haute, pour qui ne le verra pas du tout. */
+.schema { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.schema svg { width: 100%; height: auto; min-width: 26rem; }
 .schema__legende { font-size: 0.875rem; color: var(--encre-douce); margin: 1.2rem 0 0; }
 
 /* ---------- Encarts et téléchargements ---------- */

@@ -76,6 +76,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://sankara.hamedouattara.com/en/visit/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://sankara.hamedouattara.com/galerie/</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.8</priority>
@@ -146,6 +151,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://sankara.hamedouattara.com/it/visitare/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://sankara.hamedouattara.com/journal/</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.7</priority>
@@ -164,5 +174,10 @@
     <loc>https://sankara.hamedouattara.com/thomas-sankara/</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sankara.hamedouattara.com/visiter/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.8</priority>
   </url>
 </urlset>

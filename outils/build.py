@@ -48,6 +48,7 @@ ORDRE = [
     "dynamique",
     "artiste",
     "galerie",
+    "visiter",
     "journal",
     "institutionnel",
     "contact",
@@ -258,8 +259,17 @@ LIEU = {
         "addressRegion": "Latium",
         "addressCountry": "IT",
     },
-    # À COMPLÉTER : coordonnées géographiques exactes du parc. Elles ne sont pas
-    # renseignées volontairement — aucune donnée inventée. Voir README.md.
+    # Coordonnées relevées en octobre 2026 sur les répertoires d'adresses romains,
+    # non auprès du III Municipio. Elles tombent bien sur la Via Ugo della Seta,
+    # à Val Melaina, mais elles désignent la rue, pas l'emplacement du monument
+    # dans le parc. À REPRENDRE après l'installation, au point exact de l'œuvre.
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.9600,
+        "longitude": 12.5255,
+    },
+    "publicAccess": True,
+    "isAccessibleForFree": True,
 }
 
 OEUVRE = {

@@ -204,6 +204,30 @@ nord-sud », qui n'était pas dans la première édition.
 Enfin, ne pas chercher à faire dire quelque chose à 152. Ce nombre ne compte
 rien. L'inventer serait exactement la faute que ces notes servent à éviter.
 
+### 4 bis. Les citations du Camarade Président
+
+La page de notice historique publie **quatre passages**, chacun avec son lieu et
+sa date : l'Assemblée générale des Nations unies (New York, 4 octobre 1984), le
+discours sur l'émancipation des femmes (Ouagadougou, 8 mars 1987), le discours
+sur la dette au sommet de l'Organisation de l'unité africaine (Addis-Abeba,
+29 juillet 1987) et l'entretien avec Jean-Philippe Rapp (1985).
+
+**Elles ont été relevées sur des reprises concordantes du texte des discours**,
+non sur les enregistrements ni sur une édition critique. Il faut les faire
+valider mot à mot auprès du Mémorial Thomas Sankara avant la mise en ligne.
+
+**Une citation a été volontairement écartée** : « On peut tuer un homme, mais on
+ne peut pas tuer ses idées. » C'est la phrase la plus citée de toutes, et elle
+dirait admirablement ce qu'est un monument intitulé *L'éternel veilleur*. Mais
+**aucune source primaire ne l'établit** — ni discours daté, ni entretien
+identifié, ni enregistrement. La recherche universitaire le signale elle-même.
+
+Sur un site institutionnel, une citation apocryphe fragilise les quatre autres :
+il suffit qu'un lecteur la conteste pour que tout le reste devienne suspect. Si
+une référence exacte est retrouvée — discours, date, lieu — elle pourra être
+ajoutée. Pas avant. Un commentaire le rappelle dans les trois versions de la
+page.
+
 ### 5. L'image d'archive du Camarade Président Thomas Sankara
 
 C'est la **seule image du site qui ne soit pas une création de l'auteur**. Vous

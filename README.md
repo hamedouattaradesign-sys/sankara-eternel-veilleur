@@ -71,6 +71,8 @@ l'inauguration est dans trois semaines.
 | Structure, gabarit, charte | fait |
 | Les douze pages, en français | fait, à relire par l'auteur |
 | Journal du projet | fait, à enrichir au fil des étapes |
+| **Page « Visiter », trois langues** | **faite** |
+| **Citations sourcées du Camarade Président** | **faites, à faire valider** |
 | Schéma des faces et comptage des bossages | fait |
 | Référencement, JSON-LD, Open Graph, sitemap | fait |
 | Accessibilité : contrastes, clavier, HTML sémantique | fait, contrôlé |
@@ -298,6 +300,25 @@ cp contenu/fr/02-oeuvre.html contenu/xx/02-oeuvre.html
 # 4. ajouter les adresses dans PAGES, dans outils/verification/navigateur.js
 python3 outils/build.py && python3 outils/verifier.py
 ```
+
+### Le schéma d'accès
+
+`outils/schema-acces.py` trace le diagramme de trajet de la page « Visiter »,
+dans les trois langues. **Ce n'est pas une carte**, et la page le dit : le site
+n'appelle aucun service extérieur, pas même un fond cartographique, et la
+géographie du diagramme n'est pas à l'échelle. Les lignes, les arrêts et les
+correspondances, eux, sont réels. Pour une carte véritable, la page donne les
+coordonnées du parc et un lien vers OpenStreetMap.
+
+```bash
+python3 outils/schema-acces.py fr    # ou it, ou en
+```
+
+Les deux schémas du site — la planche des faces et celui-ci — portent du texte
+de 8 à 11 pixels. Réduits à la largeur d'un téléphone ils deviendraient
+illisibles : ils gardent donc une largeur minimale de 26 rem et c'est leur cadre
+qui défile latéralement. La page, elle, ne déborde pas, et la suite de contrôles
+le vérifie. Le `<desc>` de chaque schéma porte l'équivalent lu à voix haute.
 
 ### La planche des faces
 
