@@ -164,20 +164,10 @@ Le dossier institutionnel a été réédité : **deuxième édition, 6 octobre 2
 désormais le même chiffre. La première édition a été retirée du site et
 conservée hors ligne.
 
-Trois choses restent, et aucune ne peut être faite ici :
+La phrase qui vous est attribuée sur les pages des nombres et dans les six
+dossiers est **validée** : voir `CHOIX-DE-REDACTION.md`.
 
-- **La phrase qui vous est attribuée.** Les pages des nombres et les six
-  dossiers portent, entre guillemets et sous votre nom&nbsp;:
-
-  > Ces nombres viennent de mes recherches, et je les ai arrêtés avant de
-  > dessiner. Une sculpture de mémoire qui ne compterait rien ne serait qu'un
-  > décor&nbsp;: celle-ci devait porter une date et des noms, et la forme s'est
-  > construite autour d'eux.
-
-  Elle remplace celle du dossier d'août, qui disait l'inverse. Elle dit ce que
-  vous m'avez demandé de dire, mais les mots sont les miens. **Validez-la ou
-  donnez-moi la vôtre** — elle figure dans un document qui portera votre
-  signature.
+Deux choses restent, et aucune ne peut être faite ici :
 
 - **La signature.** La deuxième édition réserve une zone de paraphe en fin de
   document. Vérifier avant de signer : le lieu et la date du bloc de signature,

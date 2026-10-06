@@ -106,16 +106,18 @@ d'implantation à arrêter avec le chantier : c'est une donnée de l'œuvre, au 
 titre que la découpe du visage. Le socle sera coulé en conséquence. Les trois
 pages de l'œuvre et les trois dossiers institutionnels le disent ainsi.
 
-**La citation attribuée à l'auteur a été réécrite en conséquence.** Elle est
-dans les trois langues, sur les pages des nombres et dans les six dossiers :
+**La citation attribuée à l'auteur a été réécrite en conséquence, et il l'a
+validée.** Elle est dans les trois langues, sur les pages des nombres et dans
+les six dossiers :
 
 > Ces nombres viennent de mes recherches, et je les ai arrêtés avant de dessiner.
 > Une sculpture de mémoire qui ne compterait rien ne serait qu'un décor :
 > celle-ci devait porter une date et des noms, et la forme s'est construite
 > autour d'eux.
 
-C'est une phrase mise dans sa bouche, dans un document qui portera sa signature.
-**Elle doit être validée, ou remplacée par la sienne**, avant diffusion.
+C'est désormais **la seule citation de l'auteur sur les nombres**. Celle du
+dossier d'août — « Je ne prétends pas avoir prémédité ces coïncidences » — ne
+doit reparaître nulle part, ni en français, ni en italien, ni en anglais.
 
 **Le dossier institutionnel a été réédité.** La première édition, signée le
 17 août 2026, portait l'erreur ; elle est retirée du site et conservée hors
