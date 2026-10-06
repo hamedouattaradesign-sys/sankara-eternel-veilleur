@@ -1,0 +1,282 @@
+# SANKARA, L'ÉTERNEL VEILLEUR — site du monument
+
+Site du monument **SANKARA, L'ÉTERNEL VEILLEUR**, sculpture monumentale de
+Hamed Ouattara destinée au Parco Thomas Sankara de Rome.
+
+Destination : `https://sankara.hamedouattara.com`
+Inauguration : fin octobre 2026.
+
+---
+
+## 1. Un seul site, deux états
+
+Le monument n'est pas encore installé. Plutôt que deux projets successifs, le
+site est **un seul ouvrage qui change d'état** le jour de l'inauguration. Mêmes
+adresses, mêmes textes, même structure : rien à refaire.
+
+| | **Phase 1 — aujourd'hui** | **Phase 2 — après l'inauguration** |
+|---|---|---|
+| Ce que le site montre | le projet : rendus, plans, portrait vectoriel, fabrication | l'œuvre installée : photographies |
+| Page d'entrée des images | Maquettes et plans | Galerie |
+| Visite virtuelle | en attente | ouverte, rotation sur 36 vues |
+| Journal du projet | fabrication, installation, inauguration | se poursuit |
+
+Tout ce qui concerne la phase 2 attend dans `_phase2/`, prêt à être remis en
+place. La marche à suivre est dans `_phase2/LISEZ-MOI.md`.
+
+**Raccourci possible.** Si le modèle 3D du monument existe, trente-six rendus
+pris tous les 10° suffisent à ouvrir la visite virtuelle **sans attendre
+l'inauguration**. Les photographies prendraient ensuite leur place sans toucher
+au site.
+
+---
+
+## 2. Pourquoi le site est statique, et pourquoi il est quand même vivant
+
+« Dynamique » recouvre deux choses qu'il faut séparer.
+
+**Techniquement**, le site est statique : des fichiers, pas de base de données,
+pas de back-office, pas de serveur applicatif. C'est un choix, pas une
+limitation :
+
+- l'hébergement est **gratuit** et le certificat HTTPS automatique ;
+- il n'y a **rien à mettre à jour** — pas de faille à corriger, pas de version
+  à suivre, rien qui se périme en silence ;
+- les frais récurrents étant à la charge du Mémorial Thomas Sankara, le site
+  doit pouvoir durer des années sans coût ni surveillance ;
+- rien à pirater : il n'y a ni formulaire, ni compte, ni base.
+
+**Éditorialement**, le site est vivant, et c'est là que tout se joue :
+
+- la **ligne d'état du projet**, en page d'accueil, dit où en est le monument.
+  Une ligne de texte à changer à chaque étape ;
+- le **journal du projet** suit les étapes, de la découpe à l'inauguration.
+  Une étape = un bloc à copier en tête de liste ;
+- les **maquettes, plans et images d'atelier** montrent une œuvre en train de
+  se faire, ce qu'une photographie d'œuvre finie ne montre jamais.
+
+Pour ajouter une actualité, il faut aujourd'hui passer par moi ou par quelqu'un
+qui touche aux fichiers. **Si l'autonomie devient nécessaire**, il existe une
+solution sans serveur ni frais : un back-office qui écrit directement dans le
+dépôt (type Decap CMS), ajouté en une demi-journée, et qui laisse le site aussi
+statique qu'avant. À décider une fois le site en ligne, pas avant :
+l'inauguration est dans trois semaines.
+
+---
+
+## 3. État d'avancement
+
+| Élément | État |
+|---|---|
+| Structure, gabarit, charte | fait |
+| Les dix pages, en français | fait, à relire par l'auteur |
+| Journal du projet | fait, à enrichir au fil des étapes |
+| Schéma des faces et comptage des bossages | fait |
+| Référencement, JSON-LD, Open Graph, sitemap | fait |
+| Accessibilité : contrastes, clavier, HTML sémantique | fait, contrôlé |
+| Dossier de presse (PDF) | fait |
+| Visite virtuelle | prête, en attente de vues — `_phase2/` |
+| **Vos visuels : rendus, plans, portrait, atelier, archives** | **attendus** |
+| **Traduction italienne, puis anglaise** | à faire |
+| **Dépôt GitHub et mise en ligne** | à faire |
+
+Tout ce qui est provisoire est **signalé à l'écran**, pour qu'aucun placeholder
+ne passe inaperçu à la mise en ligne.
+
+---
+
+## 4. Ce qu'il reste à fournir
+
+1. **Les visuels** — la liste exacte, avec les noms de fichiers attendus, est
+   dans `VISUELS.md`. Onze emplacements sont déjà en place dans le site, chacun
+   portant son libellé.
+2. **La ligne de crédit de l'image d'archive** du Camarade Président Thomas
+   Sankara. C'est la seule image du site qui ne soit pas une création de
+   l'auteur : elle ne doit pas être publiée sans son crédit exact.
+3. **Les accès au registrar** de `hamedouattara.com`.
+4. **Quatre validations** : la note d'intention, le choix de rédaction sur
+   l'amitié d'enfance (`CHOIX-DE-REDACTION.md`), l'ordre exact des prénoms
+   gravés dans l'acier, et la date exacte de l'inauguration.
+
+---
+
+## 5. Comment le site est fait
+
+Pas de base de données, pas de back-office, pas de dépendance à installer.
+Un générateur de 400 lignes en Python, sans aucune bibliothèque extérieure.
+
+```
+contenu/fr/           le texte des pages, un fichier par page
+contenu/it/ en/       les traductions, à venir
+gabarits/base.html    le gabarit commun
+statique/             ce qui est recopié tel quel : CSS, JS, images, PDF
+outils/               le générateur et les contrôles
+_phase2/              ce qui attend l'inauguration
+public/               LE SITE PRODUIT — c'est ce dossier que l'on publie
+```
+
+Chaque page est un fragment HTML précédé de ses métadonnées en JSON. Le
+générateur fabrique autour la navigation, le pied de page, les liens entre
+langues et le JSON-LD.
+
+```bash
+python3 outils/build.py        # écrit public/
+python3 outils/verifier.py     # structure, SEO, liens, accessibilité
+
+cd public && python3 -m http.server 8765      # regarder en local
+
+node outils/verification/navigateur.js        # contrôles en navigateur réel
+```
+
+Le contrôle en navigateur vérifie, page par page : erreurs de console,
+ressources manquantes, débordement horizontal sur écran de 360 px, textes
+alternatifs, unicité du h1. Quand la visite virtuelle sera publiée, il
+contrôlera aussi la rotation au curseur, au clavier, au glissement, sans
+JavaScript et en économie de données. Nécessite Playwright.
+
+### Les autres outils
+
+```bash
+python3 outils/emplacements-photo.py       # régénère les emplacements de visuels
+python3 outils/vues-de-substitution.py     # régénère les 36 vues provisoires
+node outils/dossier-de-presse.js           # régénère le PDF du dossier de presse
+outils/optimiser-images.sh galerie  <dossier>   # vos images → WebP
+outils/optimiser-images.sh rotation <dossier>   # 36 vues → WebP (phase 2)
+```
+
+**`public/` est versionné volontairement.** Le site peut être publié sans que
+personne ait à exécuter quoi que ce soit — une sécurité pour un site maintenu
+dans la durée, et par d'autres mains. Après toute modification de `contenu/`,
+relancer `build.py` et committer `public/` dans le même commit.
+
+---
+
+## 6. Poids des pages
+
+Mesuré en gzip, ce que paie réellement un visiteur en données :
+
+| Page | Poids |
+|---|---|
+| Accueil | ~10 Ko |
+| Les autres pages | 7 à 11 Ko |
+| Site publié, tout compris | 516 Ko, dossier de presse inclus |
+
+Aucune police n'est téléchargée : la typographie est celle du système. Aucune
+requête n'est faite hors du domaine du site.
+
+**Quand vos visuels arriveront**, tenir le budget : 120 Ko par image de
+galerie, 40 Ko par vue de rotation. `outils/optimiser-images.sh` applique ces
+réglages.
+
+---
+
+## 7. Mise en ligne, pas à pas
+
+### 7.1 Créer le dépôt
+
+Le dépôt doit être **public** : GitHub Pages est gratuit sur un dépôt public, et
+le site a vocation à être lu de tous. Sur github.com : *New repository*, nom
+`sankara-eternel-veilleur`, visibilité *Public*, sans README ni .gitignore.
+
+```bash
+git remote add origin https://github.com/hamedouattaradesign-sys/sankara-eternel-veilleur.git
+git push -u origin main
+```
+
+### 7.2 Publier par GitHub Pages
+
+Le site produit est dans `public/`, et GitHub Pages ne sert d'office que la
+racine ou `/docs`. On passe donc par une action, fournie :
+
+```bash
+mkdir -p .github/workflows
+cp deploiement/github-pages.yml .github/workflows/
+git add .github && git commit -m "Publication par GitHub Pages" && git push
+```
+
+Puis, sur github.com : **Settings → Pages → Build and deployment → Source :
+GitHub Actions**. Le premier déploiement part tout seul.
+
+### 7.3 Configurer le sous-domaine chez le registrar
+
+Dans la zone DNS de `hamedouattara.com`, créer **un seul** enregistrement :
+
+| Champ | Valeur |
+|---|---|
+| Type | `CNAME` |
+| Nom / Hôte | `sankara` |
+| Valeur / Cible | `hamedouattaradesign-sys.github.io.` |
+| TTL | 3600 (ou la valeur par défaut) |
+
+Selon le registrar, le champ « Nom » attend `sankara` seul, ou
+`sankara.hamedouattara.com.` en entier. Ne créer aucun enregistrement A, et ne
+toucher à rien d'autre : le site principal n'est pas concerné.
+
+Ensuite, sur github.com : **Settings → Pages → Custom domain**, saisir
+`sankara.hamedouattara.com`. Le fichier `CNAME` est déjà dans `public/`.
+
+### 7.4 Vérifier la propagation et le certificat
+
+```bash
+dig +short sankara.hamedouattara.com CNAME
+# attendu : hamedouattaradesign-sys.github.io.
+
+curl -sI https://sankara.hamedouattara.com | head -3
+# attendu : HTTP/2 200
+
+echo | openssl s_client -servername sankara.hamedouattara.com \
+    -connect sankara.hamedouattara.com:443 2>/dev/null \
+  | openssl x509 -noout -subject -dates
+```
+
+Quelques minutes à quelques heures pour la propagation DNS, jusqu'à 24 heures
+pour le certificat. Tant qu'il n'est pas émis, la case **Enforce HTTPS** reste
+grisée : il faut y revenir la cocher.
+
+### 7.5 Si l'on préfère Netlify
+
+Netlify sert aussi les dépôts privés, gratuitement. Réglages : **Build command**
+vide, **Publish directory** `public`. C'est aussi la voie la plus simple si vous
+voulez plus tard un back-office sans serveur.
+
+---
+
+## 8. Ajouter l'italien, puis l'anglais
+
+Le générateur ne produit une langue que si les fichiers existent, le sélecteur
+de langue n'apparaît que sur les pages réellement traduites, et les balises
+`hreflang` ne déclarent que ce qui existe. Aucune page morte n'est possible.
+
+```bash
+cp contenu/fr/02-oeuvre.html contenu/it/02-oeuvre.html
+# traduire le corps, puis dans les métadonnées :
+#   "slug" : l'adresse en italien   "nav" : le libellé de navigation
+#   "titre" : 75 caractères au plus  "description" : 165 au plus
+python3 outils/build.py && python3 outils/verifier.py
+```
+
+Le français reste la langue de référence : il n'est la traduction de rien.
+Le registre doit être conservé : « Camarade Président » devient *Compagno
+Presidente*, jamais *il Presidente*.
+
+---
+
+## 9. Charges
+
+Conception et réalisation : à la charge de Hamed Ouattara.
+Nom de domaine, hébergement et maintenance : à la charge du Mémorial Thomas
+Sankara, par le Projet de Construction des Infrastructures du Mémorial Isidore
+Noël Thomas Sankara.
+
+Avec GitHub Pages, l'hébergement est gratuit et le certificat automatique. La
+seule dépense récurrente est le nom de domaine `hamedouattara.com`, déjà
+détenu.
+
+---
+
+## 10. À lire aussi
+
+- `VISUELS.md` — la liste exacte des images à fournir, et leurs consignes.
+- `CHOIX-DE-REDACTION.md` — les formulations à arbitrer par l'auteur.
+- `NOTES-DE-VIGILANCE.md` — les points sensibles et leur traitement.
+- `_phase2/LISEZ-MOI.md` — comment ouvrir la visite virtuelle le moment venu.

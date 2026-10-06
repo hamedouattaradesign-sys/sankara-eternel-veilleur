@@ -1,0 +1,112 @@
+<!--
+{
+  "slug": "visite",
+  "nav": "Visite virtuelle",
+  "titre": "Visite virtuelle — SANKARA, L'ÉTERNEL VEILLEUR, Hamed Ouattara",
+  "og_titre": "Visite virtuelle — SANKARA, L'ÉTERNEL VEILLEUR",
+  "description": "Tournez autour de SANKARA, L'ÉTERNEL VEILLEUR, sculpture en acier Corten de Hamed Ouattara au Parco Thomas Sankara de Rome. Visite légère, pensée pour le mobile.",
+  "donnees": [
+    "oeuvre",
+    "lieu"
+  ],
+  "priorite": "0.9",
+  "scripts": "<script src=\"/assets/js/visite.js\" defer></script>"
+}
+-->
+<section class="section section--creuse">
+  <div class="enveloppe">
+    <p class="surtitre">Visite virtuelle</p>
+    <h1>Tourner autour du monument</h1>
+    <p class="chapeau">Le monument se découvre en tournant&nbsp;: le portrait n'apparaît que sur
+    deux faces opposées, et les deux autres ne livrent que la peau de l'acier. Faites glisser
+    l'image, ou servez-vous du curseur et des flèches du clavier.</p>
+  </div>
+</section>
+
+<section class="section section--creuse">
+  <div class="enveloppe">
+    <div class="visite">
+      <div>
+        <div class="visionneuse"
+             data-visionneuse
+             data-base="/assets/img/visite/rotation-"
+             data-ext=".svg"
+             data-pas="10">
+          <div class="visionneuse__scene">
+            <img class="visionneuse__image"
+                 data-visionneuse-image
+                 src="/assets/img/visite/rotation-000.svg"
+                 width="300" height="400"
+                 data-alt-gabarit="SANKARA, L'ÉTERNEL VEILLEUR, sculpture monumentale en acier Corten de Hamed Ouattara, vue à {angle} degrés"
+                 alt="SANKARA, L'ÉTERNEL VEILLEUR, sculpture monumentale en acier Corten de Hamed Ouattara, vue de face, à 0 degré."
+                 decoding="async">
+          </div>
+          <p class="visionneuse__etat" data-visionneuse-etat role="status"></p>
+        </div>
+
+        <noscript>
+          <div class="repli">
+            <p><strong>Votre navigateur n'exécute pas JavaScript.</strong> La rotation ne peut pas
+            être animée, mais l'œuvre reste consultable&nbsp;: la galerie présente les mêmes vues,
+            une par une, en pages ordinaires.</p>
+            <p><a class="appel appel--sobre" href="/galerie/">Voir la galerie</a></p>
+          </div>
+        </noscript>
+
+        <div class="commandes">
+          <label for="rotation">Rotation du monument, de 0 à 350 degrés</label>
+          <div class="commandes__ligne">
+            <button class="bouton-rond" type="button" data-visionneuse-pas="-1"
+                    aria-label="Tourner de dix degrés vers la gauche">&#8249;</button>
+            <input type="range" id="rotation" data-visionneuse-curseur
+                   min="0" max="350" step="10" value="0">
+            <button class="bouton-rond" type="button" data-visionneuse-pas="1"
+                    aria-label="Tourner de dix degrés vers la droite">&#8250;</button>
+          </div>
+          <button class="appel appel--sobre" type="button" data-visionneuse-complet hidden>
+            Charger la rotation complète
+          </button>
+        </div>
+
+        <p class="petit doux" style="margin-top:0.9rem">
+          <em>SANKARA, L'ÉTERNEL VEILLEUR</em>, Hamed Ouattara, 2026, acier Corten.
+          <span class="aconfirmer">Images de substitution</span>
+          Les trente-six vues actuelles sont des schémas volumétriques provisoires. Elles seront
+          remplacées par la rotation photographique de l'œuvre installée, au même nommage, sans
+          modification du site.
+        </p>
+      </div>
+
+      <aside>
+        <div class="repli">
+          <h2 style="margin-top:0;font-size:1rem">Comment regarder</h2>
+          <ul class="petit">
+            <li><strong>Les deux faces du portrait.</strong> Le visage n'existe pas en relief&nbsp;:
+            il est fait des vides traversant la tôle. Arrêtez-vous à 0 et à 180 degrés.</li>
+            <li><strong>Les deux faces de texture.</strong> À 90 et 270 degrés, aucune découpe&nbsp;:
+            seulement les bossages hémisphériques, quatre colonnes sur douze rangées.</li>
+            <li><strong>Les angles.</strong> Entre les deux, on voit en même temps la découpe et la
+            peau, et l'épaisseur de six millimètres de l'acier.</li>
+          </ul>
+          <p class="petit doux">Au clavier&nbsp;: atteignez le curseur par la touche de tabulation,
+          puis tournez avec les flèches gauche et droite.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="enveloppe">
+    <h2>Pensée pour les connexions lentes</h2>
+    <div class="prose">
+      <p>La rotation n'emploie ni modèle tridimensionnel, ni WebGL, ni bibliothèque extérieure.
+      C'est une séquence d'images fixes&nbsp;: elle fonctionne sur les téléphones anciens comme sur
+      les navigateurs récents, et ne télécharge que ce qu'elle affiche.</p>
+      <p>Si votre appareil signale une connexion lente ou le mode économie de données, seule une
+      vue sur trois est chargée. Le reste ne vient qu'à votre demande, par le bouton
+      «&nbsp;charger la rotation complète&nbsp;».</p>
+    </div>
+    <p class="suite"><a href="/oeuvre/">Lire le détail technique de l'œuvre</a></p>
+  </div>
+</section>

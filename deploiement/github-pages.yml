@@ -1,0 +1,61 @@
+# Publication du site sur GitHub Pages.
+#
+# À copier dans .github/workflows/ du dépôt dédié, puis, sur github.com :
+# Settings → Pages → Build and deployment → Source : GitHub Actions.
+#
+# Le dossier public/ étant versionné, cette action ne fait que le publier.
+# Elle régénère tout de même le site et contrôle le résultat : si un commit
+# a modifié contenu/ sans relancer build.py, la publication échoue au lieu
+# de mettre en ligne une version périmée.
+
+name: Publier le site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  construire:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Régénérer le site
+        run: python3 outils/build.py
+
+      - name: Vérifier que public/ était à jour
+        run: |
+          if ! git diff --quiet -- public; then
+            echo "::error::public/ ne correspond pas à contenu/."
+            echo "Lancez « python3 outils/build.py » et committez public/."
+            git diff --stat -- public
+            exit 1
+          fi
+
+      - name: Contrôler le site produit
+        run: python3 outils/verifier.py
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  publier:
+    needs: construire
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploiement.outputs.page_url }}
+    steps:
+      - id: deploiement
+        uses: actions/deploy-pages@v4
