@@ -27,9 +27,9 @@ paraître.
 
 - **Où exactement** le monument sera-t-il dressé ? Près de l'entrée, au centre,
   le long d'une allée ?
-- **Dans quelle direction regardera le visage ?** Les deux faces portrait sont
-  opposées : vers quoi sont-elles tournées ? Vers l'allée, vers la rue, vers le
-  levant ?
+- L'orientation est arrêtée : **les deux faces au visage regardent le nord et le
+  sud**, l'une vers l'Europe, l'autre vers l'Afrique. Le socle devra être coulé
+  en conséquence. *À vérifier sur place une fois le monument dressé.*
 - Le **socle de béton** est-il déjà coulé ? Par qui ?
 - Y a-t-il un **éclairage** prévu, ou le monument restera-t-il sous le seul
   éclairage public ?
