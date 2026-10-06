@@ -169,6 +169,15 @@ def verifier_page(fichier):
         if not cible_existe(href):
             anomalies.append("%s : lien interne cassé — %s" % (rel, href))
 
+    # Une image absente ne se voit pas dans le code : elle se voit sur la page,
+    # trop tard. On la cherche ici.
+    for img in s.images:
+        src = img.get("src", "")
+        if not src or src.startswith(("http://", "https://", "data:")):
+            continue
+        if not cible_existe(src):
+            anomalies.append("%s : image introuvable — %s" % (rel, src))
+
     # Le pied de page porte la mention obligatoire de l'auteur sur chaque page.
     if "Hamed Ouattara" not in brut:
         anomalies.append("%s : le nom de l'auteur ne figure pas sur la page" % rel)

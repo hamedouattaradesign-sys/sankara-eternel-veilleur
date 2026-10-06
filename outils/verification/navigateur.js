@@ -20,7 +20,7 @@ const BASE = process.env.BASE || "http://127.0.0.1:8765";
 // Phase 1 : la visite virtuelle et la galerie attendent l'inauguration.
 // Les contrôles de la visite ne s'exécutent que si la page est publiée.
 const PAGES = ["/", "/oeuvre/", "/nombres/", "/histoire/", "/thomas-sankara/",
-               "/artiste/", "/maquettes/", "/journal/", "/institutionnel/",
+               "/artiste/", "/galerie/", "/journal/", "/institutionnel/",
                "/contact/", "/404.html"];
 
 let echecs = 0;
