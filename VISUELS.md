@@ -62,10 +62,58 @@ disparaissent.
 | `01-thomas-sankara` | `archives/` | Le Camarade Président Thomas Sankara | vertical |
 
 **L'image d'archive est la seule du site qui ne soit pas votre création.** Elle
-ne doit pas être publiée sans sa ligne de crédit exacte : nom du photographe ou
-du fonds, et mention convenue. Un commentaire le rappelle dans
-`contenu/fr/05-sankara.html`. Si plusieurs images d'archive sont disponibles,
-me le dire : la notice historique peut en accueillir deux ou trois.
+ne doit pas être publiée sans sa ligne de crédit exacte. Un commentaire le
+rappelle dans les trois versions de `05-sankara.html`.
+
+#### Trois images libres de droits, à vérifier
+
+Le conteneur de travail n'a pas accès à Wikimedia : je ne peux ni les
+télécharger ni lire leur page de licence. Les trois sont données ici d'après la
+recherche, **à vérifier une par une avant usage** — ouvrir la page du fichier et
+lire la mention de licence, l'auteur et la date.
+
+| Fichier sur Wikimedia Commons | Ce qu'il montre | Licence annoncée |
+|---|---|---|
+| `Thomas Sankara in Harlem (1984).png` | Il parle à Harlem, New York, 1984 | domaine public — publié aux États-Unis entre 1978 et 1989 sans mention de copyright. Source *The Militant* / Ernest Harsch |
+| `Thomas Sankara photo.png` | Portrait | domaine public, même motif. Source *The Militant* / Sam Manuel |
+| `Photo of Thomas Sankara by CIA.png` | Portrait, août 1986 | domaine public — œuvre d'un agent du gouvernement des États-Unis |
+
+**Ma recommandation : la photographie de Harlem, 1984.**
+
+C'est celle qui tient le mieux pour ce site. Elle date du voyage de New York,
+le même que le discours aux Nations unies du 4 octobre 1984 que la page cite
+quatre paragraphes plus haut — l'image et la citation se répondent. Et sa
+provenance est digne : *The Militant* est le journal qui a couvert la
+Révolution, et dont la maison d'édition a publié *Thomas Sankara parle*.
+
+**N'utilisez pas la troisième.** Elle est juridiquement la plus solide, et c'est
+la seule qui soit à écarter sans discussion : porter « photographie : Central
+Intelligence Agency » sous le portrait du Camarade Président, sur un site
+mémoriel burkinabè, serait retourné contre vous en une journée. La licence n'a
+rien à voir avec la question.
+
+#### La ligne de crédit, une fois l'image choisie
+
+Elle se met sous l'image, dans les trois langues, sur le modèle :
+
+> Le Camarade Président Thomas Sankara, Harlem, New York, octobre 1984.
+> Photographie Ernest Harsch / *The Militant*. Domaine public.
+
+#### L'installer
+
+Déposer le fichier, puis :
+
+```bash
+outils/optimiser-images.sh galerie <dossier-contenant-l-image>
+```
+
+Il reste à remplacer, dans les trois `05-sankara.html`, le chemin
+`/assets/img/archives/01-thomas-sankara.svg` par le `.webp` produit, ses
+dimensions réelles, et la ligne de crédit. Dites-moi quand le fichier est là :
+je fais les trois en une passe.
+
+Si plusieurs images sont disponibles, me le dire : la notice historique peut en
+accueillir deux ou trois.
 
 ### Conversion
 
