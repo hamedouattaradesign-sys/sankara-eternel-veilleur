@@ -303,4 +303,7 @@ détenu.
 - `VISUELS.md` — la liste exacte des images à fournir, et leurs consignes.
 - `CHOIX-DE-REDACTION.md` — les formulations à arbitrer par l'auteur.
 - `NOTES-DE-VIGILANCE.md` — les points sensibles et leur traitement.
+- `QUESTIONS-AU-COMMANDITAIRE.md` — ce qu'il faut demander au Camarade Madi
+  Sakandé, classé par urgence.
+- `outils/presse/prompt-image-monument.md` — le prompt de génération d'image.
 - `_phase2/LISEZ-MOI.md` — comment ouvrir la visite virtuelle le moment venu.
