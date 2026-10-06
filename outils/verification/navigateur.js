@@ -20,8 +20,11 @@ const BASE = process.env.BASE || "http://127.0.0.1:8765";
 // Phase 1 : la visite virtuelle et la galerie attendent l'inauguration.
 // Les contrôles de la visite ne s'exécutent que si la page est publiée.
 const PAGES = ["/", "/oeuvre/", "/nombres/", "/histoire/", "/thomas-sankara/",
-               "/artiste/", "/galerie/", "/journal/", "/institutionnel/",
-               "/contact/", "/404.html"];
+               "/dynamique/", "/artiste/", "/galerie/", "/journal/", "/institutionnel/",
+               "/contact/", "/404.html",
+               "/it/", "/it/opera/", "/it/numeri/", "/it/storia/", "/it/thomas-sankara/",
+               "/it/dinamica/", "/it/artista/", "/it/galleria/", "/it/diario/",
+               "/it/istituzionale/", "/it/contatti/"];
 
 let echecs = 0;
 function verifie(nom, condition, detail) {
@@ -138,7 +141,7 @@ async function controlerVisite(navigateur) {
   await p.goto(BASE + "/", { waitUntil: "networkidle" });
   verifie("sans JS : la navigation reste entièrement visible",
           (await p.locator(".nav__lien").first().isVisible()) &&
-          (await p.locator(".nav__lien").count()) === 10);
+          (await p.locator(".nav__lien").count()) === 12);
   await ctx.close();
 
   // Économie de données

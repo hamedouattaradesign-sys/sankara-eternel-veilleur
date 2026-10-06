@@ -69,15 +69,17 @@ l'inauguration est dans trois semaines.
 | Élément | État |
 |---|---|
 | Structure, gabarit, charte | fait |
-| Les dix pages, en français | fait, à relire par l'auteur |
+| Les douze pages, en français | fait, à relire par l'auteur |
 | Journal du projet | fait, à enrichir au fil des étapes |
 | Schéma des faces et comptage des bossages | fait |
 | Référencement, JSON-LD, Open Graph, sitemap | fait |
 | Accessibilité : contrastes, clavier, HTML sémantique | fait, contrôlé |
 | Dossier de presse (PDF) | fait |
 | Visite virtuelle | prête, en attente de vues — `_phase2/` |
-| **Vos visuels : rendus, plans, portrait, atelier, archives** | **attendus** |
-| **Traduction italienne, puis anglaise** | à faire |
+| Photographies de l'œuvre, du parc et de l'atelier | installées |
+| **Version italienne, 12 pages** | **faite** |
+| Version anglaise | à faire |
+| **Image d'archive du Camarade Président** | **attendue** |
 | **Dépôt GitHub et mise en ligne** | à faire |
 
 Tout ce qui est provisoire est **signalé à l'écran**, pour qu'aucun placeholder
@@ -241,23 +243,45 @@ voulez plus tard un back-office sans serveur.
 
 ---
 
-## 8. Ajouter l'italien, puis l'anglais
+## 8. Les langues
 
-Le générateur ne produit une langue que si les fichiers existent, le sélecteur
-de langue n'apparaît que sur les pages réellement traduites, et les balises
-`hreflang` ne déclarent que ce qui existe. Aucune page morte n'est possible.
+**Le français et l'italien sont en ligne**, douze pages chacun. Le sélecteur de
+langue apparaît en tête, les balises `hreflang` sont posées, et le sitemap
+déclare les vingt-deux adresses.
+
+Le générateur ne produit une langue que si les fichiers existent, et le
+sélecteur ne s'affiche que sur les pages réellement traduites : aucune page
+morte n'est possible.
+
+Le français reste la langue de référence : il n'est la traduction de rien. Le
+registre est conservé en italien — « Camarade Président » devient *Compagno
+Presidente*, jamais *il Presidente* ; « Révolution Démocratique et Populaire »
+devient *Rivoluzione Democratica e Popolare*.
+
+### Ajouter l'anglais
 
 ```bash
-cp contenu/fr/02-oeuvre.html contenu/it/02-oeuvre.html
+cp contenu/fr/02-oeuvre.html contenu/en/02-oeuvre.html
 # traduire le corps, puis dans les métadonnées :
-#   "slug" : l'adresse en italien   "nav" : le libellé de navigation
+#   "slug" : l'adresse en anglais   "nav" : le libellé de navigation
 #   "titre" : 75 caractères au plus  "description" : 165 au plus
 python3 outils/build.py && python3 outils/verifier.py
 ```
 
-Le français reste la langue de référence : il n'est la traduction de rien.
-Le registre doit être conservé : « Camarade Président » devient *Compagno
-Presidente*, jamais *il Presidente*.
+Le registre doit y être conservé de même : *Comrade President*, jamais
+*Mr President*.
+
+### La planche des faces
+
+Elle est tracée par `outils/planche-faces.py`, aux cotes réelles du plan
+FACE PORTRAIT INDICE E, avec un dictionnaire de libellés par langue. Le script
+refuse de produire le dessin si le compte ne tombe pas juste : 4 × 11 = 44,
+4 + 24 = 28, 144 = 12 × 12, et la durée du 4 août 1983 au 15 octobre 1987
+égale bien quatre ans, deux mois et onze jours.
+
+```bash
+python3 outils/planche-faces.py fr    # ou it
+```
 
 ---
 
