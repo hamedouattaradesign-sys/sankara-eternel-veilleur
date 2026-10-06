@@ -150,8 +150,14 @@ def verifier_page(fichier):
             anomalies.append("%s : JSON-LD sans @context" % rel)
 
     for img in s.images:
-        if not img.get("alt", "").strip():
+        # Un alt vide n'est correct que si l'image est explicitement déclarée
+        # décorative ; sinon c'est un oubli.
+        decorative = img.get("aria-hidden") == "true" or img.get("role") == "presentation"
+        if not img.get("alt", "").strip() and not decorative:
             anomalies.append("%s : image sans texte alternatif — %s"
+                             % (rel, img.get("src", "?")))
+        if "alt" not in img and decorative:
+            anomalies.append("%s : image décorative sans attribut alt — %s"
                              % (rel, img.get("src", "?")))
         if not (img.get("width") and img.get("height")):
             avertissements.append("%s : image sans width/height, la page sautera au "
