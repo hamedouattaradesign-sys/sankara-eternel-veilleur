@@ -135,11 +135,23 @@ blanc qui est en ligne**, et c'est la bonne décision : les couleurs d'une
 colorisation ne sont pas celles du jour, ce sont celles qu'un modèle a devinées.
 Sur une notice historique, cela se serait vu et se serait retourné.
 
-**Elle n'a ni lieu ni date établis.** La légende ne dit donc que ce que l'image
-montre, et un encadré « lieu et date à établir » le signale au lecteur. Le béret
-à l'étoile et les pattes d'épaule la distinguent de la photographie de Harlem,
-où le béret est nu : ce sont deux occasions différentes, et il ne faut pas
-dater l'une d'après l'autre. La demande au Mémorial la joint.
+**C'est la même occasion que la photographie de Harlem** : même patte d'épaule,
+même pastille de col, même treillis. Les deux sont deux images d'une seule prise
+de parole, l'une serrée, l'autre large, et les légendes le disent.
+
+J'avais d'abord écrit l'inverse, « deux occasions différentes », en m'appuyant
+sur le béret que je croyais nu sur la photographie de Harlem. Il ne l'est pas :
+je n'en avais recadré que l'arrière, là où l'étoile ne peut pas se voir,
+puisqu'elle se porte à l'avant gauche. Une crop mal choisie, et une conclusion
+fausse sur laquelle j'ai bâti une légende et un avertissement. L'auteur a
+rétabli.
+
+**La leçon, pour la suite** : ne jamais conclure d'une absence observée sur un
+recadrage. Vérifier d'abord que la zone où la chose devrait se trouver est
+réellement dans le champ.
+
+Reste à obtenir du Mémorial la **ligne de crédit** de cette image et le **nom de
+l'interprète**.
 
 #### Trois images libres de droits, à vérifier
 
