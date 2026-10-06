@@ -111,6 +111,20 @@ la page de notice historique rend ce lien visible, au lieu de le laisser à
 l'état de déclaration. Une demande prête à envoyer est dans
 `outils/presse/demande-image-memorial.md`.
 
+#### La photographie de Harlem — PUBLIÉE
+
+`02-harlem-1984` ouvre la section « Ses mots » de la notice historique, dans les
+trois langues, juste au-dessus de la citation des Nations unies du 4 octobre
+1984. L'image et la parole sont du même voyage, et la légende le dit.
+
+Domaine public — publiée aux États-Unis entre 1978 et 1989 sans mention de
+copyright. Crédit : Ernest Harsch / *The Militant*. Servie en 760 et 480 pixels
+de large, 117 et 59 Ko.
+
+Deux états ont été transmis : une version tramée, scannée du journal, et une
+version nette. **C'est la nette qui est en ligne.** La tramée reste utilisable
+si l'on veut montrer le document de presse pour ce qu'il est.
+
 #### Trois images libres de droits, à vérifier
 
 Le conteneur de travail n'a pas accès à Wikimedia : je ne peux ni les
