@@ -24,7 +24,10 @@ const PAGES = ["/", "/oeuvre/", "/nombres/", "/histoire/", "/thomas-sankara/",
                "/contact/", "/404.html",
                "/it/", "/it/opera/", "/it/numeri/", "/it/storia/", "/it/thomas-sankara/",
                "/it/dinamica/", "/it/artista/", "/it/galleria/", "/it/diario/",
-               "/it/istituzionale/", "/it/contatti/"];
+               "/it/istituzionale/", "/it/contatti/",
+               "/en/", "/en/the-work/", "/en/the-numbers/", "/en/history/",
+               "/en/thomas-sankara/", "/en/the-movement/", "/en/the-artist/",
+               "/en/gallery/", "/en/diary/", "/en/institutional/", "/en/contact/"];
 
 let echecs = 0;
 function verifie(nom, condition, detail) {

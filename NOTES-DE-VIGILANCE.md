@@ -48,10 +48,15 @@ l'étendre. Une ligne de crédit fausse est bien plus coûteuse qu'une ligne abs
 « Camarade Président », « Révolution Démocratique et Populaire » en toutes
 lettres, « héros national ». Aucun des mots proscrits n'apparaît nulle part.
 
-**À tenir, surtout en traduction :** un traducteur italien ou anglais neutralisera
-spontanément « Camarade Président » en « Mr President » ou « il Presidente ».
-Ce serait l'erreur la plus grave du site. Le registre doit être conservé :
-*Compagno Presidente*, *Comrade President*.
+**Tenu dans les trois langues.** Un traducteur italien ou anglais neutralise
+spontanément « Camarade Président » en « il Presidente » ou « Mr President ».
+Ce serait l'erreur la plus grave du site. Le registre a été conservé partout :
+*Compagno Presidente*, *Comrade President*, et jamais la forme neutre seule. Le
+tableau de correspondance des trois langues est au §8 du `README.md` ; les
+règles propres à l'anglais sont dans `contenu/en/LISEZ-MOI.md`.
+
+C'est le point à relire en premier si une page est un jour modifiée par
+quelqu'un d'autre que l'auteur.
 
 ### La part de l'artiste
 
@@ -156,6 +161,24 @@ visiteur peut compter. L'œuvre étant achevée, **comptez les rangées sur une 
 de texture avant la mise en ligne** — onze rangées de quatre. Si l'objet s'écarte
 du plan, c'est le site qu'il faut corriger, jamais le contraire.
 
+**Si le compte est de douze**, les fichiers à reprendre, tous en une seule
+passe, sont :
+
+```
+contenu/fr/00-accueil.html   contenu/it/00-accueil.html   contenu/en/00-accueil.html
+contenu/fr/03-nombres.html   contenu/it/03-nombres.html   contenu/en/03-nombres.html
+contenu/fr/02-oeuvre.html    contenu/it/02-oeuvre.html    contenu/en/02-oeuvre.html
+outils/planche-faces.py      (les assertions, et les trois dictionnaires)
+outils/presse/               (les deux PDF, à régénérer)
+CHOIX-DE-REDACTION.md        NOTES-DE-VIGILANCE.md        README.md
+```
+
+Les trois planches SVG sont incluses en dur dans les pages des nombres : il
+faut les retracer avec `outils/planche-faces.py` et les recoller. Et la lecture
+elle-même change : douze rangées ne donnent plus « quatre ans, deux mois, onze
+jours », le total devient 152, et le 12 × 12 tombe. Ne rien reformuler avant
+d'avoir le chiffre.
+
 ### 5. L'image d'archive du Camarade Président Thomas Sankara
 
 C'est la **seule image du site qui ne soit pas une création de l'auteur**. Vous
@@ -166,7 +189,8 @@ celle du crédit.
 du photographe ou du fonds d'archive, et mention convenue — et la porter sous
 l'image. Un site institutionnel qui reproduit une image d'archive sans crédit
 prête le flanc, même quand les droits sont acquis. Un commentaire le rappelle
-dans `contenu/fr/05-sankara.html`, et l'emplacement est en place.
+dans `contenu/fr/05-sankara.html` — et dans les versions italienne et anglaise,
+où l'emplacement est en place de même.
 
 Si plusieurs images sont disponibles, la notice historique peut en accueillir
 deux ou trois : elles donneront du corps à une page aujourd'hui entièrement

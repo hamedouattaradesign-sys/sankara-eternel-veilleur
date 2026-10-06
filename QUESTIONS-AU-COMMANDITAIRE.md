@@ -143,7 +143,9 @@ exemple :
   associations de la diaspora, presse ?
 - Faut-il une **version italienne de la communication** ? *(Le site est déjà
   entièrement bilingue, français et italien.)*
-- Une **version anglaise** serait-elle utile pour la presse internationale ?
+- La **version anglaise** est faite, douze pages, en ligne sous `/en/`. Reste
+  à savoir si les **deux dossiers PDF** doivent être traduits eux aussi : ils
+  sont aujourd'hui en français, et les pages anglaise et italienne le signalent.
 
 ---
 

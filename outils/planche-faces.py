@@ -10,6 +10,7 @@ et c'est ce que l'on doit voir.
 
 Usage :  python3 outils/planche-faces.py fr > planche.svg
          python3 outils/planche-faces.py it > planche.svg
+         python3 outils/planche-faces.py en > planche.svg
 """
 
 import sys
@@ -60,6 +61,24 @@ MOTS = {
                  "poi ventiquattro bugne nella parte bassa, e la firma dell'artista tagliata al "
                  "piede. Le due facce a tessitura e le due facce con il volto sommano "
                  "centoquarantaquattro bugne."),
+    },
+    "en": {
+        "texture": "TEXTURED FACE", "portrait": "PORTRAIT FACE",
+        "opposees": "two opposite faces",
+        "colonnes": "four columns", "rangees": "eleven rows",
+        "n44": "44 bosses", "n28": "28 bosses",
+        "aucune": "no cut at all", "haut_bas": "4 above + 24 below",
+        "traversants": "face, name and signature cut through",
+        "visage": "face", "nom": "name and dates",
+        "a_visage": "face cut through", "a_nom": "name and dates", "a_sig": "signature",
+        "total": "2 textured faces + 2 portrait faces  =  144 bosses",
+        "titre": "Drawing of the two types of face of the monument",
+        "desc": ("Flat elevation, at true dimensions. On the left, a textured face: four columns "
+                 "of bosses over eleven rows, that is forty-four bosses, with no cut at all. On "
+                 "the right, a portrait face: a top row of four bosses, the face and the name "
+                 "block cut clean through the plate, then twenty-four bosses in the lower part, "
+                 "and the artist's signature cut at the foot. The two textured faces and the two "
+                 "portrait faces come to one hundred and forty-four bosses in all."),
     },
 }
 

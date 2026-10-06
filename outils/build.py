@@ -184,12 +184,48 @@ def fichier_sortie(langue, meta):
 # Données structurées JSON-LD
 # --------------------------------------------------------------------------
 
+# Les champs de texte libre du JSON-LD sont lus par les moteurs dans la langue
+# déclarée par la page. Les identifiants, les dates, les cotes et les codes pays
+# sont les mêmes partout ; seuls ces libellés changent.
+MOTS_DONNEES = {
+    "fr": {
+        "metier": "Artiste designer",
+        "forme": "Sculpture monumentale",
+        "medium": "Acier Corten, épaisseur 6 mm",
+        "matiere": "Acier Corten",
+        "fabrique": "Région de Bologne, Italie",
+        "credit": "SANKARA, L'ÉTERNEL VEILLEUR, Hamed Ouattara, 2026, acier Corten",
+        "parc": ("Seul espace public d'Europe entièrement dédié à la mémoire du Camarade "
+                 "Président Thomas Sankara."),
+    },
+    "it": {
+        "metier": "Artista designer",
+        "forme": "Scultura monumentale",
+        "medium": "Acciaio Corten, spessore 6 mm",
+        "matiere": "Acciaio Corten",
+        "fabrique": "Regione di Bologna, Italia",
+        "credit": "SANKARA, L'ÉTERNEL VEILLEUR, Hamed Ouattara, 2026, acciaio Corten",
+        "parc": ("Unico spazio pubblico d'Europa interamente dedicato alla memoria del "
+                 "Compagno Presidente Thomas Sankara."),
+    },
+    "en": {
+        "metier": "Artist designer",
+        "forme": "Monumental sculpture",
+        "medium": "Corten steel, 6 mm thick",
+        "matiere": "Corten steel",
+        "fabrique": "Bologna area, Italy",
+        "credit": "SANKARA, L'ÉTERNEL VEILLEUR, Hamed Ouattara, 2026, Corten steel",
+        "parc": ("The only public space in Europe given over entirely to the memory of "
+                 "Comrade President Thomas Sankara."),
+    },
+}
+
 PERSONNE = {
     "@type": "Person",
     "@id": SITE + "/#hamed-ouattara",
     "name": "Hamed Ouattara",
     "alternateName": "Ouattara Mohamed Sékou",
-    "jobTitle": "Artiste designer",
+    "jobTitle": None,          # posé par bloc_personne()
     "nationality": {"@type": "Country", "name": "Burkina Faso"},
     "url": "https://hamedouattara.com",
     "sameAs": [
@@ -214,10 +250,7 @@ LIEU = {
     "@type": "Place",
     "@id": SITE + "/#parco-thomas-sankara",
     "name": "Parco Thomas Sankara",
-    "description": (
-        "Seul espace public d'Europe entièrement dédié à la mémoire du Camarade "
-        "Président Thomas Sankara."
-    ),
+    "description": None,       # posée par bloc_lieu()
     "address": {
         "@type": "PostalAddress",
         "streetAddress": "Via Ugo della Seta",
@@ -235,10 +268,10 @@ OEUVRE = {
     "name": "SANKARA, L'ÉTERNEL VEILLEUR",
     "creator": {"@id": SITE + "/#hamed-ouattara"},
     "dateCreated": "2026",
-    "artform": "Sculpture monumentale",
-    "artMedium": "Acier Corten, épaisseur 6 mm",
-    "artworkSurface": "Acier Corten",
-    "material": "Acier Corten",
+    "artform": None,           # les cinq champs de texte libre
+    "artMedium": None,         # sont posés par bloc_oeuvre(),
+    "artworkSurface": None,    # dans la langue de la page
+    "material": None,
     "height": {"@type": "QuantitativeValue", "value": 200, "unitCode": "CMT"},
     "width": {"@type": "QuantitativeValue", "value": 70, "unitCode": "CMT"},
     "depth": {"@type": "QuantitativeValue", "value": 70, "unitCode": "CMT"},
@@ -251,12 +284,60 @@ OEUVRE = {
     "contentLocation": {"@id": SITE + "/#parco-thomas-sankara"},
     "locationCreated": {
         "@type": "Place",
-        "name": "Région de Bologne, Italie",
+        "name": None,
         "address": {"@type": "PostalAddress", "addressCountry": "IT"},
     },
     "copyrightHolder": {"@id": SITE + "/#hamed-ouattara"},
-    "creditText": "SANKARA, L'ÉTERNEL VEILLEUR, Hamed Ouattara, 2026, acier Corten",
+    "creditText": None,
 }
+
+
+def _traduit(gabarit, remplacements):
+    """Copie le gabarit en y posant les libellés de la langue demandée.
+
+    Une valeur None restée en place signalerait un libellé oublié dans
+    MOTS_DONNEES : on refuse de publier plutôt que d'émettre un null.
+    """
+    import copy
+    bloc = copy.deepcopy(gabarit)
+    for chemin, valeur in remplacements.items():
+        cible = bloc
+        *parents, feuille = chemin.split(".")
+        for cle in parents:
+            cible = cible[cle]
+        cible[feuille] = valeur
+
+    def controle(noeud, voie=""):
+        if isinstance(noeud, dict):
+            for cle, val in noeud.items():
+                controle(val, voie + "." + cle)
+        elif noeud is None:
+            raise SystemExit("JSON-LD : libellé manquant pour %s" % voie.lstrip("."))
+
+    controle(bloc)
+    return bloc
+
+
+def bloc_personne(langue):
+    m = MOTS_DONNEES[langue]
+    return _traduit(PERSONNE, {"jobTitle": m["metier"]})
+
+
+def bloc_lieu(langue):
+    m = MOTS_DONNEES[langue]
+    return _traduit(LIEU, {"description": m["parc"]})
+
+
+def bloc_oeuvre(langue):
+    m = MOTS_DONNEES[langue]
+    return _traduit(OEUVRE, {
+        "artform": m["forme"],
+        "artMedium": m["medium"],
+        "artworkSurface": m["matiere"],
+        "material": m["matiere"],
+        "locationCreated.name": m["fabrique"],
+        "creditText": m["credit"],
+    })
 
 
 def bloc_site(langue):
@@ -272,9 +353,9 @@ def bloc_site(langue):
 
 
 BLOCS = {
-    "oeuvre": lambda langue: OEUVRE,
-    "lieu": lambda langue: LIEU,
-    "personne": lambda langue: PERSONNE,
+    "oeuvre": bloc_oeuvre,
+    "lieu": bloc_lieu,
+    "personne": bloc_personne,
     "site": bloc_site,
 }
 

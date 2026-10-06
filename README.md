@@ -78,7 +78,7 @@ l'inauguration est dans trois semaines.
 | Visite virtuelle | prête, en attente de vues — `_phase2/` |
 | Photographies de l'œuvre, du parc et de l'atelier | installées |
 | **Version italienne, 12 pages** | **faite** |
-| Version anglaise | à faire |
+| **Version anglaise, 12 pages** | **faite** |
 | **Image d'archive du Camarade Président** | **attendue** |
 | **Dépôt GitHub et mise en ligne** | à faire |
 
@@ -245,31 +245,55 @@ voulez plus tard un back-office sans serveur.
 
 ## 8. Les langues
 
-**Le français et l'italien sont en ligne**, douze pages chacun. Le sélecteur de
-langue apparaît en tête, les balises `hreflang` sont posées, et le sitemap
-déclare les vingt-deux adresses.
+**Les trois langues sont en ligne**, douze pages chacune : français, italien,
+anglais. Le sélecteur de langue apparaît en tête, les balises `hreflang` sont
+posées, et le sitemap déclare les trente-trois adresses.
 
 Le générateur ne produit une langue que si les fichiers existent, et le
 sélecteur ne s'affiche que sur les pages réellement traduites : aucune page
 morte n'est possible.
 
-Le français reste la langue de référence : il n'est la traduction de rien. Le
-registre est conservé en italien — « Camarade Président » devient *Compagno
-Presidente*, jamais *il Presidente* ; « Révolution Démocratique et Populaire »
-devient *Rivoluzione Democratica e Popolare*.
+Le français reste la langue de référence : il n'est la traduction de rien.
 
-### Ajouter l'anglais
+**Le registre est conservé dans les trois langues.** Ce n'est pas une
+préférence de style, c'est la règle éditoriale du projet :
+
+| Français | Italien | Anglais |
+|---|---|---|
+| Camarade Président Thomas Sankara | Compagno Presidente Thomas Sankara | Comrade President Thomas Sankara |
+| Camarade Ministre | Compagno Ministro | Comrade Minister |
+| Révolution Démocratique et Populaire | Rivoluzione Democratica e Popolare | Democratic and Popular Revolution |
+| bossage | bugna | boss |
+| acier Corten | acciaio Corten | Corten steel |
+
+Jamais *il Presidente* seul, jamais *Mr President*, jamais *Mr Sankara*. Les
+mots interdits en français le sont dans les trois langues : *junte*, *régime
+militaire*, *putsch*, et leurs équivalents italiens et anglais.
+
+Restent en français dans les trois versions, parce que ce sont des noms
+propres : le titre de l'œuvre, *Ma brique pour Sankara* (marqué `lang="fr"`
+pour les lecteurs d'écran), le Conseil National de la Révolution, le Haut
+Conseil des Burkinabè de l'Étranger, le Bureau Burkinabè du Droit d'Auteur, et
+le nom gravé dans l'acier.
+
+Les champs de texte libre du JSON-LD — métier, forme, matériau, ligne de crédit,
+description du parc — sont traduits eux aussi, dans `MOTS_DONNEES` au début de
+`outils/build.py`. Un libellé oublié y arrête la génération : le script refuse
+d'émettre un `null` dans les données structurées.
+
+### Ajouter une quatrième langue
 
 ```bash
-cp contenu/fr/02-oeuvre.html contenu/en/02-oeuvre.html
+# 1. déclarer la langue dans LANGUES et MOTS_DONNEES, dans outils/build.py
+# 2. ajouter son dictionnaire dans MOTS, dans outils/planche-faces.py
+# 3. puis, fichier par fichier :
+cp contenu/fr/02-oeuvre.html contenu/xx/02-oeuvre.html
 # traduire le corps, puis dans les métadonnées :
-#   "slug" : l'adresse en anglais   "nav" : le libellé de navigation
+#   "slug" : l'adresse traduite     "nav" : le libellé de navigation
 #   "titre" : 75 caractères au plus  "description" : 165 au plus
+# 4. ajouter les adresses dans PAGES, dans outils/verification/navigateur.js
 python3 outils/build.py && python3 outils/verifier.py
 ```
-
-Le registre doit y être conservé de même : *Comrade President*, jamais
-*Mr President*.
 
 ### La planche des faces
 
@@ -280,7 +304,7 @@ refuse de produire le dessin si le compte ne tombe pas juste : 4 × 11 = 44,
 égale bien quatre ans, deux mois et onze jours.
 
 ```bash
-python3 outils/planche-faces.py fr    # ou it
+python3 outils/planche-faces.py fr    # ou it, ou en
 ```
 
 ---
