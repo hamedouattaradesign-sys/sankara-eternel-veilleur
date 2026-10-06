@@ -81,7 +81,7 @@ l'inauguration est dans trois semaines.
 | Photographies de l'œuvre, du parc et de l'atelier | installées |
 | **Version italienne, 12 pages** | **faite** |
 | **Version anglaise, 12 pages** | **faite** |
-| **Image d'archive du Camarade Président** | **attendue** |
+| **Image d'archive du Camarade Président** | **posée, accord du Mémorial** |
 | **Dépôt GitHub et mise en ligne** | à faire |
 
 Tout ce qui est provisoire est **signalé à l'écran**, pour qu'aucun placeholder

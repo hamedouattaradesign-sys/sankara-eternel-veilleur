@@ -240,22 +240,33 @@ notes servent à empêcher. Si une référence exacte est un jour établie par l
 Mémorial, elle pourra remonter avec les quatre autres. Un commentaire le
 rappelle dans les trois versions de la page.
 
-### 5. L'image d'archive du Camarade Président Thomas Sankara
+### 5. L'image d'archive du Camarade Président — POSÉE
 
-C'est la **seule image du site qui ne soit pas une création de l'auteur**. Vous
-indiquez en détenir les droits, ce qui règle la question de l'usage ; reste
-celle du crédit.
+Le portrait assis — treillis, béret sans insigne, galons de capitaine — est en
+ligne dans les trois langues, sur la page de notice historique. **L'auteur a
+obtenu le feu vert du Mémorial Thomas Sankara en octobre 2026.**
 
-**Proposition.** Arrêter la ligne de crédit exacte avant la mise en ligne — nom
-du photographe ou du fonds d'archive, et mention convenue — et la porter sous
-l'image. Un site institutionnel qui reproduit une image d'archive sans crédit
-prête le flanc, même quand les droits sont acquis. Un commentaire le rappelle
-dans `contenu/fr/05-sankara.html` — et dans les versions italienne et anglaise,
-où l'emplacement est en place de même.
+C'était la seule image du site qui ne soit pas une création de l'auteur, et le
+seul emplacement resté vide.
 
-Si plusieurs images sont disponibles, la notice historique peut en accueillir
-deux ou trois : elles donneront du corps à une page aujourd'hui entièrement
-textuelle.
+**Deux points restent, et aucun n'empêche la publication :**
+
+1. **Le libellé exact de la ligne de crédit.** Celle qui figure aujourd'hui —
+   « Photographie d'archive, publiée avec l'accord du Mémorial Thomas Sankara »
+   — est une formule d'attente, convenable mais que le Mémorial n'a pas arrêtée.
+   Dès que leur libellé est connu, le reprendre dans les trois langues. Un
+   commentaire le rappelle dans chaque fichier.
+2. **Le nom du photographe**, si le Mémorial le connaît. Une photographie
+   d'archive créditée au fonds mais pas à son auteur reste incomplète.
+
+La demande écrite au Mémorial est dans
+`outils/presse/demande-image-memorial.md`. Elle couvre aussi les citations et le
+canal de « Ma brique pour Sankara ».
+
+**Les quatre autres images transmises ne sont pas publiées**, et il ne faut pas
+les publier sans reprendre l'analyse de `VISUELS.md` : deux montrent des hommes
+que personne n'a identifiés, une montre un président français, et la dernière
+montre la tombe d'avant le Mausolée.
 
 ### 6. La date exacte de l'inauguration
 

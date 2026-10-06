@@ -82,15 +82,22 @@ rapporte.
 
 | Image | Droits | Lecture |
 |---|---|---|
-| Portrait assis, treillis et béret | à établir | **aucune réserve** — il est seul, c'est le portrait que tout le monde reconnaît |
+| **Portrait assis, treillis et béret** | **accord du Mémorial, octobre 2026** | **PUBLIÉ** — il est seul, c'est le portrait que tout le monde reconnaît |
 | Avec François Mitterrand, sur un tarmac | agence, à établir | **à peser.** Une image souriante aux côtés d'un président français, aujourd'hui, se lira comme une proximité avec la France. Le face-à-face de Ouagadougou en novembre 1986 est un motif de fierté ; cette photographie-ci ne le montre pas. |
 | Avec quatre militaires, près d'une jeep | agence, à établir | **à identifier avant tout usage.** Je ne sais pas qui sont ces hommes. Parmi les compagnons de l'époque, certains ont pris ensuite des chemins très différents. Publier sans nommer, c'est publier sans savoir. |
 | La tombe, avec des enfants | à établir | digne, et historiquement juste. Mais le Camarade Président repose désormais au Mausolée : une légende devra le dire, sans quoi l'image paraîtra datée. |
 | En tenue de sortie, avec trois civils | à établir | **à identifier**, même remarque que pour la jeep. |
 
-**Si une seule doit être retenue, c'est le portrait assis.** Il est seul dessus,
-il n'y a rien à expliquer, et c'est l'image qui vient à l'esprit quand on dit son
-nom.
+**Le portrait assis est publié**, avec l'accord du Mémorial obtenu par l'auteur
+en octobre 2026. C'est le bon choix : il est seul dessus, il n'y a rien à
+expliquer, et c'est l'image qui vient à l'esprit quand on dit son nom.
+
+Il est servi en deux tailles — 900 et 600 pixels de large, 117 et 66 Ko — avec
+un `srcset` : un téléphone ne charge que la petite. Le béret est **sans
+insigne**, contrairement à celui que porte le monument ; l'alternative textuelle
+le dit, et il ne faut pas la « corriger » d'après la description de l'œuvre.
+
+**Les quatre autres ne sont pas publiées.** Les réserves ci-dessus tiennent.
 
 #### La bonne source est le Mémorial
 
