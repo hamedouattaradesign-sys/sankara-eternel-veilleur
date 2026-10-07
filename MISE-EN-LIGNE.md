@@ -23,12 +23,20 @@ votre place.
 
 Dans la gestion DNS de `hamedouattara.com`, ajouter :
 
-| Type | Nom | Valeur | TTL |
+| Type | Nom d'hôte | Pointe vers | TTL |
 |---|---|---|---|
-| CNAME | `sankara` | `cname.vercel-dns.com` | 3600 |
+| CNAME | `sankara` | `81197017f9857654.vercel-dns-017.com` | 1 heure |
 
-Au 7 octobre, `sankara.hamedouattara.com` ne résout encore vers rien. La
-propagation prend de une à quelques heures, et le certificat TLS n'est émis
+**Cette valeur est propre à ce projet Vercel**, elle n'est pas la valeur
+générique `cname.vercel-dns.com` que donne la documentation. Si elle doit un
+jour être revérifiée, elle se lit sur la page *Settings → Domains* du projet,
+en face du domaine. C'est cette page qui fait foi, pas ce document.
+
+Dans le champ « Nom d'hôte », saisir `sankara` seul : IONOS ajoute le domaine
+lui-même. Et n'y modifier aucune autre ligne — les enregistrements MX portent la
+messagerie.
+
+La propagation prend de une à quelques heures, et le certificat TLS n'est émis
 qu'une fois le nom résolu.
 
 **Rien n'est public avant ce geste**, et c'est voulu : la protection Vercel
