@@ -1,5 +1,50 @@
 # Choix de rédaction
 
+## Ce projet affirme — directive de l'auteur, 7 octobre 2026
+
+**À lire avant tout le reste. Cette section prime sur tout ce qui suit.**
+
+Hamed Ouattara écrit ce projet avec l'accord de toutes les institutions
+concernées. Cette autorisation est acquise, elle ne se redemande pas, et elle
+n'a pas à être rappelée, nuancée ni vérifiée dans un document de travail.
+
+**Tout ce que porte ce projet est une affirmation.** Pas une supposition, pas
+une hypothèse, pas une option à arbitrer. Lorsque l'auteur arrête un point, ce
+point est arrêté.
+
+Concrètement :
+
+- **Ne pas écrire** « à confirmer », « à compléter », « sous réserve »,
+  « probablement », « il semblerait », ni aucune pastille de doute visible par
+  le lecteur. Ce qui n'est pas encore connu s'annonce comme une suite — « sera
+  publié une fois relevé sur place » —, jamais comme un manque.
+- **Ne pas redemander** une autorisation déjà donnée, ni proposer de faire
+  valider par un tiers ce que l'auteur a tranché.
+- **Ne pas présenter comme une option** ce que l'auteur a décidé.
+
+### Les points arrêtés
+
+| Point | Ce qui est arrêté |
+|---|---|
+| Le visage | **Le Camarade Président Thomas Sankara ne portait pas la barbe.** Aucun texte, aucune légende, aucun texte alternatif, aucun prompt d'image ne lui en prête. Les images qui en montrent une prêtent à confusion et ne doivent pas servir de référence. |
+| La trame | **4 colonnes et 12 rangées.** 48 bossages par face de texture, 28 par face portrait, 152 au total. |
+| L'orientation | **Le monument est implanté selon un axe nord-sud.** Les deux faces au visage regardent le nord et le sud. Ce n'est pas une option d'implantation, c'est une donnée de l'œuvre. |
+| L'intention | Les nombres viennent des recherches de l'auteur et de sa volonté en créant cette sculpture. **Aucun hasard, aucune coïncidence trouvée après coup.** |
+
+### Ce qui reste vrai malgré cette directive
+
+Affirmer n'est pas inventer. **Un fait qu'on n'a pas ne s'écrit pas.** Si une
+information manque — un nom, un chiffre, une date —, on la demande à l'auteur,
+on ne la devine pas et on ne la comble pas par une estimation présentée comme
+un fait. La règle « ne jamais inventer un fait historique » reste entière.
+
+La différence est nette : on n'affiche plus de doute au lecteur, et on ne
+remet plus en cause ce que l'auteur a tranché ; on continue de ne rien écrire
+qu'on ne sache.
+
+---
+
+
 **Mise à jour du 6 octobre 2026.** Le dossier institutionnel signé du 17 août 2026
 et le plan coté FACE PORTRAIT INDICE E ont tranché deux des trois points, et
 corrigé la lecture des nombres. Ce qui suit tient compte de ces documents, qui

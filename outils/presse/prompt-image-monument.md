@@ -38,7 +38,8 @@ LA FACE AU VISAGE (deux faces opposées). De haut en bas :
   des VIDES TRAVERSANTS, à travers lesquels on voit la pénombre intérieure du
   monument ; les zones claires sont l'acier laissé en place. L'effet est celui
   d'un grand pochoir découpé au laser. Béret militaire à l'étoile, regard franc,
-  barbe courte ;
+  visage glabre — le Camarade Président Thomas Sankara ne portait pas la barbe,
+  et aucune image qui lui en prête une ne doit être produite ;
 — de part et d'autre du visage, deux bandes verticales d'acier LISSES, sans
   aucun bossage ;
 — sous le visage, un bloc de texte lui aussi découpé de part en part, en
@@ -103,7 +104,8 @@ THE PORTRAIT FACE (two opposite faces), from top to bottom:
   not painted and not engraved: the dark areas of the portrait are THROUGH-CUT
   VOIDS revealing the dark hollow interior of the monument, and the light areas
   are the steel left in place. The effect is a large laser-cut stencil. Military
-  beret with a star, steady gaze, short beard;
+  beret with a star, steady gaze, clean-shaven — Comrade President Thomas
+  Sankara did not wear a beard, and no image giving him one is acceptable;
 — on either side of the face, two vertical bands of SMOOTH steel with no bosses
   at all;
 — below the face, a text block also cut clean through, in bridged stencil
