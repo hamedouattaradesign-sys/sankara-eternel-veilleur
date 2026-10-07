@@ -1,5 +1,5 @@
-# Rien à ignorer côté site : public/ est versionné volontairement, pour que
-# la publication ne dépende d'aucune exécution. Voir README.md §5.
-.DS_Store
-*.log
+# Rendus temporaires des dossiers PDF (voir outils/dossiers-pdf.js)
+outils/presse/.rendu-*.html
 __pycache__/
+*.pyc
+.DS_Store
