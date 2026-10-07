@@ -268,11 +268,27 @@ les publier sans reprendre l'analyse de `VISUELS.md` : deux montrent des hommes
 que personne n'a identifiés, une montre un président français, et la dernière
 montre la tombe d'avant le Mausolée.
 
-### 6. La date exacte de l'inauguration
+### 6. La date de l'inauguration — ARRÊTÉE
 
-Elle n'est inscrite nulle part sur le site : elle n'était pas dans le brief.
-À fournir pour l'annoncer, et pour accorder les temps des verbes — plusieurs
-pages sont rédigées au présent de l'œuvre installée.
+**Samedi 24 octobre 2026**, au Parco Thomas Sankara. Vérifié : le 24 octobre
+2026 tombe bien un samedi.
+
+Elle est portée partout : les trois accueils, les trois pages « Visiter », les
+trois journaux, les six dossiers PDF, et les données structurées, où
+l'inauguration est désormais déclarée comme un `Event` — date, lieu, auteur,
+entrée libre. C'est ce qui permet à un moteur de l'afficher comme un événement
+plutôt que comme une page parmi d'autres.
+
+**Ce qui manque encore : l'heure et le déroulé.** Tant que l'heure n'est pas
+connue, les données structurées ne portent que la date. Mieux vaut une donnée
+partielle qu'une heure inventée. Dès qu'elle est arrêtée, `startDate` accepte la
+forme complète `2026-10-24T11:00:00+02:00` — un commentaire le rappelle dans
+`outils/build.py`.
+
+**Une seule ligne à tenir après l'inauguration.** La ligne d'état des trois
+accueils et des trois pages « Visiter » devra passer au présent : le monument
+est installé. Un commentaire le rappelle dans chaque fichier. C'est aussi le
+moment de publier la visite virtuelle, qui attend dans `_phase2/`.
 
 ### 7. La page « La dynamique Sankara » — à faire valider
 

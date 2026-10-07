@@ -11,7 +11,8 @@ Camarade Président Thomas Sankara
 Camarades,
 
 Le monument **SANKARA, L'ÉTERNEL VEILLEUR**, sculpture monumentale en acier
-Corten, sera inauguré fin octobre 2026 au Parco Thomas Sankara de Rome, seul
+Corten, sera inauguré le **samedi 24 octobre 2026** au Parco Thomas Sankara de
+Rome, seul
 espace public d'Europe entièrement dédié à la mémoire du Camarade Président.
 L'œuvre est une commande du Camarade Madi Sakandé, de la diaspora burkinabè en
 Italie et ancien pionnier de la Révolution Démocratique et Populaire. Vous en

@@ -4,7 +4,7 @@ Site du monument **SANKARA, L'ÉTERNEL VEILLEUR**, sculpture monumentale de
 Hamed Ouattara destinée au Parco Thomas Sankara de Rome.
 
 Destination : `https://sankara.hamedouattara.com`
-Inauguration : fin octobre 2026.
+Inauguration : le samedi 24 octobre 2026.
 
 ---
 
@@ -100,7 +100,8 @@ ne passe inaperçu à la mise en ligne.
 3. **Les accès au registrar** de `hamedouattara.com`.
 4. **Quatre validations** : la note d'intention, le choix de rédaction sur
    l'amitié d'enfance (`CHOIX-DE-REDACTION.md`), l'ordre exact des prénoms
-   gravés dans l'acier, et la date exacte de l'inauguration.
+   gravés dans l'acier. La date de l'inauguration est arrêtée : samedi
+   24 octobre 2026.
 
 ---
 

@@ -198,6 +198,9 @@ MOTS_DONNEES = {
         "credit": "SANKARA, L'ÉTERNEL VEILLEUR, Hamed Ouattara, 2026, acier Corten",
         "parc": ("Seul espace public d'Europe entièrement dédié à la mémoire du Camarade "
                  "Président Thomas Sankara."),
+        "inauguration": "Inauguration de SANKARA, L'ÉTERNEL VEILLEUR",
+        "inauguration_desc": ("Inauguration de la sculpture monumentale en acier Corten de "
+                              "Hamed Ouattara au Parco Thomas Sankara de Rome. Entrée libre."),
     },
     "it": {
         "metier": "Artista designer",
@@ -208,6 +211,9 @@ MOTS_DONNEES = {
         "credit": "SANKARA, L'ÉTERNEL VEILLEUR, Hamed Ouattara, 2026, acciaio Corten",
         "parc": ("Unico spazio pubblico d'Europa interamente dedicato alla memoria del "
                  "Compagno Presidente Thomas Sankara."),
+        "inauguration": "Inaugurazione di SANKARA, L'ÉTERNEL VEILLEUR",
+        "inauguration_desc": ("Inaugurazione della scultura monumentale in acciaio Corten di "
+                              "Hamed Ouattara al Parco Thomas Sankara di Roma. Ingresso libero."),
     },
     "en": {
         "metier": "Artist designer",
@@ -218,6 +224,9 @@ MOTS_DONNEES = {
         "credit": "SANKARA, L'ÉTERNEL VEILLEUR, Hamed Ouattara, 2026, Corten steel",
         "parc": ("The only public space in Europe given over entirely to the memory of "
                  "Comrade President Thomas Sankara."),
+        "inauguration": "Unveiling of SANKARA, L'ÉTERNEL VEILLEUR",
+        "inauguration_desc": ("Unveiling of Hamed Ouattara's monumental Corten steel sculpture "
+                              "at the Parco Thomas Sankara in Rome. Free entry."),
     },
 }
 
@@ -350,6 +359,32 @@ def bloc_oeuvre(langue):
     })
 
 
+INAUGURATION = {
+    "@type": "Event",
+    "@id": SITE + "/#inauguration",
+    "startDate": "2026-10-24",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {"@id": SITE + "/#parco-thomas-sankara"},
+    "about": {"@id": SITE + "/#sankara-eternel-veilleur"},
+    "performer": {"@id": SITE + "/#hamed-ouattara"},
+    "isAccessibleForFree": True,
+    "name": None,          # posés par bloc_inauguration(), dans la langue
+    "description": None,   # de la page
+    # À COMPLÉTER quand l'heure sera arrêtée : "startDate" accepte
+    # "2026-10-24T11:00:00+02:00". Tant que l'heure n'est pas connue, la date
+    # seule est publiée — mieux vaut une donnée partielle qu'une heure inventée.
+}
+
+
+def bloc_inauguration(langue):
+    m = MOTS_DONNEES[langue]
+    return _traduit(INAUGURATION, {
+        "name": m["inauguration"],
+        "description": m["inauguration_desc"],
+    })
+
+
 def bloc_site(langue):
     return {
         "@type": "WebSite",
@@ -367,6 +402,7 @@ BLOCS = {
     "lieu": bloc_lieu,
     "personne": bloc_personne,
     "site": bloc_site,
+    "inauguration": bloc_inauguration,
 }
 
 

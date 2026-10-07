@@ -20,7 +20,7 @@ paraître.
 - Existe-t-il une **affiche ou une invitation officielle** que le site puisse
   reprendre ?
 
-> Le site annonce aujourd'hui « fin octobre 2026 ». C'est la première
+> Le site annonce aujourd'hui « le samedi 24 octobre 2026 ». C'est la première
 > information que tout visiteur cherchera, et la seule qui manque vraiment.
 
 ### 2. L'implantation dans le parc
