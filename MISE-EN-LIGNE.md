@@ -1,41 +1,25 @@
 # Mise en ligne — marche à suivre
 
-Le site est prêt. Il ne reste que des gestes qui demandent vos accès.
+État au 7 octobre 2026 : **le site est déployé et il fonctionne.** 39 pages,
+trois langues, 0 anomalie.
 
-État au 7 octobre 2026 : 39 pages, trois langues, 0 anomalie. Hébergement
-**Vercel**, projet `sankara-eternel-veilleur` déjà créé dans l'équipe *Studio
-Hamed Ouattara*, domaine `sankara.hamedouattara.com` déjà rattaché au projet.
-
----
-
-## 1. Créer le dépôt GitHub — une minute
-
-Je ne peux pas le créer moi-même : l'intégration GitHub de cette session n'a pas
-ce droit, et elle répond `403`. C'est le seul geste qui bloque.
-
-Sur **github.com → New repository** :
-
-| Champ | Valeur |
+| | |
 |---|---|
-| Repository name | `sankara-eternel-veilleur` |
-| Visibilité | **Public** |
-| Add a README | **non**, décoché |
-| .gitignore / licence | **aucun** |
+| Dépôt | `github.com/hamedouattaradesign-sys/sankara-eternel-veilleur`, public, 28 commits |
+| Hébergement | **Vercel**, projet `sankara-eternel-veilleur`, équipe *Studio Hamed Ouattara* |
+| Déploiement | production, depuis le commit `4cdc321`, construit en trois secondes |
+| Adresse publique | `https://sankara.hamedouattara.com` — **en attente du DNS** |
 
-Le dépôt doit rester **vide**. S'il contient un README, le premier envoi sera
-refusé.
-
-Dites-le-moi ensuite : je pousse les vingt-six commits, et Vercel déploie tout
-seul dans la minute.
+Il ne reste que des gestes qui demandent vos accès.
 
 ---
 
-## 2. L'enregistrement DNS — à faire chez IONOS
+## 1. L'enregistrement DNS — chez IONOS, c'est le seul vrai blocage
 
-Le domaine `hamedouattara.com` est bien rattaché à votre compte Vercel, mais sa
-zone DNS reste gérée chez **IONOS** (`ns1022.ui-dns.biz` et les trois autres).
-C'est donc chez IONOS que l'enregistrement se crée, et personne ne peut le faire
-à votre place.
+Le domaine `hamedouattara.com` est rattaché à votre compte Vercel, mais sa zone
+DNS reste gérée chez **IONOS** (`ns1022.ui-dns.biz` et les trois autres). C'est
+donc chez IONOS que l'enregistrement se crée, et personne ne peut le faire à
+votre place.
 
 Dans la gestion DNS de `hamedouattara.com`, ajouter :
 
@@ -43,12 +27,33 @@ Dans la gestion DNS de `hamedouattara.com`, ajouter :
 |---|---|---|---|
 | CNAME | `sankara` | `cname.vercel-dns.com` | 3600 |
 
-**À faire dès maintenant, avant même la mise en ligne.** La propagation prend de
-une à quelques heures, et le certificat TLS n'est émis qu'une fois le nom
-résolu. Autant que cela tourne pendant que le reste se termine.
+Au 7 octobre, `sankara.hamedouattara.com` ne résout encore vers rien. La
+propagation prend de une à quelques heures, et le certificat TLS n'est émis
+qu'une fois le nom résolu.
 
-Tant que le DNS n'a pas basculé, le site reste accessible sur l'adresse
-`.vercel.app` du projet.
+**Rien n'est public avant ce geste**, et c'est voulu : la protection Vercel
+couvre toutes les adresses `.vercel.app` du projet et laisse passer le seul
+domaine propre. Tant que le CNAME n'existe pas, le site est déployé mais
+personne ne peut le lire. **C'est vous qui choisissez le moment de l'ouverture,
+et c'est ce geste-là qui l'ouvre.**
+
+---
+
+## 2. Connecter le dépôt à Vercel — trois clics, facultatif
+
+Le projet Vercel n'est pas encore *lié* au dépôt GitHub. Le site est bien
+déployé depuis le dépôt, mais je désigne le commit à chaque fois : un envoi sur
+`main` ne déclenche donc rien tout seul.
+
+Pour que chaque envoi déploie sans intervention :
+
+**Vercel → projet `sankara-eternel-veilleur` → Settings → Git → Connect Git
+Repository**, choisir `hamedouattaradesign-sys/sankara-eternel-veilleur`,
+branche de production `main`.
+
+Si vous ne le faites pas, rien n'est cassé : je lance le déploiement moi-même à
+chaque fois, cela prend quelques secondes. La connexion sert surtout à ce que le
+site ne dépende pas de moi.
 
 ---
 
@@ -64,14 +69,14 @@ La deuxième édition réserve une zone de paraphe en fin de document. Trois poi
 - le comptage : **douze rangées, 48 par face de texture, 152 au total**.
 
 Renvoyez-moi le PDF signé : je le mets en place et je redéploie. L'opération
-prend quelques secondes, et peut se faire après la mise en ligne du site.
+prend quelques secondes, et peut se faire après l'ouverture du site.
 
 ---
 
-## 4. Après la mise en ligne
+## 4. Une fois le DNS propagé
 
-- **Vérifier l'adresse** une fois le DNS propagé :
-  `curl -I https://sankara.hamedouattara.com` doit répondre `HTTP/2 200`.
+- **Vérifier l'adresse** : `curl -I https://sankara.hamedouattara.com` doit
+  répondre `HTTP/2 200`.
 - **Déclarer le site** à Google Search Console et à Bing, et leur soumettre
   `https://sankara.hamedouattara.com/sitemap.xml`.
 - **Envoyer la demande au Mémorial** (`outils/presse/demande-image-memorial.md`)
@@ -79,9 +84,7 @@ prend quelques secondes, et peut se faire après la mise en ligne du site.
 
 ---
 
-## Ce qui déclenche un déploiement, ensuite
-
-Chaque envoi sur la branche principale. Le cycle complet est :
+## Le cycle de publication, ensuite
 
 ```bash
 python3 outils/build.py        # reconstruit public/
@@ -90,14 +93,16 @@ git add -A && git commit -m "…"
 git push
 ```
 
-Vercel reconstruit et met en ligne dans la minute. Il n'y a rien d'autre à
-faire : pas de compilation, pas de dépendance, pas de serveur.
+Puis le déploiement : automatique si le dépôt est connecté (section 2), sinon je
+le déclenche. Il n'y a rien d'autre à faire : pas de compilation, pas de
+dépendance, pas de serveur.
 
 ---
 
 ## Ce que le site envoie comme en-têtes
 
-`vercel.json` pose une politique de sécurité stricte, possible parce que le site
+Vérifié sur le déploiement en production, pas seulement écrit dans
+`vercel.json`. La politique est stricte, et elle le peut parce que le site
 n'appelle aucun service extérieur :
 
 - `default-src 'none'` — rien n'est autorisé par défaut ;
@@ -105,6 +110,10 @@ n'appelle aucun service extérieur :
 - `frame-ancestors 'none'` — il ne peut pas être encadré par un autre site ;
 - le seul script en ligne est autorisé par son empreinte, pas par une
   permission générale.
+
+S'y ajoutent `strict-transport-security` sur deux ans avec `preload`,
+`x-content-type-options`, `referrer-policy`, et une `permissions-policy` qui
+coupe la géolocalisation, la caméra, le micro et le pistage publicitaire.
 
 **Si un script en ligne est un jour ajouté ou modifié**, son empreinte change et
 il sera bloqué. Recalculer la nouvelle valeur et la reporter dans
@@ -119,6 +128,5 @@ for m in re.findall(r'<script>(.*?)</script>', s, re.S):
 "
 ```
 
-Les images, le CSS et le JS sont mis en cache un an — leurs noms changent quand
-leur contenu change. Les pages HTML ne sont jamais mises en cache : une
-correction est visible immédiatement.
+Les images, le CSS, les polices et le JS sont mis en cache un an. Les pages HTML
+ne sont jamais mises en cache : une correction est visible immédiatement.
