@@ -67,6 +67,10 @@ LANGUES = {
         "nav_label": "Navigation principale",
         "marque_sous": "L'éternel veilleur",
         "pied_atelier": "Studio Hamed Ouattara",
+        "og_image_alt": ("SANKARA, L'ÉTERNEL VEILLEUR, sculpture monumentale en acier "
+                         "Corten de Hamed Ouattara, Parco Thomas Sankara, Rome"),
+        "pied_matiere": "Hamed Ouattara, 2026, acier Corten",
+        "pied_lieu": "Parco Thomas Sankara, Rome, Italie",
         "pied_nav": "Le site",
         "langues_label": "Langue",
         "pied_mention": (
@@ -85,6 +89,10 @@ LANGUES = {
         "nav_label": "Navigazione principale",
         "marque_sous": "L'eterno vigile",
         "pied_atelier": "Studio Hamed Ouattara",
+        "og_image_alt": ("SANKARA, L'ÉTERNEL VEILLEUR, scultura monumentale in acciaio "
+                         "Corten di Hamed Ouattara, Parco Thomas Sankara, Roma"),
+        "pied_matiere": "Hamed Ouattara, 2026, acciaio Corten",
+        "pied_lieu": "Parco Thomas Sankara, Roma, Italia",
         "pied_nav": "Il sito",
         "langues_label": "Lingua",
         "pied_mention": (
@@ -103,6 +111,10 @@ LANGUES = {
         "nav_label": "Main navigation",
         "marque_sous": "The eternal watchman",
         "pied_atelier": "Studio Hamed Ouattara",
+        "og_image_alt": ("SANKARA, L'ÉTERNEL VEILLEUR, monumental Corten steel sculpture "
+                         "by Hamed Ouattara, Parco Thomas Sankara, Rome"),
+        "pied_matiere": "Hamed Ouattara, 2026, Corten steel",
+        "pied_lieu": "Parco Thomas Sankara, Rome, Italy",
         "pied_nav": "This site",
         "langues_label": "Language",
         "pied_mention": (
@@ -586,11 +598,7 @@ def construire():
                 "og_type": meta.get("og_type", "website"),
                 "og_locale": strings["og_locale"],
                 "og_titre": meta.get("og_titre", meta["titre"]),
-                "og_image_alt": meta.get(
-                    "og_image_alt",
-                    "SANKARA, L'ÉTERNEL VEILLEUR, sculpture monumentale en acier Corten "
-                    "de Hamed Ouattara, Parco Thomas Sankara, Rome",
-                ),
+                "og_image_alt": meta.get("og_image_alt", strings["og_image_alt"]),
                 "jsonld": rendre_jsonld(langue, meta, pages),
                 "accueil": accueil_href,
                 "nav": rendre_nav(langue, identifiant, pages),
@@ -603,6 +611,8 @@ def construire():
                 "i18n_nav_label": strings["nav_label"],
                 "i18n_marque_sous": strings["marque_sous"],
                 "i18n_pied_atelier": strings["pied_atelier"],
+                "i18n_pied_matiere": strings["pied_matiere"],
+                "i18n_pied_lieu": strings["pied_lieu"],
                 "i18n_pied_nav": strings["pied_nav"],
                 "i18n_pied_mention": strings["pied_mention"],
             }

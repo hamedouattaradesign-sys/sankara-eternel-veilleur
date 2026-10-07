@@ -25,6 +25,14 @@ PUBLIC = os.path.join(RACINE, "public")
 ORPHELINES = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link",
               "meta", "param", "source", "track", "wbr"}
 
+# Le matériau, nommé dans chacune des trois langues. Sert de témoin de langue :
+# voir verifier_page(). « Corten » seul ne convient pas, il est identique partout.
+MATIERE = {
+    "fr": "acier Corten",
+    "it": "acciaio Corten",
+    "en": "Corten steel",
+}
+
 anomalies = []
 avertissements = []
 
@@ -181,6 +189,21 @@ def verifier_page(fichier):
     # Le pied de page porte la mention obligatoire de l'auteur sur chaque page.
     if "Hamed Ouattara" not in brut:
         anomalies.append("%s : le nom de l'auteur ne figure pas sur la page" % rel)
+
+    # Aucun mot d'une autre langue ne doit traîner sur la page. Ce contrôle est né
+    # d'un vrai défaut : le cartouche du pied de page était écrit en dur dans le
+    # gabarit, en français, et se retrouvait tel quel sur les pages italiennes et
+    # anglaises — à deux lignes d'une mention qui, elle, était bien traduite.
+    # Le site a été servi ainsi pendant une heure.
+    #
+    # Les témoins sont le nom du matériau dans les trois langues : il figure sur
+    # toute page et ne peut pas apparaître dans une autre langue que la sienne.
+    langue = re.search(r'<html lang="([a-z]{2})"', brut)
+    langue = langue.group(1) if langue else "fr"
+    for autre, temoin in MATIERE.items():
+        if autre != langue and temoin in brut:
+            anomalies.append("%s : page en %s, mais le texte « %s » y figure, "
+                             "qui est du %s" % (rel, langue, temoin, autre))
 
     return rel
 
