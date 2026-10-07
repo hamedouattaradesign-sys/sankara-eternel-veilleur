@@ -30,6 +30,10 @@
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/css/site.css">
+<!-- Le gras sert au titre de chaque page : on le demande en même temps que la
+     feuille de style, sans attendre qu'elle soit lue. Les deux autres coupes
+     suivent naturellement. -->
+<link rel="preload" href="/assets/polices/charis-700.woff2" as="font" type="font/woff2" crossorigin>
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -105,8 +109,12 @@
 <header class="entete">
   <div class="entete__barre">
     <a class="marque" href="/it/">
-      <span class="marque__titre">SANKARA</span>
-      <span class="marque__soustitre">L'eterno vigile</span>
+      <img class="marque__portrait" src="/assets/img/identite/portrait.svg"
+           width="44" height="52" alt="" aria-hidden="true" decoding="async">
+      <span class="marque__mots">
+        <span class="marque__titre">SANKARA</span>
+        <span class="marque__soustitre">L'eterno vigile</span>
+      </span>
     </a>
     <button class="bascule" type="button" aria-expanded="false" aria-controls="navigation">
       <span class="bascule__texte">Menu</span>
@@ -204,6 +212,13 @@
              Vercel Inc., à reprendre sur sa propre page légale. Le droit
              français exige le nom ET l'adresse de l'hébergeur. Le nom, la
              ville et le pays sont exacts ; la rue manque. -->
+        <tr><th scope="row">Tipografia</th>
+          <td>Charis SIL, di SIL Global, sotto
+          <a href="/assets/polices/OFL.txt">SIL Open Font License 1.1</a>. Derivata dal
+          Bitstream Charter di Matthew Carter.</td></tr>
+        <tr><th scope="row">Marchio e icona</th>
+          <td>Il ritratto tagliato del monumento, vettorializzato dal disegno di fabbricazione
+          dell'autore</td></tr>
         <tr><th scope="row">Misurazione del pubblico</th><td>Nessuna. Questo sito non deposita
           alcun cookie e non raccoglie alcun dato personale.</td></tr>
       </tbody>

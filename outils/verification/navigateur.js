@@ -55,8 +55,18 @@ async function controlerPages(navigateur) {
     const deborde = await p.evaluate(() =>
       document.documentElement.scrollWidth > document.documentElement.clientWidth + 1
         ? document.documentElement.scrollWidth : 0);
+    // Même règle que outils/verifier.py : un alt vide n'est correct que si
+    // l'image est déclarée décorative, et une image décorative doit tout de
+    // même porter l'attribut. Ce contrôle était plus grossier que le
+    // validateur et refusait une image décorative correctement balisée.
     const sansAlt = await p.evaluate(() =>
-      [...document.images].filter((i) => !i.getAttribute("alt")).map((i) => i.src.split("/").pop()));
+      [...document.images].filter((i) => {
+        const decorative = i.getAttribute("aria-hidden") === "true"
+          || i.getAttribute("role") === "presentation";
+        const alt = i.getAttribute("alt");
+        if (alt === null) return true;              // attribut absent
+        return alt.trim() === "" && !decorative;    // vide sans être décorative
+      }).map((i) => i.src.split("/").pop()));
     const h1 = await p.locator("h1").count();
 
     const detail = [

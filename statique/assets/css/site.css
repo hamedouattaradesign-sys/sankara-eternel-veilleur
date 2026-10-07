@@ -1,3 +1,40 @@
+/* ---------- Typographie ----------
+
+   Charis SIL, dérivée de la Bitstream Charter de Matthew Carter, dessinée pour
+   rester lisible là où le rendu est mauvais, et étendue par SIL pour les
+   orthographes africaines. Licence SIL Open Font License 1.1, reproduite dans
+   /assets/polices/OFL.txt.
+
+   Trois coupes seulement — romain, italique, gras —, découpées aux 258 signes
+   dont le site a besoin : 53 Ko en tout, contre 2,6 Mo pour les trois fontes
+   complètes. Voir outils/polices.py.
+
+   font-display: swap — le texte s'affiche immédiatement dans la fonte système,
+   puis bascule. Sur une connexion lente, personne n'attend devant une page
+   blanche. C'est tout le propos de ce site.                               */
+
+@font-face {
+  font-family: "Charis SIL";
+  src: url("/assets/polices/charis-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Charis SIL";
+  src: url("/assets/polices/charis-400i.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Charis SIL";
+  src: url("/assets/polices/charis-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @charset "utf-8";
 /* SANKARA, L'ÉTERNEL VEILLEUR — Hamed Ouattara, 2026
    Feuille de style unique.
@@ -41,7 +78,7 @@
 
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
     Arial, "Noto Sans", sans-serif;
-  --serif: Georgia, "Times New Roman", "Noto Serif", serif;
+  --serif: "Charis SIL", Georgia, "Times New Roman", "Noto Serif", serif;
 
   --ombre: 0 1px 2px rgba(28, 26, 23, 0.06), 0 4px 14px rgba(28, 26, 23, 0.06);
 
@@ -211,7 +248,28 @@ strong { font-weight: 700; }
   padding: 1rem var(--gouttiere);
 }
 
-.marque { text-decoration: none; display: block; line-height: 1.2; color: var(--encre); }
+/* La marque porte le portrait découpé du monument — le pochoir du plan de
+   fabrication, vectorisé. Le site s'ouvrait jusqu'ici sur du texte nu : un
+   monument qui porte un visage doit se présenter avec. Voir
+   outils/portrait-vectoriel.py. */
+.marque {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  line-height: 1.2;
+  color: var(--encre);
+}
+.marque__portrait {
+  width: auto;
+  height: 2.6rem;
+  flex: none;
+  color: var(--rouge);
+}
+.marque__mots { display: block; }
+@media (min-width: 46em) {
+  .marque__portrait { height: 3rem; }
+}
 .marque:hover { color: var(--encre); }
 .marque__titre {
   display: block;
