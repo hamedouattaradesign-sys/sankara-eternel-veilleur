@@ -591,6 +591,9 @@ def construire():
             valeurs = {
                 "lang": langue,
                 "base": "",
+                # Les images de partage s'adressent à des serveurs
+                # extérieurs : il leur faut une adresse absolue.
+                "site": SITE,
                 "titre": meta["titre"],
                 "description": meta["description"],
                 "canonical": canonical,

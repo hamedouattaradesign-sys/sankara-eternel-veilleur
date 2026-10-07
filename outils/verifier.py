@@ -198,6 +198,16 @@ def verifier_page(fichier):
     #
     # Les témoins sont le nom du matériau dans les trois langues : il figure sur
     # toute page et ne peut pas apparaître dans une autre langue que la sienne.
+    # Les images de partage sont lues par des serveurs extérieurs — Facebook,
+    # LinkedIn, WhatsApp, X — qui n'ont aucun moyen de résoudre un chemin
+    # relatif. Elles doivent porter une adresse absolue, sans quoi le site se
+    # partage sans aperçu. Le défaut a existé jusqu'au jour de la mise en ligne.
+    for prop in ('property="og:image"', 'name="twitter:image"'):
+        m = re.search(r'<meta %s content="([^"]*)"' % prop, brut)
+        if m and not m.group(1).startswith("https://"):
+            anomalies.append("%s : image de partage en chemin relatif — %s"
+                             % (rel, m.group(1)))
+
     langue = re.search(r'<html lang="([a-z]{2})"', brut)
     langue = langue.group(1) if langue else "fr"
     for autre, temoin in MATIERE.items():
