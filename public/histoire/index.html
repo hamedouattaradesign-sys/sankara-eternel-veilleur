@@ -144,8 +144,15 @@
 <body>
 <a class="saut" href="#contenu">Aller au contenu</a>
 
-<!-- Rappel discret des couleurs nationales du Burkina Faso. -->
-<div class="drapeau" aria-hidden="true"><span></span><span></span></div>
+<!-- Les deux pays, en haut de chaque page : le Burkina Faso à gauche, deux
+     bandes superposées ; l'Italie à droite, trois bandes verticales. Les deux
+     structures diffèrent, c'est ce qui les fait lire comme deux drapeaux et non
+     comme un dégradé. Les vrais drapeaux sont au pied de page, à une taille où
+     ils se reconnaissent. -->
+<div class="drapeau" aria-hidden="true">
+  <span class="drapeau__bf"><i></i><i></i></span>
+  <span class="drapeau__it"><i></i><i></i><i></i></span>
+</div>
 
 <header class="entete">
   <div class="entete__barre">
@@ -200,11 +207,9 @@
   <div class="enveloppe">
     <h2>Une initiative burkinabè</h2>
     <div class="prose">
-      <p>Le parc a été porté par le Camarade Madi Sakandé, Burkinabè établi à Bologne depuis
-      1998, de la diaspora burkinabè en Italie et <strong>ancien pionnier de la Révolution
-      Démocratique et Populaire</strong>. Il a engagé ses propres moyens pour que ce lieu existe,
-      qu'il porte ce nom, et qu'il reçoive une œuvre. Il entend par ce geste honorer la mémoire de
-      celui qu'il nomme son père spirituel.</p>
+      <p>Le parc a été porté par le Camarade Madi Sakandé, de la diaspora burkinabè en Italie.
+      Il est le <strong>donateur de l'œuvre, au profit de l'État burkinabè</strong>, pour le Parco
+      Thomas Sankara de Rome.</p>
 
       <!-- FORMULATION A — retenue par défaut. La formulation B, sans la mention de
            l'amitié d'enfance, est conservée dans CHOIX-DE-REDACTION.md.
@@ -235,12 +240,12 @@
       <figure>
         <div class="figure__cadre">
           <img src="/assets/img/parc/01-parco-thomas-sankara.webp" width="950" height="1267"
-               alt="Sous la plaque du Parco Thomas Sankara, Via Ugo della Seta à Rome, deux hommes devant l'affiche de la rencontre préparatoire : le Camarade Madi Sakandé, en tenue traditionnelle burkinabè tissée et coiffe, et le Camarade Yemboini Etienne. La plaque porte PARCO THOMAS SANKARA 1949-1987 PRESIDENTE DEL BURKINA FASO."
+               alt="Sous la plaque du Parco Thomas Sankara, Via Ugo della Seta à Rome, deux hommes devant l'affiche de la rencontre préparatoire : le Camarade Madi Sakandé, en tenue traditionnelle burkinabè tissée et coiffe, et le Camarade Étienne Lompo. La plaque porte PARCO THOMAS SANKARA 1949-1987 PRESIDENTE DEL BURKINA FASO."
                loading="lazy" decoding="async">
         </div>
-        <figcaption>Le Camarade <strong>Madi Sakandé</strong>, donateur de la sculpture, et le
-        Camarade <strong>Yemboini Etienne</strong>, coordonnateur du Mémorial Thomas Sankara,
-        sous la plaque du parc.
+        <figcaption>Le Camarade <strong>Madi Sakandé</strong>, donateur de l'œuvre, et le
+        Camarade <strong>Étienne Lompo</strong>, Coordonnateur du Projet de Construction des
+        Infrastructures du Mémorial Isidore Noël Thomas Sankara, sous la plaque du parc.
         <span class="credit">Parco Thomas Sankara, Rome, juin 2026</span></figcaption>
       </figure>
       <figure>
@@ -322,6 +327,20 @@
       <p class="pied__oeuvre"><em>SANKARA, L'ÉTERNEL VEILLEUR</em><br>
       Hamed Ouattara, 2026, acier Corten<br>
       Parco Thomas Sankara, Rome, Italie</p>
+      <!-- Une œuvre burkinabè portée en Italie. Le trajet est le sujet du
+           monument autant que son sujet : les deux pays sont nommés et
+           montrés. -->
+      <p class="trajet">
+        <span class="trajet__pays">
+          <img class="trajet__drapeau" src="/assets/img/identite/drapeau-burkina.svg"
+               width="30" height="20" alt="" aria-hidden="true" loading="lazy" decoding="async">
+          Burkina&nbsp;Faso</span>
+        <span class="trajet__fleche" aria-hidden="true"></span>
+        <span class="trajet__pays">
+          <img class="trajet__drapeau" src="/assets/img/identite/drapeau-italie.svg"
+               width="30" height="20" alt="" aria-hidden="true" loading="lazy" decoding="async">
+          Italie</span>
+      </p>
     </div>
     <div class="pied__bloc">
       <p class="pied__titre">Studio Hamed Ouattara</p>

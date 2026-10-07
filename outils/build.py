@@ -69,6 +69,7 @@ LANGUES = {
         "pied_atelier": "Studio Hamed Ouattara",
         "og_image_alt": ("SANKARA, L'ÉTERNEL VEILLEUR, sculpture monumentale en acier "
                          "Corten de Hamed Ouattara, Parco Thomas Sankara, Rome"),
+        "pays_arrivee": "Italie",
         "pied_matiere": "Hamed Ouattara, 2026, acier Corten",
         "pied_lieu": "Parco Thomas Sankara, Rome, Italie",
         "pied_nav": "Le site",
@@ -91,6 +92,7 @@ LANGUES = {
         "pied_atelier": "Studio Hamed Ouattara",
         "og_image_alt": ("SANKARA, L'ÉTERNEL VEILLEUR, scultura monumentale in acciaio "
                          "Corten di Hamed Ouattara, Parco Thomas Sankara, Roma"),
+        "pays_arrivee": "Italia",
         "pied_matiere": "Hamed Ouattara, 2026, acciaio Corten",
         "pied_lieu": "Parco Thomas Sankara, Roma, Italia",
         "pied_nav": "Il sito",
@@ -113,6 +115,7 @@ LANGUES = {
         "pied_atelier": "Studio Hamed Ouattara",
         "og_image_alt": ("SANKARA, L'ÉTERNEL VEILLEUR, monumental Corten steel sculpture "
                          "by Hamed Ouattara, Parco Thomas Sankara, Rome"),
+        "pays_arrivee": "Italy",
         "pied_matiere": "Hamed Ouattara, 2026, Corten steel",
         "pied_lieu": "Parco Thomas Sankara, Rome, Italy",
         "pied_nav": "This site",
@@ -614,6 +617,7 @@ def construire():
                 "i18n_nav_label": strings["nav_label"],
                 "i18n_marque_sous": strings["marque_sous"],
                 "i18n_pied_atelier": strings["pied_atelier"],
+                "i18n_pays_arrivee": strings["pays_arrivee"],
                 "i18n_pied_matiere": strings["pied_matiere"],
                 "i18n_pied_lieu": strings["pied_lieu"],
                 "i18n_pied_nav": strings["pied_nav"],

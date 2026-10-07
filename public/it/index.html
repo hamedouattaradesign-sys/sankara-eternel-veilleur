@@ -174,8 +174,15 @@
 <body>
 <a class="saut" href="#contenu">Vai al contenuto</a>
 
-<!-- Rappel discret des couleurs nationales du Burkina Faso. -->
-<div class="drapeau" aria-hidden="true"><span></span><span></span></div>
+<!-- Les deux pays, en haut de chaque page : le Burkina Faso à gauche, deux
+     bandes superposées ; l'Italie à droite, trois bandes verticales. Les deux
+     structures diffèrent, c'est ce qui les fait lire comme deux drapeaux et non
+     comme un dégradé. Les vrais drapeaux sont au pied de page, à une taille où
+     ils se reconnaissent. -->
+<div class="drapeau" aria-hidden="true">
+  <span class="drapeau__bf"><i></i><i></i></span>
+  <span class="drapeau__it"><i></i><i></i><i></i></span>
+</div>
 
 <header class="entete">
   <div class="entete__barre">
@@ -227,9 +234,8 @@
 
       <p class="etat">
         <span class="etat__date">Sabato 24 ottobre 2026</span>
-        <span class="etat__texte">Il monumento è compiuto a Bologna. Trasporto e installazione a
-        Roma, poi <strong>inaugurazione al Parco Thomas Sankara sabato 24 ottobre
-        2026</strong>.</span>
+        <span class="etat__texte">Il monumento è installato al Parco Thomas Sankara, a Roma.
+        <strong>Inaugurazione sabato 24 ottobre 2026</strong>.</span>
       </p>
 
       <p class="appels" style="margin-bottom:0">
@@ -247,7 +253,7 @@
            alt="Rendering di posa di SANKARA, L'ÉTERNEL VEILLEUR di Hamed Ouattara: il prisma di acciaio Corten eretto sul basamento di calcestruzzo a due gradini, in un viale alberato. La faccia con il volto mostra il viso del Compagno Presidente Thomas Sankara tagliato nella lamiera, sopra il blocco ISIDORE NOEL THOMAS SANKARA 1949 - 1987, e la faccia accanto è coperta di bugne emisferiche."
            fetchpriority="high" decoding="async">
       <figcaption class="banniere__credit">Rendering di posa del monumento sul suo basamento a
-      gradini. Il monumento è compiuto; la sua installazione nel parco è a venire. —
+      gradini, come si trova oggi al Parco Thomas Sankara. —
       <em>SANKARA, L'ÉTERNEL VEILLEUR</em>, Hamed Ouattara, 2026, acciaio Corten</figcaption>
     </figure>
   </div>
@@ -309,9 +315,9 @@
       Italia da officine specializzate per il taglio al laser e la formatura delle bugne, ma
       <strong>l'assemblaggio, la saldatura e la finitura sono stati eseguiti dall'artista
       stesso</strong>, a Bologna.</p>
-      <p>L'opera è una committenza del Compagno Madi Sakandé, della diaspora burkinabè in Italia e
-      antico pioniere della Rivoluzione Democratica e Popolare, che con questo gesto intende
-      onorare la memoria del suo padre spirituale.</p>
+      <p>L'opera è donata dal Compagno Madi Sakandé, della diaspora burkinabè in Italia,
+      <strong>a beneficio dello Stato burkinabè</strong>, per il Parco Thomas Sankara di
+      Roma.</p>
       <p>Questo monumento è <strong>complementare e distinto</strong> dal Memoriale Thomas Sankara
       eretto in Burkina Faso. Non ne è né la replica né il prolungamento: porta all'estero, in uno
       spazio pubblico europeo, una memoria il cui focolare resta a Ouagadougou.</p>
@@ -361,6 +367,20 @@
       <p class="pied__oeuvre"><em>SANKARA, L'ÉTERNEL VEILLEUR</em><br>
       Hamed Ouattara, 2026, acciaio Corten<br>
       Parco Thomas Sankara, Roma, Italia</p>
+      <!-- Une œuvre burkinabè portée en Italie. Le trajet est le sujet du
+           monument autant que son sujet : les deux pays sont nommés et
+           montrés. -->
+      <p class="trajet">
+        <span class="trajet__pays">
+          <img class="trajet__drapeau" src="/assets/img/identite/drapeau-burkina.svg"
+               width="30" height="20" alt="" aria-hidden="true" loading="lazy" decoding="async">
+          Burkina&nbsp;Faso</span>
+        <span class="trajet__fleche" aria-hidden="true"></span>
+        <span class="trajet__pays">
+          <img class="trajet__drapeau" src="/assets/img/identite/drapeau-italie.svg"
+               width="30" height="20" alt="" aria-hidden="true" loading="lazy" decoding="async">
+          Italia</span>
+      </p>
     </div>
     <div class="pied__bloc">
       <p class="pied__titre">Studio Hamed Ouattara</p>

@@ -60,6 +60,11 @@
   --vert: #0a6136;
   --or: #d99b1c;
 
+  /* Le drapeau italien — ses couleurs, pas des variantes accordées au site */
+  --it-vert: #008c45;
+  --it-blanc: #f4f5f0;
+  --it-rouge: #cd212a;
+
   /* Le matériau de l'œuvre */
   --corten: #8a4f2b;
 
@@ -228,13 +233,23 @@ strong { font-weight: 700; }
 /* ---------- En-tête ---------- */
 
 /* Rappel du drapeau national, discret : cinq pixels en tête de page. */
+/* Le bandeau des deux pays. Le Burkina Faso tient la moitié gauche en deux
+   bandes superposées, l'Italie la moitié droite en trois bandes verticales :
+   à six pixels, c'est la différence de structure qui les distingue, jamais la
+   finesse du dessin. L'étoile n'y figure pas, elle serait une poussière ; elle
+   est au pied de page, où le drapeau a la taille d'un drapeau. */
 .drapeau {
-  height: 5px;
+  height: 6px;
   display: flex;
 }
-.drapeau span { flex: 1; }
-.drapeau span:first-child { background: var(--rouge); }
-.drapeau span:last-child { background: var(--vert); }
+.drapeau > span { flex: 1; display: flex; }
+.drapeau > span i { flex: 1; }
+.drapeau__bf { flex-direction: column; }
+.drapeau__bf i:first-child { background: var(--rouge); }
+.drapeau__bf i:last-child  { background: var(--vert); }
+.drapeau__it i:nth-child(1) { background: var(--it-vert); }
+.drapeau__it i:nth-child(2) { background: var(--it-blanc); }
+.drapeau__it i:nth-child(3) { background: var(--it-rouge); }
 
 .entete { background: var(--blanc); border-bottom: 1px solid var(--filet); }
 
@@ -767,4 +782,53 @@ figcaption .credit { display: block; font-style: italic; margin-top: 0.15rem; co
   .entete, .nav, .drapeau, .saut, .commandes, .bascule, .pied__liens { display: none; }
   a { color: #000; }
   .carte, .encart, .fiche, .schema { box-shadow: none; }
+}
+
+
+/* LE TRAJET — une œuvre burkinabè portée en Italie, dite au pied de chaque
+   page. Les drapeaux sont ici à une taille où ils se reconnaissent, étoile
+   comprise. La flèche est dessinée en CSS plutôt qu'écrite : un caractère
+   flèche se lit à voix haute par les lecteurs d'écran, et « Burkina Faso
+   flèche vers la droite Italie » n'apprend rien à personne. */
+.trajet {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  margin: 1.1rem 0 0;
+  font-size: .82rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--pied-texte);
+}
+.trajet__pays {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  white-space: nowrap;
+}
+.trajet__drapeau {
+  width: 1.45rem;
+  height: auto;
+  display: block;
+  border-radius: 1px;
+  /* Le blanc du drapeau italien disparaîtrait sur le fond sombre du pied. */
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, .22);
+}
+.trajet__fleche {
+  flex: 0 0 1.6rem;
+  height: 1px;
+  position: relative;
+  background: currentColor;
+  opacity: .55;
+}
+.trajet__fleche::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: .32rem;
+  height: .32rem;
+  border-top: 1px solid currentColor;
+  border-right: 1px solid currentColor;
+  transform: translateY(-50%) rotate(45deg);
 }

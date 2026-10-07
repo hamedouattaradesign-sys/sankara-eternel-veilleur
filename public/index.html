@@ -174,8 +174,15 @@
 <body>
 <a class="saut" href="#contenu">Aller au contenu</a>
 
-<!-- Rappel discret des couleurs nationales du Burkina Faso. -->
-<div class="drapeau" aria-hidden="true"><span></span><span></span></div>
+<!-- Les deux pays, en haut de chaque page : le Burkina Faso à gauche, deux
+     bandes superposées ; l'Italie à droite, trois bandes verticales. Les deux
+     structures diffèrent, c'est ce qui les fait lire comme deux drapeaux et non
+     comme un dégradé. Les vrais drapeaux sont au pied de page, à une taille où
+     ils se reconnaissent. -->
+<div class="drapeau" aria-hidden="true">
+  <span class="drapeau__bf"><i></i><i></i></span>
+  <span class="drapeau__it"><i></i><i></i><i></i></span>
+</div>
 
 <header class="entete">
   <div class="entete__barre">
@@ -231,9 +238,8 @@
            À COMPLÉTER : l'heure et le déroulé de la cérémonie. -->
       <p class="etat">
         <span class="etat__date">Samedi 24 octobre 2026</span>
-        <span class="etat__texte">Le monument est achevé à Bologne. Transport et installation à
-        Rome, puis <strong>inauguration au Parco Thomas Sankara le samedi 24 octobre
-        2026</strong>.</span>
+        <span class="etat__texte">Le monument est installé au Parco Thomas Sankara, à Rome.
+        <strong>Inauguration le samedi 24 octobre 2026</strong>.</span>
       </p>
 
       <p class="appels" style="margin-bottom:0">
@@ -251,7 +257,7 @@
            alt="Rendu d'implantation de SANKARA, L'ÉTERNEL VEILLEUR de Hamed Ouattara : le prisme d'acier Corten dressé sur son socle de béton à deux gradins, dans une allée plantée d'arbres. La face portrait montre le visage du Camarade Président Thomas Sankara découpé au travers de la tôle, au-dessus du bloc ISIDORE NOEL THOMAS SANKARA 1949 - 1987, et la face voisine est couverte de bossages hémisphériques."
            fetchpriority="high" decoding="async">
       <figcaption class="banniere__credit">Rendu d'implantation du monument sur son socle à
-      gradins. Le monument est achevé&nbsp;; son installation au parc est à venir. —
+      gradins, tel qu'il se tient aujourd'hui au Parco Thomas Sankara. —
       <em>SANKARA, L'ÉTERNEL VEILLEUR</em>, Hamed Ouattara, 2026, acier Corten</figcaption>
     </figure>
   </div>
@@ -312,9 +318,8 @@
       en Italie par des ateliers spécialisés pour la découpe au laser et le formage des bossages,
       mais <strong>l'assemblage, la soudure et la finition ont été réalisés par l'artiste
       lui-même</strong>, à Bologne.</p>
-      <p>L'œuvre est une commande du Camarade Madi Sakandé, de la diaspora burkinabè en Italie et
-      ancien pionnier de la Révolution Démocratique et Populaire, qui entend par ce geste honorer
-      la mémoire de son père spirituel.</p>
+      <p>L'œuvre est donnée par le Camarade Madi Sakandé, de la diaspora burkinabè en Italie,
+      <strong>au profit de l'État burkinabè</strong>, pour le Parco Thomas Sankara de Rome.</p>
       <p>Ce monument est complémentaire et distinct du Mémorial Thomas Sankara élevé au Burkina
       Faso. Il n'en est ni la réplique ni le prolongement&nbsp;: il porte à l'étranger, dans un
       espace public européen, une mémoire dont le foyer reste à Ouagadougou.</p>
@@ -365,6 +370,20 @@
       <p class="pied__oeuvre"><em>SANKARA, L'ÉTERNEL VEILLEUR</em><br>
       Hamed Ouattara, 2026, acier Corten<br>
       Parco Thomas Sankara, Rome, Italie</p>
+      <!-- Une œuvre burkinabè portée en Italie. Le trajet est le sujet du
+           monument autant que son sujet : les deux pays sont nommés et
+           montrés. -->
+      <p class="trajet">
+        <span class="trajet__pays">
+          <img class="trajet__drapeau" src="/assets/img/identite/drapeau-burkina.svg"
+               width="30" height="20" alt="" aria-hidden="true" loading="lazy" decoding="async">
+          Burkina&nbsp;Faso</span>
+        <span class="trajet__fleche" aria-hidden="true"></span>
+        <span class="trajet__pays">
+          <img class="trajet__drapeau" src="/assets/img/identite/drapeau-italie.svg"
+               width="30" height="20" alt="" aria-hidden="true" loading="lazy" decoding="async">
+          Italie</span>
+      </p>
     </div>
     <div class="pied__bloc">
       <p class="pied__titre">Studio Hamed Ouattara</p>

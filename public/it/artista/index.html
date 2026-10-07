@@ -103,8 +103,15 @@
 <body>
 <a class="saut" href="#contenu">Vai al contenuto</a>
 
-<!-- Rappel discret des couleurs nationales du Burkina Faso. -->
-<div class="drapeau" aria-hidden="true"><span></span><span></span></div>
+<!-- Les deux pays, en haut de chaque page : le Burkina Faso à gauche, deux
+     bandes superposées ; l'Italie à droite, trois bandes verticales. Les deux
+     structures diffèrent, c'est ce qui les fait lire comme deux drapeaux et non
+     comme un dégradé. Les vrais drapeaux sont au pied de page, à une taille où
+     ils se reconnaissent. -->
+<div class="drapeau" aria-hidden="true">
+  <span class="drapeau__bf"><i></i><i></i></span>
+  <span class="drapeau__it"><i></i><i></i><i></i></span>
+</div>
 
 <header class="entete">
   <div class="entete__barre">
@@ -233,6 +240,20 @@
       <p class="pied__oeuvre"><em>SANKARA, L'ÉTERNEL VEILLEUR</em><br>
       Hamed Ouattara, 2026, acciaio Corten<br>
       Parco Thomas Sankara, Roma, Italia</p>
+      <!-- Une œuvre burkinabè portée en Italie. Le trajet est le sujet du
+           monument autant que son sujet : les deux pays sont nommés et
+           montrés. -->
+      <p class="trajet">
+        <span class="trajet__pays">
+          <img class="trajet__drapeau" src="/assets/img/identite/drapeau-burkina.svg"
+               width="30" height="20" alt="" aria-hidden="true" loading="lazy" decoding="async">
+          Burkina&nbsp;Faso</span>
+        <span class="trajet__fleche" aria-hidden="true"></span>
+        <span class="trajet__pays">
+          <img class="trajet__drapeau" src="/assets/img/identite/drapeau-italie.svg"
+               width="30" height="20" alt="" aria-hidden="true" loading="lazy" decoding="async">
+          Italia</span>
+      </p>
     </div>
     <div class="pied__bloc">
       <p class="pied__titre">Studio Hamed Ouattara</p>
