@@ -39,23 +39,17 @@ et c'est ce geste-là qui l'ouvre.**
 
 ---
 
-## 2. Connecter le dépôt à Vercel — trois clics, facultatif
+## 2. Le dépôt est connecté à Vercel — fait
 
-Le projet Vercel n'est pas encore *lié* au dépôt GitHub. Le site est bien
-déployé depuis le dépôt, mais je désigne le commit à chaque fois : un envoi sur
-`main` ne déclenche donc rien tout seul.
+Le projet Vercel est lié à `hamedouattaradesign-sys/sankara-eternel-veilleur`,
+branche de production `main`. **Chaque envoi sur `main` déclenche un déploiement
+tout seul**, sans que personne ait à le demander — ni vous, ni moi.
 
-Pour que chaque envoi déploie sans intervention :
+C'est ce qui fait que le site ne dépend plus d'une session de travail pour être
+publié. Le cycle est décrit plus bas.
 
-**Vercel → projet `sankara-eternel-veilleur` → Settings → Git → Connect Git
-Repository**, choisir `hamedouattaradesign-sys/sankara-eternel-veilleur`,
-branche de production `main`.
-
-Si vous ne le faites pas, rien n'est cassé : je lance le déploiement moi-même à
-chaque fois, cela prend quelques secondes. La connexion sert surtout à ce que le
-site ne dépende pas de moi.
-
----
+Si cela devait un jour être défait, c'est ici que cela se règle :
+**Vercel → projet `sankara-eternel-veilleur` → Settings → Git**.
 
 ## 3. Signer le dossier institutionnel
 
@@ -93,9 +87,8 @@ git add -A && git commit -m "…"
 git push
 ```
 
-Puis le déploiement : automatique si le dépôt est connecté (section 2), sinon je
-le déclenche. Il n'y a rien d'autre à faire : pas de compilation, pas de
-dépendance, pas de serveur.
+Le déploiement suit l'envoi, tout seul, en quelques secondes. Il n'y a rien
+d'autre à faire : pas de compilation, pas de dépendance, pas de serveur.
 
 ---
 
