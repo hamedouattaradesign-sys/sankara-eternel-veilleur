@@ -528,6 +528,13 @@ figure { margin-inline: 0; }
   border-radius: 3px;
   overflow: hidden;
 }
+.figure__cadre img { display: block; width: 100%; height: auto; }
+
+/* Une photographie verticale isolée dans une colonne large s'étale sur toute
+   sa hauteur et écrase le texte autour. Elle garde la largeur d'une colonne de
+   lecture, pas celle de la page. */
+.figure--portrait { max-width: 24rem; }
+
 
 figcaption {
   margin-top: 0.65rem;
