@@ -210,7 +210,9 @@ MOTS_DONNEES = {
         "medium": "Acier Corten, épaisseur 6 mm",
         "matiere": "Acier Corten",
         "fabrique": "Région de Bologne, Italie",
-        "credit": "SANKARA, L'ÉTERNEL VEILLEUR, Hamed Ouattara, 2026, acier Corten",
+        "credit": ("SANKARA, L'ÉTERNEL VEILLEUR, Hamed Ouattara, 2026, acier Corten. "
+                   "Collection de l'État burkinabè, Ministère de la Communication, de la "
+                   "Culture, des Arts et du Tourisme (MCCAT)."),
         "parc": ("Seul espace public d'Europe entièrement dédié à la mémoire du Camarade "
                  "Président Thomas Sankara."),
         "inauguration": "Inauguration de SANKARA, L'ÉTERNEL VEILLEUR",
@@ -223,7 +225,9 @@ MOTS_DONNEES = {
         "medium": "Acciaio Corten, spessore 6 mm",
         "matiere": "Acciaio Corten",
         "fabrique": "Regione di Bologna, Italia",
-        "credit": "SANKARA, L'ÉTERNEL VEILLEUR, Hamed Ouattara, 2026, acciaio Corten",
+        "credit": ("SANKARA, L'ÉTERNEL VEILLEUR, Hamed Ouattara, 2026, acciaio Corten. "
+                   "Collezione dello Stato burkinabè, Ministero della Comunicazione, della "
+                   "Cultura, delle Arti e del Turismo (MCCAT)."),
         "parc": ("Unico spazio pubblico d'Europa interamente dedicato alla memoria del "
                  "Compagno Presidente Thomas Sankara."),
         "inauguration": "Inaugurazione di SANKARA, L'ÉTERNEL VEILLEUR",
@@ -236,7 +240,9 @@ MOTS_DONNEES = {
         "medium": "Corten steel, 6 mm thick",
         "matiere": "Corten steel",
         "fabrique": "Bologna area, Italy",
-        "credit": "SANKARA, L'ÉTERNEL VEILLEUR, Hamed Ouattara, 2026, Corten steel",
+        "credit": ("SANKARA, L'ÉTERNEL VEILLEUR, Hamed Ouattara, 2026, Corten steel. "
+                   "Collection of the Burkinabè State, Ministry of Communication, Culture, "
+                   "Arts and Tourism (MCCAT)."),
         "parc": ("The only public space in Europe given over entirely to the memory of "
                  "Comrade President Thomas Sankara."),
         "inauguration": "Unveiling of SANKARA, L'ÉTERNEL VEILLEUR",

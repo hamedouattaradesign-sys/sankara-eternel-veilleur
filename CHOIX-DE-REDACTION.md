@@ -22,6 +22,42 @@ Concrètement :
   valider par un tiers ce que l'auteur a tranché.
 - **Ne pas présenter comme une option** ce que l'auteur a décidé.
 
+### La propriété de l'œuvre — arrêté le 19 octobre 2026
+
+Le Ministère de la Communication, de la Culture, des Arts et du Tourisme
+(MCCAT) demande à être cité. C'est accordé, et c'est à l'avantage du projet :
+un monument burkinabè installé en Europe qui porte publiquement le nom de son
+ministère de tutelle est un projet adossé, pas un projet isolé.
+
+**Le mot est « don », jamais « cession ».** Le donateur donne l'œuvre à l'État
+burkinabè ; le MCCAT est le ministère dont elle relève.
+
+**Deux lignes distinctes, jamais confondues.** C'est l'usage des musées et c'est
+la seule manière sûre :
+
+| Ligne | Ce qu'elle dit | À qui elle appartient |
+|---|---|---|
+| Ligne de crédit | Titre, auteur, année, matériau | L'auteur — droit moral, inaliénable |
+| Ligne de collection | À qui appartient l'objet | Le propriétaire |
+
+> *SANKARA, L'ÉTERNEL VEILLEUR*, Hamed Ouattara, 2026, acier Corten.
+> Parco Thomas Sankara, Via Ugo della Seta, IIIe Municipio, Rome, Italie.
+> **Collection de l'État burkinabè, Ministère de la Communication, de la
+> Culture, des Arts et du Tourisme (MCCAT).**
+
+**Et la phrase qui protège l'auteur doit toujours suivre** : donner l'objet ne
+donne pas les droits. Sans elle, quelqu'un finira par supposer le contraire.
+
+**Où la mention figure**, sur décision de l'auteur : la page Institutions, les
+mentions légales de la page Contact, les six dossiers PDF et le `creditText` des
+données structurées. **Pas dans le pied de page des 39 pages** — ce pied reste
+la ligne d'auteur.
+
+Si le MCCAT transmet une formule imposée au mot près, elle remplace « Collection
+de l'État burkinabè, Ministère… (MCCAT) » partout, d'un seul geste.
+
+---
+
 ### Les points arrêtés
 
 | Point | Ce qui est arrêté |
