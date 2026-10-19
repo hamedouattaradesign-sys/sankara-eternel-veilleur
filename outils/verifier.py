@@ -218,6 +218,35 @@ def verifier_page(fichier):
     return rel
 
 
+def verifier_pli_navigation():
+    """Le script et la feuille de style doivent plier la navigation au même endroit.
+
+    Quand les deux divergent, il existe une bande de largeurs où la feuille de
+    style montre encore le bouton « Menu » tandis que le script croit la
+    navigation dépliée : le menu s'affiche ouvert par-dessus le contenu, et
+    l'attribut aria-expanded ment. Le défaut a vécu avec 46em contre 62em.
+    """
+    js = open(os.path.join(RACINE, "statique/assets/js/site.js"), encoding="utf-8").read()
+    css = open(os.path.join(RACINE, "statique/assets/css/site.css"), encoding="utf-8").read()
+
+    m = re.search(r'matchMedia\("\(min-width:\s*([\d.]+)em\)"\)', js)
+    if not m:
+        anomalies.append("site.js : le pli de la navigation est introuvable")
+        return
+    pli_js = float(m.group(1))
+
+    # Le pli du style est la requête qui masque le bouton « Menu ».
+    plis_css = [float(x) for x in re.findall(
+        r'@media \(min-width:\s*([\d.]+)em\)\s*\{\s*\.bascule', css)]
+    if not plis_css:
+        anomalies.append("site.css : la requête qui masque la bascule est introuvable")
+        return
+    if pli_js not in plis_css:
+        anomalies.append(
+            "le pli de la navigation diverge — site.js plie à %gem, site.css à %s"
+            % (pli_js, ", ".join("%gem" % v for v in plis_css)))
+
+
 def verifier_fichiers_annexes():
     for attendu in ("sitemap.xml", "robots.txt", "404.html",
                     "assets/css/site.css", "assets/js/site.js",
@@ -272,6 +301,8 @@ def main():
 
     for a in avertissements:
         print("  avertissement  %s" % a)
+    verifier_pli_navigation()
+
     for a in anomalies:
         print("  ANOMALIE       %s" % a)
 
