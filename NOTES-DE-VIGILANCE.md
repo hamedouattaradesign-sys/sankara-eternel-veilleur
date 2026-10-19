@@ -8,6 +8,42 @@ qu'ils le restent.
 
 ---
 
+## À NE JAMAIS CITER — la statue de Milan
+
+**Relevé le 19 octobre 2026, en vérifiant une note de recherche transmise à
+l'auteur.** Cette note affirmait qu'« une statue de Sankara a été installée à
+Milan, à côté de celle de Montanelli, aux jardins Montanelli — donc l'Italie a
+déjà validé le principe d'un Sankara sculpté dans l'espace public ».
+
+**C'est faux, et le citer exposerait l'auteur.**
+
+Les faits : en **octobre 2020**, des collectifs militants — le Centro Sociale
+Cantiere, dans le cadre de la campagne *Decolonize the City* — ont posé
+**sans autorisation** une statue de fer du sculpteur sénégalais Mor Talla Seck
+aux bastions de Porta Venezia, **à côté de la statue contestée d'Indro
+Montanelli**. Fratelli d'Italia a réagi publiquement, un conseiller régional a
+demandé l'intervention du préfet, et l'œuvre a été **retirée aussitôt**.
+
+Ce que la citer produirait :
+
+- elle rapprocherait un monument officiel, donné à l'État burkinabè, d'une
+  action non autorisée et retirée par l'autorité ;
+- elle l'inscrirait dans le contentieux Montanelli — colonialisme italien,
+  polémique nationale — qui n'est pas le sujet de cette œuvre et que personne
+  au Burkina Faso n'a demandé d'épouser ;
+- elle offrirait à qui le voudrait l'angle d'attaque : *« la précédente statue
+  de Sankara à Milan était illégale »*.
+
+**Le vrai précédent est le Municipio III de Rome** : une intitulation
+officielle, une plaque, une ambassadrice et un adjoint à la culture présents.
+C'est celui-là que le site cite, et aucun autre.
+
+**À tenir :** ne jamais introduire la statue de Milan, ni aucune installation
+militante non autorisée, dans le site, les dossiers ou les communications.
+Si un journaliste la mentionne, ne pas la commenter.
+
+---
+
 ## Ce qui est déjà traité
 
 ### L'assassinat du Camarade Président Thomas Sankara
