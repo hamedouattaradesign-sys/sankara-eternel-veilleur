@@ -44,6 +44,38 @@ Si un journaliste la mentionne, ne pas la commenter.
 
 ---
 
+## À NE PAS PUBLIER — l'affiche « 39 ans après » — arrêté par l'auteur, 21 octobre 2026
+
+Une affiche de mobilisation circule pour les Journées d'hommage : *« 39 ans
+après… Des milliers de SANKARA… »*, avec le cachet « J'Y SERAI ! ». Elle a été
+proposée au site et **l'auteur a décidé de ne pas la publier.**
+
+**Le motif.** Elle porte, sous le portrait du Camarade Président Ibrahim Traoré,
+la mention **« Ré-incarné le 30.09.2022 »**. C'est une affirmation politique. Elle
+n'est ni dans l'affiche de l'Ambassade, ni dans l'invitation, ni dans le
+programme officiel. Cette image ne porte d'ailleurs ni armoiries ni mention de
+l'Ambassade : c'est une pièce de diaspora, pas un document d'État.
+
+**Le risque.** Sur le site du monument, elle cesse d'être un tract et devient le
+propos de l'auteur. Le titre s'écrit tout seul : *le site du monument présente le
+président actuel comme la réincarnation de Sankara.* Le sujet quitte l'œuvre pour
+une prise de position que ni le MCCAT ni l'Ambassade n'ont formulée.
+
+**Deux motifs secondaires :** la femme au médaillon central n'est pas nommée, et
+le site ne légende pas un visage qu'il ne peut pas identifier ; les deux portraits
+paraissent composés ou retouchés, ce qui en fait une illustration et non un
+document.
+
+**La règle que l'auteur en tire, et qui vaut au-delà de cette affiche :**
+
+> Le site ne doit pas être un centre politique ni polémique.
+
+**À tenir :** ne publier, des Journées, que les documents émis par l'Ambassade du
+Burkina Faso en Italie — l'affiche officielle, l'invitation, le programme. Toute
+pièce de mobilisation, si bien intentionnée soit-elle, reste dehors.
+
+---
+
 ## Ce qui est déjà traité
 
 ### L'assassinat du Camarade Président Thomas Sankara
