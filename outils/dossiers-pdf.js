@@ -52,16 +52,12 @@ const DOSSIERS = [
      ne porte pas de logos ; sur un stand ou dans un dossier, celui-ci dit qui
      porte le projet.
 
-     PROVISOIRE — il n'est pas publié sur le site, et sa sortie reste dans
-     outils/presse/. Sa bande vient de l'invitation de l'Ambassade, et
-     l'auteur a signalé que le logo du CIM-TS qui y figure est une ancienne
-     version. Manquent aussi le Musée National du Burkina Faso et la
-     communauté burkinabè d'Italie. Le jour où ces trois fichiers arrivent,
-     la bande est refaite, `sortie` disparaît et le lien revient sur la page
-     Institutions, dans les trois langues. */
+     La bande n'est plus un découpage de l'invitation : chaque marque est un
+     fichier, et outils/presse/logos/bandeau.py les compose. Voir le
+     LISEZ-MOI de ce dossier pour l'origine de chacune. */
   { source: "cartel-qr-institutions.html",
     cible: "cartel-qr-institutions-sankara-eternel-veilleur.pdf",
-    langue: "fr", format: "A5", sortie: presse },
+    langue: "fr", format: "A5" },
 ];
 
 /* L'adresse que porte le code. Elle est écrite ici une seule fois, et le

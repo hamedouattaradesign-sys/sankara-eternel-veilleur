@@ -9,32 +9,38 @@ paraître.
 
 ---
 
-## 0. Trois fichiers qui manquent — 21 octobre 2026
+## 0. Les logos — 21 octobre 2026
 
-Le cartel au code QR existe en deux versions. La sobre est en ligne et
-imprimable. **Celle qui porte les institutions ne l'est pas** : sa bande de
-partenaires a été découpée dans l'invitation officielle de l'Ambassade, et
-l'auteur a signalé que **le logo du CIM-TS qui y figure est une ancienne
-version**. Un logo périmé sur un document imprimé la veille d'une cérémonie,
-c'est la faute qu'on ne rattrape pas.
+Deux des trois fichiers demandés sont arrivés, et la bande des partenaires du
+cartel a été entièrement refaite à partir des fichiers d'origine. Elle n'est
+plus un découpage de l'invitation : chaque marque est un fichier à part, et se
+remplace maintenant sans toucher aux autres.
 
-Trois fichiers sont attendus, en vectoriel de préférence (SVG, EPS, AI ou PDF),
-sinon en PNG à fond transparent et 1000 pixels de large au moins :
+**Reçus et en place :** le logo **PCIM-INTS**, en vectoriel, et celui du
+**Musée National du Burkina Faso**, en 4890 × 3533 à fond transparent. Le Musée
+est aussi cité dans la liste des institutions concernées, et son logo paraît
+sur la page Institutions, à côté de celui du Municipio III.
 
-1. **Le logo actuel du CIM-TS** — Comité International du Mémorial
-   Thomas Sankara.
-2. **Le logo du Musée National du Burkina Faso.** L'institution est désormais
-   citée dans la liste des institutions concernées, sur la page Institutions,
-   dans les trois langues.
-3. **Le logo de la communauté burkinabè d'Italie**, et surtout **son nom exact**.
-   Le site de l'Ambassade mentionne une *Fédération des Associations des
-   Burkinabè en Italie (FABI)*, mais cette page n'a pas pu être lue depuis
-   l'atelier : rien n'est écrit sur le site tant que le nom n'est pas confirmé
-   par l'auteur ou par l'Ambassade.
+**Le CIM-TS a été retiré de la bande.** L'auteur a signalé que la version qui
+figurait sur l'invitation est ancienne. S'il doit revenir, c'est avec son
+fichier à jour.
 
-Dès que les trois arrivent, la bande est refaite, le cartel reparaît en
-téléchargement sur la page Institutions, et la liste des institutions accueille
-la communauté.
+### Ce qui manque encore
+
+1. **La Confédération des États du Sahel** — le seul des quatre logos de la
+   bande qui reste un découpage de JPEG, en 252 × 276. Il tient à la taille où
+   la bande l'affiche, mais une marque institutionnelle se donne en vectoriel.
+2. **La communauté burkinabè d'Italie** — ni le logo, ni le nom. L'auteur n'a
+   pas le fichier. Le site de l'Ambassade mentionne une *Fédération des
+   Associations des Burkinabè en Italie (FABI)*, mais cette page n'a pas pu
+   être lue depuis l'atelier : rien n'est écrit, ni sur le site ni sur le
+   cartel, tant que le nom n'est pas confirmé par l'auteur ou par l'Ambassade.
+3. **Le logo du MCCAT**, qui n'a jamais été demandé mais qui manque : le
+   ministère est cité en toutes lettres partout, et c'est lui dont l'œuvre
+   relève.
+
+Ajouter une marque tient en une ligne dans `MARQUES`, dans
+`outils/presse/logos/bandeau.py`.
 
 ---
 
