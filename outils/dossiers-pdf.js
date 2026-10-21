@@ -48,12 +48,20 @@ const DOSSIERS = [
   { source: "cartel-qr.html", cible: "cartel-qr-sankara-eternel-veilleur.pdf",
     langue: "fr", format: "A5" },
   /* La même chose, avec les armoiries du Burkina Faso et la bande des
-     partenaires reprises de l'invitation officielle. Le cartel sobre reste :
-     près de l'œuvre, un cartel de musée ne porte pas de logos ; sur un stand
-     ou dans un dossier, celui-ci dit qui porte le projet. */
+     partenaires. Le cartel sobre reste : près de l'œuvre, un cartel de musée
+     ne porte pas de logos ; sur un stand ou dans un dossier, celui-ci dit qui
+     porte le projet.
+
+     PROVISOIRE — il n'est pas publié sur le site, et sa sortie reste dans
+     outils/presse/. Sa bande vient de l'invitation de l'Ambassade, et
+     l'auteur a signalé que le logo du CIM-TS qui y figure est une ancienne
+     version. Manquent aussi le Musée National du Burkina Faso et la
+     communauté burkinabè d'Italie. Le jour où ces trois fichiers arrivent,
+     la bande est refaite, `sortie` disparaît et le lien revient sur la page
+     Institutions, dans les trois langues. */
   { source: "cartel-qr-institutions.html",
     cible: "cartel-qr-institutions-sankara-eternel-veilleur.pdf",
-    langue: "fr", format: "A5" },
+    langue: "fr", format: "A5", sortie: presse },
 ];
 
 /* L'adresse que porte le code. Elle est écrite ici une seule fois, et le
@@ -113,14 +121,15 @@ function planche(langue) {
 
     try {
       await page.goto("file://" + servi, { waitUntil: "networkidle" });
-      await page.pdf({ path: path.join(sortie, dossier.cible),
+      await page.pdf({ path: path.join(dossier.sortie || sortie, dossier.cible),
                        format: dossier.format || "A4", printBackground: true });
     } finally {
       if (servi !== chemin) fs.unlinkSync(servi);
     }
 
-    const octets = fs.statSync(path.join(sortie, dossier.cible)).size;
-    console.log("  " + dossier.cible + "  " + Math.round(octets / 1024) + " Ko");
+    const octets = fs.statSync(path.join(dossier.sortie || sortie, dossier.cible)).size;
+    console.log("  " + dossier.cible + "  " + Math.round(octets / 1024) + " Ko"
+                + (dossier.sortie ? "  (non publié)" : ""));
   }
 
   await navigateur.close();

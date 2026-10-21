@@ -9,6 +9,35 @@ paraître.
 
 ---
 
+## 0. Trois fichiers qui manquent — 21 octobre 2026
+
+Le cartel au code QR existe en deux versions. La sobre est en ligne et
+imprimable. **Celle qui porte les institutions ne l'est pas** : sa bande de
+partenaires a été découpée dans l'invitation officielle de l'Ambassade, et
+l'auteur a signalé que **le logo du CIM-TS qui y figure est une ancienne
+version**. Un logo périmé sur un document imprimé la veille d'une cérémonie,
+c'est la faute qu'on ne rattrape pas.
+
+Trois fichiers sont attendus, en vectoriel de préférence (SVG, EPS, AI ou PDF),
+sinon en PNG à fond transparent et 1000 pixels de large au moins :
+
+1. **Le logo actuel du CIM-TS** — Comité International du Mémorial
+   Thomas Sankara.
+2. **Le logo du Musée National du Burkina Faso.** L'institution est désormais
+   citée dans la liste des institutions concernées, sur la page Institutions,
+   dans les trois langues.
+3. **Le logo de la communauté burkinabè d'Italie**, et surtout **son nom exact**.
+   Le site de l'Ambassade mentionne une *Fédération des Associations des
+   Burkinabè en Italie (FABI)*, mais cette page n'a pas pu être lue depuis
+   l'atelier : rien n'est écrit sur le site tant que le nom n'est pas confirmé
+   par l'auteur ou par l'Ambassade.
+
+Dès que les trois arrivent, la bande est refaite, le cartel reparaît en
+téléchargement sur la page Institutions, et la liste des institutions accueille
+la communauté.
+
+---
+
 ## I. Ce qui bloque la mise en ligne
 
 ### 1. L'inauguration du monument
