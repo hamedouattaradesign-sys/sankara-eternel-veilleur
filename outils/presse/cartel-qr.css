@@ -1,0 +1,68 @@
+/* Le cartel au code QR, en A5. Il se lit à un mètre : le code fait 42 mm de
+   côté, ce qui se scanne à cette distance avec un téléphone ordinaire, et
+   l'adresse est écrite en toutes lettres dessous pour qui ne scanne pas.
+
+   Chargée en file:// par Playwright : les polices sont appelées en chemin
+   relatif depuis outils/presse/, et doivent le rester. */
+
+@font-face { font-family: Charis; font-weight: 700; font-style: normal; font-display: block;
+             src: url("../../statique/assets/polices/charis-700.woff2") format("woff2"); }
+@font-face { font-family: Charis; font-weight: 400; font-style: normal; font-display: block;
+             src: url("../../statique/assets/polices/charis-400.woff2") format("woff2"); }
+
+@page { size: A5; margin: 0; }
+* { box-sizing: border-box; }
+
+body { margin: 0; width: 148mm; height: 210mm; background: #fbf8f2; color: #16150f;
+       font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+       display: flex; flex-direction: column; }
+
+/* Les deux drapeaux, en bandeau : le Burkina Faso en deux bandes superposées,
+   l'Italie en trois bandes verticales. Les deux structures diffèrent, c'est ce
+   qui les fait lire comme deux drapeaux et non comme un dégradé. */
+.drapeaux { display: flex; height: 3mm; }
+.drapeaux span { display: flex; flex: 1; }
+.drapeaux .bf { flex-direction: column; }
+.drapeaux .bf i { flex: 1; }
+.drapeaux .bf i:first-child { background: #ef2b2d; }
+.drapeaux .bf i:last-child  { background: #009e49; }
+.drapeaux .it i { flex: 1; }
+.drapeaux .it i:nth-child(1) { background: #008c45; }
+.drapeaux .it i:nth-child(2) { background: #f4f5f0; }
+.drapeaux .it i:nth-child(3) { background: #cd212a; }
+
+main { flex: 1; display: flex; flex-direction: column; align-items: center;
+       justify-content: center; text-align: center; padding: 0 13mm; }
+
+.surtitre { font-size: 7.6pt; letter-spacing: 0.26em; text-transform: uppercase;
+            color: #8a4f2b; font-weight: 700; margin: 0 0 7mm; }
+
+h1 { font-family: Charis, Georgia, serif; font-weight: 700; font-size: 20pt;
+     line-height: 1.15; letter-spacing: 0.01em; margin: 0; }
+h1 em { font-style: normal; }
+
+.auteur { font-size: 9pt; color: #4a443b; margin: 3mm 0 0;
+          padding-bottom: 6mm; border-bottom: 0.6pt solid #d8d0c2; width: 62mm; }
+
+/* L'appel, dans les trois langues, au même rang : aucune ne passe avant. */
+.appel { margin: 6mm 0 5mm; }
+.appel p { font-family: Charis, Georgia, serif; font-size: 13pt; line-height: 1.35;
+           margin: 0 0 0.6mm; }
+.appel p[lang="it"], .appel p[lang="en"] { color: #4a443b; font-size: 12pt; }
+
+.code { width: 42mm; height: 42mm; }
+.code svg { width: 100%; height: 100%; display: block; }
+
+.adresse { font-size: 11pt; font-weight: 700; letter-spacing: 0.01em;
+           margin: 4mm 0 0; color: #16150f; }
+
+.invite { margin: 5mm 0 0; text-align: left; width: 100%; }
+.invite p { font-size: 8.2pt; line-height: 1.45; color: #4a443b; margin: 0 0 1.6mm;
+            padding-left: 9mm; text-indent: -9mm; }
+.invite span { display: inline-block; width: 7mm; text-indent: 0; font-weight: 700;
+               letter-spacing: 0.08em; color: #8a4f2b; }
+
+footer { margin: 0 13mm; padding: 5mm 0 9mm; border-top: 0.6pt solid #e2dacb;
+         font-size: 7.2pt; line-height: 1.45; color: #6d665c; text-align: center; }
+footer p { margin: 0 0 1.5mm; }
+footer .lieu { letter-spacing: 0.04em; color: #8a4f2b; }

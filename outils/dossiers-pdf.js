@@ -41,7 +41,30 @@ const DOSSIERS = [
   { source: "presse-en.html",          cible: "press-kit-sankara-eternel-veilleur-en.pdf",            langue: "en" },
   { source: "institutionnel-it.html",  cible: "dossier-istituzionale-sankara-eternel-veilleur-it.pdf", langue: "it" },
   { source: "institutionnel-en.html",  cible: "institutional-dossier-sankara-eternel-veilleur-en.pdf", langue: "en" },
+  /* Le cartel au code QR : A5, trilingue, à imprimer et à poser près de
+     l'œuvre ou à distribuer. Le code est tracé par outils/qr.py — aucun
+     générateur en ligne : une adresse confiée à un tiers, c'est un tiers qui
+     la compte, parfois la redirige, et peut cesser d'exister. */
+  { source: "cartel-qr.html", cible: "cartel-qr-sankara-eternel-veilleur.pdf",
+    langue: "fr", format: "A5" },
 ];
+
+/* L'adresse que porte le code. Elle est écrite ici une seule fois, et le
+   cartel l'imprime aussi en toutes lettres : qui ne scanne pas doit pouvoir
+   la recopier. */
+const ADRESSE = "https://sankara.hamedouattara.com";
+
+/* Le fond du code est celui du papier du cartel, et non du blanc : le carré
+   blanc posé sur la crème se voyait de loin et cassait la page. Le contraste
+   avec l'encre reste très au-dessus de ce qu'un téléphone demande, et le
+   contrôle relit le PDF rendu pour s'en assurer. */
+const PAPIER = "#fbf8f2";
+
+function codeQR() {
+  return execFileSync("python3",
+                      [path.join(racine, "outils", "qr.py"), ADRESSE, "Q", PAPIER],
+                      { encoding: "utf-8", maxBuffer: 1 << 20 });
+}
 
 /* La planche, tracée par le script qui porte les cotes et les assertions. */
 function planche(langue) {
@@ -67,15 +90,24 @@ function planche(langue) {
     /* Fichier temporaire à côté de la source, pour que dossier.css et sho.png
        restent accessibles en chemin relatif. */
     let servi = chemin;
+    let injecte = false;
     if (html.includes("<!--PLANCHE-->")) {
       html = html.replace("<!--PLANCHE-->", planche(dossier.langue));
+      injecte = true;
+    }
+    if (html.includes("<!--QR-->")) {
+      html = html.replace("<!--QR-->", codeQR());
+      injecte = true;
+    }
+    if (injecte) {
       servi = path.join(presse, ".rendu-" + dossier.source);
       fs.writeFileSync(servi, html, "utf-8");
     }
 
     try {
       await page.goto("file://" + servi, { waitUntil: "networkidle" });
-      await page.pdf({ path: path.join(sortie, dossier.cible), format: "A4", printBackground: true });
+      await page.pdf({ path: path.join(sortie, dossier.cible),
+                       format: dossier.format || "A4", printBackground: true });
     } finally {
       if (servi !== chemin) fs.unlinkSync(servi);
     }

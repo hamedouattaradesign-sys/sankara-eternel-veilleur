@@ -302,6 +302,46 @@ cp contenu/fr/02-oeuvre.html contenu/xx/02-oeuvre.html
 python3 outils/build.py && python3 outils/verifier.py
 ```
 
+### Le code QR et le cartel
+
+`outils/qr.py` trace un code QR, en SVG, sans aucune bibliothèque. Ce site
+n'appelle aucun service extérieur, et ce qu'il imprime non plus : un code
+fabriqué par un générateur en ligne, c'est une adresse confiée à un tiers qui
+la compte, parfois la redirige, et peut cesser d'exister. Celui-ci est calculé
+ici, à partir de l'adresse, et ne mène qu'à elle.
+
+Mode octet, versions 1 à 6, les quatre niveaux de correction. Le générateur se
+contrôle lui-même :
+
+```bash
+python3 outils/qr.py --controle     # modules libres, format, aller-retour
+python3 outils/qr.py "https://sankara.hamedouattara.com" Q > qr.svg
+python3 outils/qr-fichiers.py       # le SVG et le PNG de statique/assets/presse/
+```
+
+Le contrôle vérifie trois choses : le nombre de modules libres par version,
+qui dénonce une réservation fautive d'une seule case ; cinq informations de
+format publiées, un niveau après l'autre ; et un aller-retour complet — la
+matrice est relue dans l'ordre de pose, démasquée, et les mots de code doivent
+revenir intacts.
+
+**Deux pièges, trouvés en écrivant ce traceur, et notés ici pour qui y
+reviendra.** L'information de format de la première copie se pose en montant
+la colonne 8 puis en repartant vers la gauche sur la ligne 8 — l'inverse se
+lit naturellement, et donne un code que rien ne déchiffre. Et la règle 3 de
+pénalité ne compte pas une suite de onze modules : elle compte le motif
+`1011101` dès que le blanc de quatre est d'**un seul** côté, le bord du
+symbole valant blanc. Compter la suite de onze revient à ne presque rien
+compter, et le masque choisi n'est alors plus le bon — un décodeur sur deux
+cesse de trouver le code.
+
+Le **cartel** (`outils/presse/cartel-qr.html`) est un A5 trilingue, produit
+par `node outils/dossiers-pdf.js` avec les six dossiers. Il porte le titre, la
+ligne de crédit, la ligne de collection, le code, et l'adresse en toutes
+lettres pour qui ne scanne pas. L'appel est une question — *Qui est cet
+homme ?* — parce qu'un passant du III<sup>e</sup> Municipio ne le sait pas
+forcément, et que c'est la seule chose qui le fera sortir son téléphone.
+
 ### Le schéma d'accès
 
 `outils/schema-acces.py` trace le diagramme de trajet de la page « Visiter »,
