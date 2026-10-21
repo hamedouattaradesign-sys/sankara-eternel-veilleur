@@ -1,33 +1,42 @@
 /* Le cartel au code QR, version avec les institutions. Il reprend la feuille
-   du cartel sobre et n'ajoute que ce qui change : les armoiries en tête, la
-   bande des partenaires au pied, et des espacements resserrés pour que le
+   du cartel sobre et n'ajoute que ce qui change : le bloc de tutelle en tête,
+   la bande des partenaires au pied, et des espacements resserrés pour que le
    tout tienne encore en A5. */
 
 main { padding-top: 4mm; justify-content: flex-start; }
 
-/* Les armoiries sont posées sur une petite carte blanche, comme sur
-   l'invitation : le dessin comporte du blanc — les chevaux, la banderole —
-   et on ne peut donc pas le détourer sans l'abîmer. */
-.armoiries { height: 17mm; width: auto; display: block; margin: 0 0 3mm;
-             background: #fff; padding: 1.6mm 2.4mm;
+/* LE BLOC DE TUTELLE, comme un en-tête de document officiel : les armoiries,
+   l'État, puis le ministère. Le ministère n'est pas un partenaire — l'œuvre
+   lui appartient — et il n'a donc rien à faire dans la bande du bas.
+   Les armoiries sont posées sur une petite carte blanche : le dessin comporte
+   du blanc, les chevaux et les banderoles, et on ne peut pas le détourer sans
+   l'abîmer. */
+.tutelle { margin-bottom: 4.5mm; }
+.armoiries { height: 17mm; width: auto; display: block; margin: 0 auto 2mm;
+             background: #fff; padding: 1.2mm 1.8mm;
              border: 0.5pt solid #e2dacb; }
+.etat { font-size: 8.2pt; font-weight: 700; letter-spacing: 0.22em;
+        text-transform: uppercase; color: #16150f; margin: 0 0 0.8mm; }
+.ministere { font-size: 7.2pt; line-height: 1.35; letter-spacing: 0.02em;
+             color: #4a443b; margin: 0; }
 
-.surtitre { margin-bottom: 3.5mm; }
+.surtitre { margin-bottom: 3mm; padding-top: 3mm;
+            border-top: 0.5pt solid #e2dacb; }
 h1 { font-size: 18pt; }
-.auteur { padding-bottom: 3.5mm; }
-.appel { margin: 3.5mm 0 3mm; }
+.auteur { padding-bottom: 3mm; }
+.appel { margin: 3mm 0 2.5mm; }
 .appel p { font-size: 12pt; }
 .appel p[lang="it"], .appel p[lang="en"] { font-size: 11pt; }
-.code { width: 36mm; height: 36mm; }
+.code { width: 34mm; height: 34mm; }
 .adresse { font-size: 10.5pt; margin-top: 2.5mm; }
-.invite { margin-top: 3.5mm; }
-.invite p { font-size: 7.8pt; margin-bottom: 1.2mm; }
+.invite { margin-top: 3mm; }
+.invite p { font-size: 7.6pt; margin-bottom: 1.1mm; }
 
 /* La bande des partenaires, sur fond blanc comme sur les documents de
-   l'Ambassade : les logos y ont été détourés sur blanc, les poser sur le
+   l'Ambassade : les marques y sont composées sur blanc, les poser sur le
    papier crème laisserait un rectangle clair. */
 .partenaires { background: #fff; padding: 2.5mm 10mm;
                border-top: 0.6pt solid #e2dacb; }
 .partenaires img { display: block; width: 100%; height: auto; }
 
-footer { border-top: none; padding-top: 3.5mm; padding-bottom: 6mm; }
+footer { border-top: none; padding-top: 3mm; padding-bottom: 5mm; }

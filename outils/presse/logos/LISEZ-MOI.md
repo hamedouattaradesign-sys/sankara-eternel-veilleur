@@ -42,8 +42,18 @@ Mémorial Thomas Sankara, dans une version que l'auteur a signalée comme
 ancienne. Il n'y figure plus. S'il doit revenir, c'est avec son fichier à jour,
 ajouté à `MARQUES` dans `bandeau.py`.
 
-## Hors bande
+## Hors bande — le bloc de tutelle
 
-`armoiries-burkina-faso.png` — les armoiries du Burkina Faso, en tête du
-cartel, découpées dans le cartouche de l'invitation. Fond ramené au blanc par
-une transition douce : un seuil net aurait rongé les bords adoucis du dessin.
+`armoiries-burkina-faso.png` — les armoiries du Burkina Faso, **reconstituées
+par l'auteur** le 21 octobre 2026, en 1254 pixels. Elles remplacent le
+découpage du cartouche de l'invitation, qui était flou dès 20 mm.
+
+Elles ouvrent le cartel, suivies de « Burkina Faso » et du nom du ministère en
+toutes lettres. **Le MCCAT n'a pas de logo dans ce dépôt, et n'en a pas
+besoin ici** : l'usage des documents officiels burkinabè est les armoiries plus
+le nom du ministère en typographie, et c'est exactement ce que fait ce bloc.
+
+**Le ministère n'est pas dans la bande des partenaires, et ne doit pas y
+descendre.** Il est la tutelle : l'œuvre lui appartient. Sa place est en tête.
+Le pied de page ne répète donc plus son nom — il ne porte que la ligne de
+collection et le dépôt auprès du Bureau Burkinabè du Droit d'Auteur.
