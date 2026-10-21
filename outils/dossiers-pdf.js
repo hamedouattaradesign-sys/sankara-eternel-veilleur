@@ -47,6 +47,13 @@ const DOSSIERS = [
      la compte, parfois la redirige, et peut cesser d'exister. */
   { source: "cartel-qr.html", cible: "cartel-qr-sankara-eternel-veilleur.pdf",
     langue: "fr", format: "A5" },
+  /* La même chose, avec les armoiries du Burkina Faso et la bande des
+     partenaires reprises de l'invitation officielle. Le cartel sobre reste :
+     près de l'œuvre, un cartel de musée ne porte pas de logos ; sur un stand
+     ou dans un dossier, celui-ci dit qui porte le projet. */
+  { source: "cartel-qr-institutions.html",
+    cible: "cartel-qr-institutions-sankara-eternel-veilleur.pdf",
+    langue: "fr", format: "A5" },
 ];
 
 /* L'adresse que porte le code. Elle est écrite ici une seule fois, et le

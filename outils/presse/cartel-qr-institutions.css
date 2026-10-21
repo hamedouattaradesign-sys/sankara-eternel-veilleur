@@ -1,0 +1,33 @@
+/* Le cartel au code QR, version avec les institutions. Il reprend la feuille
+   du cartel sobre et n'ajoute que ce qui change : les armoiries en tête, la
+   bande des partenaires au pied, et des espacements resserrés pour que le
+   tout tienne encore en A5. */
+
+main { padding-top: 4mm; justify-content: flex-start; }
+
+/* Les armoiries sont posées sur une petite carte blanche, comme sur
+   l'invitation : le dessin comporte du blanc — les chevaux, la banderole —
+   et on ne peut donc pas le détourer sans l'abîmer. */
+.armoiries { height: 17mm; width: auto; display: block; margin: 0 0 3mm;
+             background: #fff; padding: 1.6mm 2.4mm;
+             border: 0.5pt solid #e2dacb; }
+
+.surtitre { margin-bottom: 3.5mm; }
+h1 { font-size: 18pt; }
+.auteur { padding-bottom: 3.5mm; }
+.appel { margin: 3.5mm 0 3mm; }
+.appel p { font-size: 12pt; }
+.appel p[lang="it"], .appel p[lang="en"] { font-size: 11pt; }
+.code { width: 36mm; height: 36mm; }
+.adresse { font-size: 10.5pt; margin-top: 2.5mm; }
+.invite { margin-top: 3.5mm; }
+.invite p { font-size: 7.8pt; margin-bottom: 1.2mm; }
+
+/* La bande des partenaires, sur fond blanc comme sur les documents de
+   l'Ambassade : les logos y ont été détourés sur blanc, les poser sur le
+   papier crème laisserait un rectangle clair. */
+.partenaires { background: #fff; padding: 2.5mm 10mm;
+               border-top: 0.6pt solid #e2dacb; }
+.partenaires img { display: block; width: 100%; height: auto; }
+
+footer { border-top: none; padding-top: 3.5mm; padding-bottom: 6mm; }
