@@ -216,8 +216,11 @@ MOTS_DONNEES = {
         "parc": ("Seul espace public d'Europe entièrement dédié à la mémoire du Camarade "
                  "Président Thomas Sankara."),
         "inauguration": "Inauguration de SANKARA, L'ÉTERNEL VEILLEUR",
-        "inauguration_desc": ("Inauguration de la sculpture monumentale en acier Corten de "
-                              "Hamed Ouattara au Parco Thomas Sankara de Rome. Entrée libre."),
+        "inauguration_desc": ("Dévoilement de la sculpture monumentale en acier Corten de "
+                              "Hamed Ouattara au Parco Thomas Sankara de Rome, le 24 octobre "
+                              "2026 à partir de 10 heures, lors des Journées d'hommage au "
+                              "Camarade Président Thomas Sankara (23-25 octobre). Entrée "
+                              "libre."),
     },
     "it": {
         "metier": "Artista designer",
@@ -231,8 +234,10 @@ MOTS_DONNEES = {
         "parc": ("Unico spazio pubblico d'Europa interamente dedicato alla memoria del "
                  "Compagno Presidente Thomas Sankara."),
         "inauguration": "Inaugurazione di SANKARA, L'ÉTERNEL VEILLEUR",
-        "inauguration_desc": ("Inaugurazione della scultura monumentale in acciaio Corten di "
-                              "Hamed Ouattara al Parco Thomas Sankara di Roma. Ingresso libero."),
+        "inauguration_desc": ("Svelamento della scultura monumentale in acciaio Corten di "
+                              "Hamed Ouattara al Parco Thomas Sankara di Roma, il 24 ottobre "
+                              "2026 dalle ore 10, durante le Giornate in omaggio al Compagno "
+                              "Presidente Thomas Sankara (23-25 ottobre). Ingresso libero."),
     },
     "en": {
         "metier": "Artist designer",
@@ -247,7 +252,9 @@ MOTS_DONNEES = {
                  "Comrade President Thomas Sankara."),
         "inauguration": "Unveiling of SANKARA, L'ÉTERNEL VEILLEUR",
         "inauguration_desc": ("Unveiling of Hamed Ouattara's monumental Corten steel sculpture "
-                              "at the Parco Thomas Sankara in Rome. Free entry."),
+                              "at the Parco Thomas Sankara in Rome on 24 October 2026 from "
+                              "10 a.m., during the Days of Homage to Comrade President Thomas "
+                              "Sankara (23-25 October). Free entry."),
     },
 }
 
@@ -383,18 +390,24 @@ def bloc_oeuvre(langue):
 INAUGURATION = {
     "@type": "Event",
     "@id": SITE + "/#inauguration",
-    "startDate": "2026-10-24",
+    # L'heure est arrêtée : la cérémonie officielle d'ouverture s'ouvre le
+    # 24 octobre 2026 à 10 heures, heure de Rome (UTC+2 en octobre). Le
+    # dévoilement du monument s'y tient. Les journées d'hommage courent du 23
+    # au 25 octobre ; endDate ferme le dernier jour.
+    "startDate": "2026-10-24T10:00:00+02:00",
+    "endDate": "2026-10-25T23:59:59+02:00",
     "eventStatus": "https://schema.org/EventScheduled",
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {"@id": SITE + "/#parco-thomas-sankara"},
     "about": {"@id": SITE + "/#sankara-eternel-veilleur"},
     "performer": {"@id": SITE + "/#hamed-ouattara"},
+    "organizer": {
+        "@type": "GovernmentOrganization",
+        "name": "Ambassade du Burkina Faso en Italie",
+    },
     "isAccessibleForFree": True,
     "name": None,          # posés par bloc_inauguration(), dans la langue
     "description": None,   # de la page
-    # À COMPLÉTER quand l'heure sera arrêtée : "startDate" accepte
-    # "2026-10-24T11:00:00+02:00". Tant que l'heure n'est pas connue, la date
-    # seule est publiée — mieux vaut une donnée partielle qu'une heure inventée.
 }
 
 

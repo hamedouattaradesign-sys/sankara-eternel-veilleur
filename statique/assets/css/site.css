@@ -873,3 +873,16 @@ figcaption .credit { display: block; font-style: italic; margin-top: 0.15rem; co
   border-right: 1px solid currentColor;
   transform: translateY(-50%) rotate(45deg);
 }
+
+
+/* LOGO D'INSTITUTION — fourni sur fond blanc. On ne le détoure pas : l'or de
+   la couronne romaine se perdrait dans le détourage. Il est posé dans un
+   cartouche blanc, ce qui est de toute façon l'usage pour un logo officiel. */
+.logo-institution { margin: 1.75rem 0 0; max-width: 17rem; }
+.logo-institution__cadre {
+  background: #fff;
+  border: 1px solid var(--filet);
+  border-radius: 3px;
+  padding: 1rem 1.1rem;
+}
+.logo-institution__cadre img { display: block; width: 100%; height: auto; }
