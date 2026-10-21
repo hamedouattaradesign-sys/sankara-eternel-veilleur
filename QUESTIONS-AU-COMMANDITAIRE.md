@@ -9,38 +9,36 @@ paraître.
 
 ---
 
-## 0. Les logos — 21 octobre 2026
+## 0. Le cartel au code QR — ARRÊTÉ le 21 octobre 2026
 
-Deux des trois fichiers demandés sont arrivés, et la bande des partenaires du
-cartel a été entièrement refaite à partir des fichiers d'origine. Elle n'est
-plus un découpage de l'invitation : chaque marque est un fichier à part, et se
-remplace maintenant sans toucher aux autres.
+**Décision de l'auteur : on imprime avec ce qu'on a.** Le document est clos.
+Ce qui suit n'est plus une attente, c'est une liste pour une édition
+ultérieure, s'il y en a une.
 
-**Reçus et en place :** le logo **PCIM-INTS**, en vectoriel, et celui du
-**Musée National du Burkina Faso**, en 4890 × 3533 à fond transparent. Le Musée
-est aussi cité dans la liste des institutions concernées, et son logo paraît
-sur la page Institutions, à côté de celui du Municipio III.
+### Ce que porte le cartel, dans sa version arrêtée
 
-**Le CIM-TS a été retiré de la bande.** L'auteur a signalé que la version qui
-figurait sur l'invitation est ancienne. S'il doit revenir, c'est avec son
-fichier à jour.
+- **En tête, la tutelle** : les armoiries du Burkina Faso, reconstituées par
+  l'auteur, puis « Burkina Faso » et le Ministère de la Communication, de la
+  Culture, des Arts et du Tourisme en toutes lettres. Le MCCAT n'a pas de logo
+  au dépôt et n'en a pas besoin : les armoiries plus le nom **sont** sa forme
+  officielle.
+- **Au pied, quatre partenaires** : PCIM-INTS (vectoriel), Musée National du
+  Burkina Faso, Confédération des États du Sahel, Roma Capitale — Municipio III.
+- **Le code**, à 40 mm, et l'adresse en toutes lettres dessous.
 
-### Ce qui manque encore
+### Ce qui aurait pu être mieux, et ne bloque rien
 
-1. **La Confédération des États du Sahel** — le seul des quatre logos de la
-   bande qui reste un découpage de JPEG, en 252 × 276. Il tient à la taille où
-   la bande l'affiche, mais une marque institutionnelle se donne en vectoriel.
-2. **La communauté burkinabè d'Italie** — ni le logo, ni le nom. L'auteur n'a
-   pas le fichier. Le site de l'Ambassade mentionne une *Fédération des
-   Associations des Burkinabè en Italie (FABI)*, mais cette page n'a pas pu
-   être lue depuis l'atelier : rien n'est écrit, ni sur le site ni sur le
-   cartel, tant que le nom n'est pas confirmé par l'auteur ou par l'Ambassade.
-3. **Le logo du MCCAT**, qui n'a jamais été demandé mais qui manque : le
-   ministère est cité en toutes lettres partout, et c'est lui dont l'œuvre
-   relève.
+1. **La Confédération des États du Sahel** est le seul logo qui reste un
+   découpage de JPEG, en 252 × 276. Il tient à 14 mm de haut ; il ne tiendrait
+   pas sur une affiche.
+2. **La communauté burkinabè d'Italie** n'est nulle part — ni nom, ni logo.
+   L'auteur n'a pas le fichier, et le nom n'a pas pu être vérifié. Le jour où
+   il est confirmé, elle entre dans la liste des institutions, logo ou non.
+3. **Le CIM-TS** a été retiré de la bande : la version imprimée sur
+   l'invitation était ancienne.
 
-Ajouter une marque tient en une ligne dans `MARQUES`, dans
-`outils/presse/logos/bandeau.py`.
+Ajouter ou remplacer une marque tient en une ligne dans `MARQUES`, dans
+`outils/presse/logos/bandeau.py`, puis `node outils/dossiers-pdf.js fr`.
 
 ---
 

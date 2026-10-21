@@ -11,7 +11,7 @@ main { padding-top: 4mm; justify-content: flex-start; }
    Les armoiries sont posées sur une petite carte blanche : le dessin comporte
    du blanc, les chevaux et les banderoles, et on ne peut pas le détourer sans
    l'abîmer. */
-.tutelle { margin-bottom: 4.5mm; }
+.tutelle { margin-bottom: 3.5mm; }
 .armoiries { height: 17mm; width: auto; display: block; margin: 0 auto 2mm;
              background: #fff; padding: 1.2mm 1.8mm;
              border: 0.5pt solid #e2dacb; }
@@ -20,23 +20,29 @@ main { padding-top: 4mm; justify-content: flex-start; }
 .ministere { font-size: 7.2pt; line-height: 1.35; letter-spacing: 0.02em;
              color: #4a443b; margin: 0; }
 
-.surtitre { margin-bottom: 3mm; padding-top: 3mm;
+.surtitre { margin-bottom: 2.5mm; padding-top: 2.5mm;
             border-top: 0.5pt solid #e2dacb; }
 h1 { font-size: 18pt; }
-.auteur { padding-bottom: 3mm; }
-.appel { margin: 3mm 0 2.5mm; }
+.auteur { padding-bottom: 2.5mm; }
+.appel { margin: 2.5mm 0 2mm; }
 .appel p { font-size: 12pt; }
 .appel p[lang="it"], .appel p[lang="en"] { font-size: 11pt; }
-.code { width: 34mm; height: 34mm; }
-.adresse { font-size: 10.5pt; margin-top: 2.5mm; }
-.invite { margin-top: 3mm; }
+.code { width: 40mm; height: 40mm; }
+.adresse { font-size: 10.5pt; margin-top: 2mm; }
+.invite { margin-top: 2.5mm; }
 .invite p { font-size: 7.6pt; margin-bottom: 1.1mm; }
+
+/* LE CODE EST PLUS GRAND QU'IL N'EN A L'AIR NÉCESSAIRE. Mis à 34 mm, il
+   tenait la page mais cessait d'être lu dès qu'on photographiait le cartel
+   d'un mètre cinquante, un peu flou ou un peu sombre — l'épreuve qui compte,
+   puisque c'est ainsi qu'on le scannera. À 40 mm il passe dans tous ces cas.
+   Les millimètres ont été pris sur les espacements, pas sur le code. */
 
 /* La bande des partenaires, sur fond blanc comme sur les documents de
    l'Ambassade : les marques y sont composées sur blanc, les poser sur le
    papier crème laisserait un rectangle clair. */
-.partenaires { background: #fff; padding: 2.5mm 10mm;
+.partenaires { background: #fff; padding: 2mm 10mm;
                border-top: 0.6pt solid #e2dacb; }
 .partenaires img { display: block; width: 100%; height: auto; }
 
-footer { border-top: none; padding-top: 3mm; padding-bottom: 5mm; }
+footer { border-top: none; padding-top: 2.5mm; padding-bottom: 4mm; }
