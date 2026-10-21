@@ -27,8 +27,8 @@ paraître.
 
 - **Où exactement** le monument sera-t-il dressé ? Près de l'entrée, au centre,
   le long d'une allée ?
-- L'orientation est arrêtée : **les deux faces au visage regardent le nord et le
-  sud**, l'une vers l'Europe, l'autre vers l'Afrique. Le socle devra être coulé
+- L'implantation a été arrêtée sur place, au montage de Rome, et le site ne
+  donne plus aucune orientation à la boussole. Le socle a été coulé
   en conséquence. *À vérifier sur place une fois le monument dressé.*
 - Le **socle de béton** est-il déjà coulé ? Par qui ?
 - Y a-t-il un **éclairage** prévu, ou le monument restera-t-il sous le seul
@@ -171,8 +171,8 @@ Deux choses restent, et aucune ne peut être faite ici :
 
 - **La signature.** La deuxième édition réserve une zone de paraphe en fin de
   document. Vérifier avant de signer : le lieu et la date du bloc de signature,
-  et la section « Orienté nord-sud », qui n'était pas dans la première édition
-  et affirme l'axe nord-sud comme une donnée de l'œuvre, et non comme une option
+  et la section « Lisible des deux côtés », qui n'était pas dans la première
+  édition et dit l'implantation arrêtée sur place, et non comme une option
   d'implantation.
 - **À qui la première édition a-t-elle déjà été transmise ?** Si un exemplaire
   signé du 17 août circule dans une institution, il porte onze rangées et

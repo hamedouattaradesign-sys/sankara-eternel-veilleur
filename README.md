@@ -379,8 +379,8 @@ node outils/dossiers-pdf.js it     # ou une seule langue
 
 Trois choses sont à vérifier avant de signer, et un commentaire en tête de
 `institutionnel-fr.html` les rappelle : le **lieu** et la **date** du bloc de
-signature, et la section **« Orienté nord-sud »**, qui n'était pas dans la
-première édition et affirme l'axe nord-sud comme une donnée de l'œuvre.
+signature, et la section **« Lisible des deux côtés »**, qui n'était pas dans la
+première édition et dit l'implantation arrêtée sur place, au montage de Rome.
 
 Les sources sont dans `outils/presse/`, avec une **feuille de style unique**,
 `dossier.css` : une correction de mise en page vaut pour les six documents.

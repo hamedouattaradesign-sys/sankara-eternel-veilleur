@@ -63,8 +63,8 @@ l'Ambassade du Burkina Faso en Italie sont en main, et le site les suit.
 
 **Le site passe au présent.** Tout ce qui annonçait l'érection au futur — « sera
 dressé », « sera posé », « le socle sera coulé », « une fois dressé » — a été
-réécrit : le monument est en place, le socle est coulé, les deux faces au visage
-regardent le nord et le sud. Le journal porte désormais deux entrées neuves :
+réécrit : le monument est en place, le socle est coulé. Le journal porte
+désormais deux entrées neuves :
 le dévoilement du 24 octobre à 10 heures, et « Octobre 2026 — Rome, le monument
 est en place ».
 
@@ -91,6 +91,42 @@ Sankara » dans les trois langues, comme partout ailleurs. L'affiche imprime
 « PARC THOMAS SANKARA » : le texte alternatif de l'image le reproduit tel quel,
 puisqu'il décrit ce qui est imprimé.
 
+### L'orientation sort du site — arrêté le 21 octobre 2026
+
+**Ce point annule et remplace l'axe nord-sud**, qui était jusqu'ici écrit comme
+une donnée de l'œuvre.
+
+Au montage, à Rome, l'auteur a constaté que le rond-point qui fait face au parc
+ne se présentait plus devant une des faces au visage. L'implantation prévue ne
+convenait pas. **Il l'a changée sur place.** Les faces au visage ne regardent
+plus le nord et le sud.
+
+**Le site ne donne donc plus aucune orientation à la boussole**, et n'en donnera
+pas : une implantation se décide sur le terrain, et ce qui est écrit doit rester
+vrai sans qu'on ait à y revenir.
+
+Ce qui reste, et qui est maintenant ce que le site dit partout :
+
+- les deux faces qui portent le visage sont **opposées** ;
+- le monument **n'a ni façade ni dos** — de quelque côté qu'on l'aborde, il
+  regarde ;
+- c'est ce qui le sépare d'une statue, faite pour être vue d'un point précis ;
+- l'implantation a été **arrêtée sur place, au montage**, d'après les abords du
+  parc et les chemins par lesquels on y arrive.
+
+**La lecture du 2 a changé avec.** Elle ne dit plus « les deux directions, le
+nord et le sud » — qui tenait au Nord et au Sud comme mots de la dette et de la
+dignité. Elle dit : *le monument regarde des deux côtés, et ne tourne le dos à
+personne.* Cette lecture tient quelle que soit l'implantation, et dit la même
+chose.
+
+**Supprimé dans ce mouvement :** la section « Orienté nord-sud » des trois pages
+de l'œuvre, remplacée par « Lisible des deux côtés » ; la rose des vents du
+schéma d'accès (`outils/schema-acces.py`) ; les deux passages de la page
+d'accueil ; la ligne du tableau des nombres et son paragraphe ; la phrase du
+journal ; les deux passages de la page Visiter ; et les mêmes dans les six
+dossiers.
+
 ---
 
 ### Les points arrêtés
@@ -99,7 +135,7 @@ puisqu'il décrit ce qui est imprimé.
 |---|---|
 | Le visage | **Le Camarade Président Thomas Sankara ne portait pas la barbe.** Aucun texte, aucune légende, aucun texte alternatif, aucun prompt d'image ne lui en prête. Les images qui en montrent une prêtent à confusion et ne doivent pas servir de référence. |
 | La trame | **4 colonnes et 12 rangées.** 48 bossages par face de texture, 28 par face portrait, 152 au total. |
-| L'orientation | **Le monument est implanté selon un axe nord-sud.** Les deux faces au visage regardent le nord et le sud. Ce n'est pas une option d'implantation, c'est une donnée de l'œuvre. |
+| L'orientation | **Le site ne donne aucune orientation à la boussole.** L'implantation a été arrêtée sur place, au montage de Rome. Ce qui s'écrit est ce qui reste vrai quelle que soit l'implantation : les deux faces au visage sont opposées, le monument n'a ni façade ni dos. *(Point révisé le 21 octobre 2026 — voir plus bas.)* |
 | L'intention | Les nombres viennent des recherches de l'auteur et de sa volonté en créant cette sculpture. **Aucun hasard, aucune coïncidence trouvée après coup.** |
 
 ### Ce qui reste vrai malgré cette directive
@@ -179,7 +215,7 @@ Le site publie désormais :
 |---|---|
 | 12 rangées sur chaque face | les douze **compagnons** tombés avec lui |
 | 4 colonnes de bossages | le **4 août 1983**, l'ouverture de la Révolution |
-| 2 faces portant le visage | les deux **directions**, le nord et le sud |
+| 2 faces portant le visage | le monument regarde des **deux côtés**, et ne tourne le dos à personne |
 
 Comptage réel : **48 par face de texture** (4 colonnes × 12 rangées),
 **28 par face portrait**, **152 au total**.
@@ -217,10 +253,8 @@ C'est une règle de rédaction, et elle vaut pour tout ce qui sera écrit ensuit
   et de fabrication sont réelles, mais elles encadrent le dessin ; elles ne le
   décident pas.
 
-La même règle vaut pour **l'axe nord-sud**. Ce n'est pas une décision
-d'implantation à arrêter avec le chantier : c'est une donnée de l'œuvre, au même
-titre que la découpe du visage. Le socle sera coulé en conséquence. Les trois
-pages de l'œuvre et les trois dossiers institutionnels le disent ainsi.
+*(L'axe nord-sud figurait ici comme une donnée de l'œuvre. Il a été abandonné le
+21 octobre 2026, au montage de Rome — voir « L'orientation sort du site ».)*
 
 **La citation attribuée à l'auteur a été réécrite en conséquence, et il l'a
 validée.** Elle est dans les trois langues, sur les pages des nombres et dans

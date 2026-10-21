@@ -235,7 +235,7 @@ La deuxième édition, du 6 octobre 2026, est générée comme les cinq autres
 dossiers et **attend la signature de l'auteur**. Trois points sont à vérifier
 avant qu'il signe, et un commentaire en tête de `institutionnel-fr.html` les
 rappelle : le lieu et la date du bloc de signature, et la section « Orienté
-nord-sud », qui n'était pas dans la première édition.
+des deux côtés », qui n'était pas dans la première édition.
 
 Enfin, ne pas chercher à faire dire quelque chose à 152. Ce nombre ne compte
 rien. L'inventer serait exactement la faute que ces notes servent à éviter.

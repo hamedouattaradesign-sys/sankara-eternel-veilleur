@@ -66,7 +66,7 @@ La deuxième édition réserve une zone de paraphe en fin de document. Trois poi
 
 - le **lieu** et la **date** du bloc de signature — aujourd'hui Ouagadougou,
   6 octobre 2026 ;
-- la section **« Orienté nord-sud »**, qui n'existait pas dans la première
+- la section **« Lisible des deux côtés »**, qui n'existait pas dans la première
   édition ;
 - le comptage : **douze rangées, 48 par face de texture, 152 au total**.
 

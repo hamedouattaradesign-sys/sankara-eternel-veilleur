@@ -27,9 +27,8 @@ MOTS = {
                  "mènent au parc. Par le métro : ligne B puis B1 jusqu'au terminus Jonio, puis "
                  "environ vingt-cinq minutes à pied ou un autobus. Par le trolleybus 90 depuis "
                  "la gare de Termini jusqu'à Largo Labia, dans le quartier de Val Melaina. "
-                 "L'autobus 80 s'arrête Via Ugo della Seta, devant le parc. Le monument sera "
-                 "dressé dans le parc, ses deux faces au visage tournées vers le nord et vers "
-                 "le sud."),
+                 "L'autobus 80 s'arrête Via Ugo della Seta, devant le parc, où le monument "
+                 "est dressé."),
         "depart": "Centre de Rome",
         "termini": "Roma Termini",
         "metro": "Métro B puis B1",
@@ -39,7 +38,6 @@ MOTS = {
         "arret": "Arrêt « Della Seta »", "arret_sous": "Via Ugo della Seta",
         "pied": "25 min à pied", "parc": "PARCO THOMAS SANKARA",
         "parc_sous": "Via Ugo della Seta, III Municipio",
-        "nord": "N", "axe": "les deux faces au visage",
         "note": "Diagramme de trajet, non une carte à l'échelle.",
     },
     "it": {
@@ -48,8 +46,7 @@ MOTS = {
                  "parco. Con la metropolitana: linea B poi B1 fino al capolinea Jonio, poi circa "
                  "venticinque minuti a piedi o un autobus. Con il filobus 90 da Roma Termini "
                  "fino a Largo Labia, a Val Melaina. L'autobus 80 ferma in Via Ugo della Seta, "
-                 "davanti al parco. Il monumento sarà eretto nel parco, con le due facce che "
-                 "portano il volto rivolte a nord e a sud."),
+                 "davanti al parco, dove il monumento è eretto."),
         "depart": "Centro di Roma",
         "termini": "Roma Termini",
         "metro": "Metro B poi B1",
@@ -59,7 +56,6 @@ MOTS = {
         "arret": "Fermata « Della Seta »", "arret_sous": "Via Ugo della Seta",
         "pied": "25 min a piedi", "parc": "PARCO THOMAS SANKARA",
         "parc_sous": "Via Ugo della Seta, III Municipio",
-        "nord": "N", "axe": "le due facce con il volto",
         "note": "Diagramma di percorso, non una mappa in scala.",
     },
     "en": {
@@ -68,8 +64,7 @@ MOTS = {
                  "park. By underground: line B then B1 to the Jonio terminus, then about "
                  "twenty-five minutes on foot, or a bus. By trolleybus 90 from Roma Termini to "
                  "Largo Labia, in Val Melaina. Bus 80 stops on Via Ugo della Seta, in front of "
-                 "the park. The monument will stand in the park, its two portrait faces turned "
-                 "north and south."),
+                 "the park, where the monument stands."),
         "depart": "Centre of Rome",
         "termini": "Roma Termini",
         "metro": "Metro B then B1",
@@ -79,7 +74,6 @@ MOTS = {
         "arret": "“Della Seta” stop", "arret_sous": "Via Ugo della Seta",
         "pied": "25 min on foot", "parc": "PARCO THOMAS SANKARA",
         "parc_sous": "Via Ugo della Seta, III Municipio",
-        "nord": "N", "axe": "the two portrait faces",
         "note": "A journey diagram, not a map to scale.",
     },
 }
@@ -145,15 +139,9 @@ def tracer(langue):
     p.append(txt(XC, Y3 + 6, m["parc"], 10.5, CORTEN, True))
     p.append(txt(XC, Y3 + 21, m["parc_sous"], 8.6))
 
-    # Flèche du nord : le monument regarde le nord et le sud.
-    xn, yn = L - 46, 300
-    p.append('<line x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" stroke="%s" stroke-width="1.6"/>'
-             % (xn, yn + 30, xn, yn - 14, ENCRE))
-    p.append('<path d="M %.1f %.1f l -5 11 l 5 -3.5 l 5 3.5 Z" fill="%s"/>' % (xn, yn - 18, ENCRE))
-    p.append(txt(xn, yn - 24, m["nord"], 10, ENCRE, True))
-    p.append('<line x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" stroke="%s" stroke-width="1.2" '
-             'stroke-dasharray="3 3"/>' % (xn - 16, yn + 8, xn + 16, yn + 8, CORTEN))
-    p.append(txt(xn, yn + 46, m["axe"], 8, CORTEN))
+    # Pas de rose des vents : l'implantation du monument dans le parc a été
+    # arrêtée sur place, au montage, et le site ne donne aucune orientation à la
+    # boussole. Ce diagramme dit comment venir, rien de plus.
 
     p.append('<line x1="20" y1="%d" x2="%d" y2="%d" stroke="%s" stroke-width="1"/>'
              % (H - 26, L - 20, H - 26, FILET))
