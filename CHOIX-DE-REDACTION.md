@@ -56,6 +56,41 @@ la ligne d'auteur.
 Si le MCCAT transmet une formule imposée au mot près, elle remplace « Collection
 de l'État burkinabè, Ministère… (MCCAT) » partout, d'un seul geste.
 
+### Les Journées d'hommage — arrêté le 21 octobre 2026
+
+L'auteur est à Rome. Le monument est monté. Les affiches officielles de
+l'Ambassade du Burkina Faso en Italie sont en main, et le site les suit.
+
+**Le site passe au présent.** Tout ce qui annonçait l'érection au futur — « sera
+dressé », « sera posé », « le socle sera coulé », « une fois dressé » — a été
+réécrit : le monument est en place, le socle est coulé, les deux faces au visage
+regardent le nord et le sud. Le journal porte désormais deux entrées neuves :
+le dévoilement du 24 octobre à 10 heures, et « Octobre 2026 — Rome, le monument
+est en place ».
+
+**Les noms, repris sur les documents officiels.**
+
+| Ce que le site écrivait | Ce qu'il écrit depuis | Pourquoi |
+|---|---|---|
+| Haut Conseil des Burkinabè de l'Étranger | Haut Conseil des Burkinabè de **l'Extérieur** | L'affiche de l'Ambassade et la presse d'État burkinabè (Sidwaya, Burkina24) écrivent « de l'extérieur » |
+| Cyrille Ganou-Badolo | Cyrille **Ganou Badolo**, sans trait d'union | Orthographe de l'affiche de l'Ambassade |
+| Ambassadrice | **la Camarade Ambassadeur** | « LA CAMARADE AMBASSADEUR DU BURKINA FASO EN ITALIE », affiche officielle |
+
+**Deux écarts assumés avec l'affiche, et dits ici pour qu'ils ne soient pas
+repris pour des fautes.**
+
+1. Le programme imprimé donne « Rue marchande, 23 au 26 octobre » alors que son
+   propre bandeau annonce 23–25. Le site **reproduit le 26 tel qu'imprimé** : on
+   ne corrige pas en silence un document officiel.
+2. Le programme imprimé dit « Dévoilement de la statue Thomas SANKARA ». Le site
+   écrit **« Dévoilement du monument Thomas Sankara »** : tout l'argument de
+   l'œuvre est qu'elle n'est pas une statue. C'est le seul mot changé.
+
+**Le nom du parc.** Dans le tableau du programme, le site écrit « Parco Thomas
+Sankara » dans les trois langues, comme partout ailleurs. L'affiche imprime
+« PARC THOMAS SANKARA » : le texte alternatif de l'image le reproduit tel quel,
+puisqu'il décrit ce qui est imprimé.
+
 ---
 
 ### Les points arrêtés

@@ -31,7 +31,7 @@ Ce sont des noms propres. Les traduire serait les effacer.
 - *Ma brique pour Sankara*, marqué `lang="fr"` pour les lecteurs d'écran, suivi
   de sa glose anglaise « My brick for Sankara »
 - Conseil National de la Révolution, Conseil de l'Entente
-- Haut Conseil des Burkinabè de l'Étranger
+- Haut Conseil des Burkinabè de l'Extérieur
 - Bureau Burkinabè du Droit d'Auteur
 - Projet de Construction des Infrastructures du Mémorial Isidore Noël Thomas
   Sankara

@@ -158,7 +158,7 @@ existe, et où elle est, pour pouvoir la relire si le contexte évolue :
 Les photographies du Parco Thomas Sankara montrent que l'**Ambassade du Burkina
 Faso à Rome** porte l'événement, « en collaboration avec le Camarade Ministre de
 la Communication, de la Culture, des Arts et du Tourisme », avec la participation
-des délégués du **Haut Conseil des Burkinabè de l'Étranger**. La tutelle
+des délégués du **Haut Conseil des Burkinabè de l'Extérieur**. La tutelle
 institutionnelle est donc établie, et du bon côté : ce sont les autorités
 burkinabè qui portent, et non une institution étrangère qui héberge.
 

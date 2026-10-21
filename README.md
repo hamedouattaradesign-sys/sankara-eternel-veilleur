@@ -280,7 +280,7 @@ militaire*, *putsch*, et leurs équivalents italiens et anglais.
 Restent en français dans les trois versions, parce que ce sont des noms
 propres : le titre de l'œuvre, *Ma brique pour Sankara* (marqué `lang="fr"`
 pour les lecteurs d'écran), le Conseil National de la Révolution, le Haut
-Conseil des Burkinabè de l'Étranger, le Bureau Burkinabè du Droit d'Auteur, et
+Conseil des Burkinabè de l'Extérieur, le Bureau Burkinabè du Droit d'Auteur, et
 le nom gravé dans l'acier.
 
 Les champs de texte libre du JSON-LD — métier, forme, matériau, ligne de crédit,

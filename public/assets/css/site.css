@@ -886,3 +886,13 @@ figcaption .credit { display: block; font-style: italic; margin-top: 0.15rem; co
   padding: 1rem 1.1rem;
 }
 .logo-institution__cadre img { display: block; width: 100%; height: auto; }
+
+
+/* Intertitre dans une fiche : la ligne qui annonce la cérémonie d'ouverture
+   traverse les trois colonnes du programme. */
+.fiche__intertitre td {
+  background: var(--papier-2);
+  font-weight: 700;
+  white-space: normal;
+}
+@media (max-width: 34em) { .fiche__intertitre td { border-bottom: 1px solid var(--filet); } }

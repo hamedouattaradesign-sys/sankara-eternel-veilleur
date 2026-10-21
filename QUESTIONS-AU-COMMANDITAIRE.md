@@ -48,7 +48,7 @@ Tourisme », d'après l'affiche de la rencontre de juin 2026. Il faut confirmer 
 - Le **nom du Camarade Ministre** et l'intitulé complet de son ministère.
 - Le **III<sup>e</sup> Municipio de Rome** et **Roma Capitale** : faut-il les
   créditer ? Sous quelle forme ? Qui est l'interlocuteur ?
-- Le **Haut Conseil des Burkinabè de l'Étranger** : quelle section, quel rôle ?
+- Le **Haut Conseil des Burkinabè de l'Extérieur** : quelle section, quel rôle ?
 - La **Confédération des États du Sahel** apparaît sur l'affiche. Doit-elle
   figurer sur le site ?
 
