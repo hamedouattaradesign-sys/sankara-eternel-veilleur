@@ -127,6 +127,27 @@ d'accueil ; la ligne du tableau des nombres et son paragraphe ; la phrase du
 journal ; les deux passages de la page Visiter ; et les mêmes dans les six
 dossiers.
 
+### Deux amendements du donateur — 22 octobre 2026
+
+Le Camarade Madi Sakandé a relu la page de l'histoire et demandé deux
+corrections, relayées par l'auteur. Les deux sont appliquées.
+
+**1. Il est nommé dans le chapeau.** La page s'ouvrait sur « il est né de
+l'obstination d'un homme », sans dire lequel. Elle dit maintenant « d'un homme,
+le Camarade Madi Sakandé ». C'est lui qui le demande : la règle de discrétion
+posée le 19 octobre portait sur ce qui est **personnel** — l'amitié d'enfance,
+la ville d'origine —, pas sur l'attribution de l'initiative. Elle tient
+toujours pour le reste.
+
+**2. Ce qu'il a porté, c'est le MONUMENT, pas le parc.** La phrase disait « Le
+parc a été porté par le Camarade Madi Sakandé ». C'était inexact et cela
+mélangeait deux choses : **le parc a été baptisé par le III Municipio de
+Rome**, le 17 septembre 2025 ; ce que le donateur a porté, c'est l'œuvre qui s'y
+dresse. La page dit désormais « Le monument a été porté par… ».
+
+À tenir : ne jamais réattribuer le baptême du parc au donateur, ni le don de
+l'œuvre au Municipio. Ce sont deux gestes, de deux côtés.
+
 ---
 
 ### Les points arrêtés
