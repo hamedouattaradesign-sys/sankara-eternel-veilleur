@@ -395,3 +395,42 @@ arbres plantés, ni taux d'alphabétisation. Ces chiffres existent et sont
 Mémorial Thomas Sankara, avec mention de la source. Sur un site qui sera lu par
 des institutions, un chiffre approximatif coûte plus qu'il ne rapporte. Un
 commentaire le rappelle dans `contenu/fr/05-sankara.html`.
+
+### 9. « La plus importante communauté burkinabè d'Europe » — VÉRIFIÉ
+
+**Vérifié le 23 octobre 2026, à la demande de l'auteur, la veille de la
+cérémonie.** La notice historique affirme, dans les trois langues : *« L'Italie
+accueille la plus importante communauté burkinabè d'Europe — plus de
+soixante-dix mille personnes, selon l'Ambassade du Burkina Faso en Italie. »*
+Deux affirmations distinctes, qui ne tiennent pas de la même façon.
+
+**Le rang tient.** Les statistiques italiennes recensent **22 589 ressortissants
+burkinabè résidant en Italie au 1er janvier 2025** (ISTAT, reprise Tuttitalia).
+Pour la France, le Quai d'Orsay donnait **6 700 ressortissants en 2018**, et la
+presse rapporte une estimation INSEE d'un peu plus de **9 000** en 2026. Aucun
+autre pays d'Europe n'approche les chiffres italiens, et une étude de la
+Konrad-Adenauer-Stiftung rattache à l'Italie près de la moitié de l'émigration
+burkinabè vers l'Europe. L'Italie est donc première en Europe avec une marge de
+deux à trois fois, sur les seules données officielles. Ce point n'a pas à être
+nuancé.
+
+**Le chiffre est une estimation consulaire, et il est déjà attribué comme tel.**
+Les soixante-dix mille sont du ressort de l'Ambassade, pas de l'ISTAT : l'écart
+avec les 22 589 résidents recensés s'explique par les binationaux, les familles
+installées de longue date et les personnes non enregistrées — c'est l'usage
+constant des estimations consulaires, et un ambassadeur l'a dit lui-même en
+entretien, qu'un chiffre exact n'est pas donnable. La phrase du site dit
+*« selon l'Ambassade du Burkina Faso en Italie »*. C'est la bonne attribution :
+l'Ambassade est la source compétente pour sa propre communauté, et le site ne
+s'approprie pas son chiffre.
+
+**Conclusion : rien à corriger.** La phrase reste telle qu'elle est. Elle est
+notée ici pour qu'on ne la rouvre pas, et pour qu'on sache, si la question est
+posée en public, que le rang se défend sur les chiffres de l'ISTAT et que les
+soixante-dix mille sont l'estimation de l'Ambassade, pas la nôtre.
+
+**Ce qu'il ne faut pas faire.** Ne pas publier les deux chiffres côte à côte.
+Mettre « 22 589 selon l'ISTAT » à côté de « plus de soixante-dix mille selon
+l'Ambassade » inviterait le lecteur à conclure que l'un des deux est faux, alors
+qu'ils comptent deux choses différentes. Et ce n'est pas au site de trancher
+publiquement contre le chiffre de l'Ambassade.
