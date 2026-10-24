@@ -58,6 +58,12 @@ const DOSSIERS = [
   { source: "cartel-qr-institutions.html",
     cible: "cartel-qr-institutions-sankara-eternel-veilleur.pdf",
     langue: "fr", format: "A5" },
+  /* L'allocution de l'auteur au dévoilement, telle qu'elle a été prononcée.
+     Les indications de scène de son exemplaire de lecture n'y figurent pas :
+     elles lui appartiennent, et ce que la presse reprend est ce qui a été dit.
+     Le document autorise explicitement la citation, à charge d'attribuer. */
+  { source: "allocution-fr.html",
+    cible: "allocution-hamed-ouattara-sankara-eternel-veilleur.pdf", langue: "fr" },
 ];
 
 /* L'adresse que porte le code. Elle est écrite ici une seule fois, et le
