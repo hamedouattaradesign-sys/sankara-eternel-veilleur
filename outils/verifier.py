@@ -272,14 +272,23 @@ def verifier_fichiers_annexes():
     if not os.path.isfile(os.path.join(PUBLIC, "assets", "js", "visite.js")):
         anomalies.append("fichier attendu absent — assets/js/visite.js")
 
-    # Les trente-six vues de la rotation ne sont exigées que si une page les
-    # emploie : en phase 1, la visite virtuelle n'est pas publiée.
-    emploie_rotation = any(
-        "rotation-" in open(f, encoding="utf-8").read() for f in pages_html()
-    )
-    if not emploie_rotation:
+    # Les vues de la rotation ne sont exigées que si une page les emploie : en
+    # phase 1, la visite virtuelle n'était pas publiée.
+    #
+    # LE PAS N'EST PAS SUPPOSÉ, IL EST LU. Il était écrit 10 en dur ici, parce
+    # que les vues de substitution étaient trente-six. Les photographies prises
+    # autour de l'œuvre sont trente, soit un pas de 12 : un contrôle qui suppose
+    # le pas réclame des vues qui n'ont pas lieu d'être. La page déclare son pas
+    # dans data-pas, et c'est lui qui fait foi.
+    pas = None
+    for f in pages_html():
+        m = re.search(r'data-pas="(\d+)"', open(f, encoding="utf-8").read())
+        if m:
+            pas = int(m.group(1))
+            break
+    if pas is None:
         return
-    manquantes = [a for a in range(0, 360, 10)
+    manquantes = [a for a in range(0, 360, pas)
                   if not os.path.isfile(os.path.join(PUBLIC, "assets", "img", "visite",
                                                      "rotation-%03d.svg" % a))
                   and not os.path.isfile(os.path.join(PUBLIC, "assets", "img", "visite",

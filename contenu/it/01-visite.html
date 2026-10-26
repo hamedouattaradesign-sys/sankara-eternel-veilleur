@@ -1,0 +1,97 @@
+<!--
+{
+  "slug": "visita-virtuale",
+  "nav": "Visita virtuale",
+  "titre": "Visita virtuale — SANKARA, L'ÉTERNEL VEILLEUR, Hamed Ouattara",
+  "og_titre": "Visita virtuale — SANKARA, L'ÉTERNEL VEILLEUR",
+  "description": "Girate attorno a SANKARA, L'ÉTERNEL VEILLEUR, scultura in acciaio Corten di Hamed Ouattara al Parco Thomas Sankara di Roma. Visita leggera, pensata per il telefono.",
+  "donnees": [
+    "oeuvre",
+    "lieu"
+  ],
+  "priorite": "0.9",
+  "scripts": "<script src=\"/assets/js/visite.js\" defer></script>"
+}
+-->
+<section class="section section--creuse">
+  <div class="enveloppe">
+    <p class="surtitre">Visita virtuale</p>
+    <h1>Girare attorno al monumento</h1>
+    <p class="chapeau">Il monumento si scopre girandoci attorno: il ritratto appare solo su due facce opposte, e le altre due non offrono che la pelle dell'acciaio. Trascinate l'immagine, oppure usate il cursore e le frecce della tastiera.</p>
+  </div>
+</section>
+
+<section class="section section--creuse">
+  <div class="enveloppe">
+    <div class="visite">
+      <div>
+        <div class="visionneuse"
+             data-visionneuse
+             data-base="/assets/img/visite/rotation-"
+             data-ext=".webp"
+             data-pas="12">
+          <div class="visionneuse__scene">
+            <img class="visionneuse__image"
+                 data-visionneuse-image
+                 src="/assets/img/visite/rotation-000.webp"
+                 width="600" height="800"
+                 data-alt-gabarit="SANKARA, L'ÉTERNEL VEILLEUR, scultura monumentale in acciaio Corten di Hamed Ouattara al Parco Thomas Sankara di Roma, vista a {angle} gradi"
+                 alt="SANKARA, L'ÉTERNEL VEILLEUR, scultura monumentale in acciaio Corten di Hamed Ouattara al Parco Thomas Sankara di Roma, faccia con il volto, a 0 gradi."
+                 fetchpriority="high" decoding="async">
+          </div>
+          <p class="visionneuse__etat" data-visionneuse-etat role="status"></p>
+        </div>
+
+        <noscript>
+          <div class="repli">
+            <p><strong>Il vostro browser non esegue JavaScript.</strong> La rotazione non può essere animata, ma l'opera resta consultabile: la galleria presenta le stesse vedute, una per una, in pagine ordinarie.</p>
+            <p><a class="appel appel--sobre" href="/it/galleria/">Vedere la galleria</a></p>
+          </div>
+        </noscript>
+
+        <div class="commandes">
+          <label for="rotation">Rotazione del monumento, da 0 a 348 gradi</label>
+          <div class="commandes__ligne">
+            <button class="bouton-rond" type="button" data-visionneuse-pas="-1"
+                    aria-label="Girare di dodici gradi verso sinistra">&#8249;</button>
+            <input type="range" id="rotation" data-visionneuse-curseur
+                   min="0" max="348" step="12" value="0">
+            <button class="bouton-rond" type="button" data-visionneuse-pas="1"
+                    aria-label="Girare di dodici gradi verso destra">&#8250;</button>
+          </div>
+          <button class="appel appel--sobre" type="button" data-visionneuse-complet hidden>
+            Caricare la rotazione completa
+          </button>
+        </div>
+
+        <p class="petit doux" style="margin-top:0.9rem">
+          <em>SANKARA, L'ÉTERNEL VEILLEUR</em>, Hamed Ouattara, 2026, acciaio Corten.
+          Trenta vedute fotografate al Parco Thomas Sankara, Roma, ottobre 2026, girando attorno all'opera di un dodicesimo di giro a ogni passo.
+        </p>
+      </div>
+
+      <aside>
+        <div class="repli">
+          <h2 style="margin-top:0;font-size:1rem">Come guardare</h2>
+          <ul class="petit">
+            <li><strong>Le due facce con il volto.</strong> Il viso non esiste in rilievo: è fatto dei vuoti che attraversano la lamiera. Fermatevi a 0 e a 180 gradi.</li>
+            <li><strong>Le due facce di texture.</strong> A un quarto di giro da lì, nessun taglio: soltanto le bugne emisferiche, quattro colonne su dodici file.</li>
+            <li><strong>Gli angoli.</strong> Tra le due, si vedono insieme il taglio e la pelle, e lo spessore di sei millimetri dell'acciaio.</li>
+          </ul>
+          <p class="petit doux">Da tastiera: raggiungete il cursore con il tasto di tabulazione, poi girate con le frecce sinistra e destra.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="enveloppe">
+    <h2>Pensata per le connessioni lente</h2>
+    <div class="prose">
+      <p>La rotazione non impiega né modello tridimensionale, né WebGL, né libreria esterna. È una sequenza di immagini fisse: funziona sui telefoni vecchi come sui browser recenti, e scarica soltanto ciò che mostra.</p>
+      <p>Se il vostro apparecchio segnala una connessione lenta o la modalità risparmio dati, viene caricata una veduta su tre. Il resto arriva solo su vostra richiesta, con il pulsante «caricare la rotazione completa».</p>
+    </div>
+    <p class="suite"><a href="/it/opera/">Leggere il dettaglio tecnico dell'opera</a></p>
+  </div>
+</section>

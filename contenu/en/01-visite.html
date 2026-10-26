@@ -1,0 +1,97 @@
+<!--
+{
+  "slug": "virtual-tour",
+  "nav": "Virtual tour",
+  "titre": "Virtual tour — SANKARA, L'ÉTERNEL VEILLEUR, Hamed Ouattara",
+  "og_titre": "Virtual tour — SANKARA, L'ÉTERNEL VEILLEUR",
+  "description": "Turn around SANKARA, L'ÉTERNEL VEILLEUR, Hamed Ouattara's Corten steel sculpture at the Parco Thomas Sankara in Rome. A light tour, built for the phone.",
+  "donnees": [
+    "oeuvre",
+    "lieu"
+  ],
+  "priorite": "0.9",
+  "scripts": "<script src=\"/assets/js/visite.js\" defer></script>"
+}
+-->
+<section class="section section--creuse">
+  <div class="enveloppe">
+    <p class="surtitre">Virtual tour</p>
+    <h1>Turning around the monument</h1>
+    <p class="chapeau">The monument reveals itself as you turn: the portrait appears on two opposite faces only, and the other two give nothing but the skin of the steel. Drag the image, or use the slider and the arrow keys.</p>
+  </div>
+</section>
+
+<section class="section section--creuse">
+  <div class="enveloppe">
+    <div class="visite">
+      <div>
+        <div class="visionneuse"
+             data-visionneuse
+             data-base="/assets/img/visite/rotation-"
+             data-ext=".webp"
+             data-pas="12">
+          <div class="visionneuse__scene">
+            <img class="visionneuse__image"
+                 data-visionneuse-image
+                 src="/assets/img/visite/rotation-000.webp"
+                 width="600" height="800"
+                 data-alt-gabarit="SANKARA, L'ÉTERNEL VEILLEUR, monumental Corten steel sculpture by Hamed Ouattara at the Parco Thomas Sankara in Rome, seen at {angle} degrees"
+                 alt="SANKARA, L'ÉTERNEL VEILLEUR, monumental Corten steel sculpture by Hamed Ouattara at the Parco Thomas Sankara in Rome, portrait face, at 0 degrees."
+                 fetchpriority="high" decoding="async">
+          </div>
+          <p class="visionneuse__etat" data-visionneuse-etat role="status"></p>
+        </div>
+
+        <noscript>
+          <div class="repli">
+            <p><strong>Your browser does not run JavaScript.</strong> The rotation cannot be animated, but the work is still there to see: the gallery shows the same views, one by one, as ordinary pages.</p>
+            <p><a class="appel appel--sobre" href="/en/gallery/">See the gallery</a></p>
+          </div>
+        </noscript>
+
+        <div class="commandes">
+          <label for="rotation">Rotation of the monument, from 0 to 348 degrees</label>
+          <div class="commandes__ligne">
+            <button class="bouton-rond" type="button" data-visionneuse-pas="-1"
+                    aria-label="Turn twelve degrees to the left">&#8249;</button>
+            <input type="range" id="rotation" data-visionneuse-curseur
+                   min="0" max="348" step="12" value="0">
+            <button class="bouton-rond" type="button" data-visionneuse-pas="1"
+                    aria-label="Turn twelve degrees to the right">&#8250;</button>
+          </div>
+          <button class="appel appel--sobre" type="button" data-visionneuse-complet hidden>
+            Load the full rotation
+          </button>
+        </div>
+
+        <p class="petit doux" style="margin-top:0.9rem">
+          <em>SANKARA, L'ÉTERNEL VEILLEUR</em>, Hamed Ouattara, 2026, Corten steel.
+          Thirty views photographed at the Parco Thomas Sankara, Rome, October 2026, turning around the work by one twelfth of a turn at each step.
+        </p>
+      </div>
+
+      <aside>
+        <div class="repli">
+          <h2 style="margin-top:0;font-size:1rem">How to look</h2>
+          <ul class="petit">
+            <li><strong>The two portrait faces.</strong> The face does not exist in relief: it is made of the voids cut through the plate. Stop at 0 and at 180 degrees.</li>
+            <li><strong>The two texture faces.</strong> A quarter turn from there, no cuts at all: only the hemispherical bosses, four columns by twelve rows.</li>
+            <li><strong>The corners.</strong> Between the two, you see the cut and the skin at once, and the six millimetres of the steel.</li>
+          </ul>
+          <p class="petit doux">By keyboard: reach the slider with the tab key, then turn with the left and right arrows.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="enveloppe">
+    <h2>Built for slow connections</h2>
+    <div class="prose">
+      <p>The rotation uses no three-dimensional model, no WebGL and no outside library. It is a sequence of still images: it works on old phones as on recent browsers, and downloads only what it shows.</p>
+      <p>If your device reports a slow connection or data saver mode, only one view in three is loaded. The rest comes only when you ask for it, with the “load the full rotation” button.</p>
+    </div>
+    <p class="suite"><a href="/en/the-work/">Read the technical detail of the work</a></p>
+  </div>
+</section>

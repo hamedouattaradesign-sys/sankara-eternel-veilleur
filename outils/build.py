@@ -40,7 +40,7 @@ SITE = "https://sankara.hamedouattara.com"
 # gabarit et mécanique des langues sont inchangés.
 ORDRE = [
     "accueil",
-    # "visite",        ← phase 2
+    "visite",
     "oeuvre",
     "nombres",
     "histoire",

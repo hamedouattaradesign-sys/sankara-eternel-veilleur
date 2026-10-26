@@ -110,17 +110,17 @@ async function controlerVisite(navigateur) {
 
   await p.locator('[data-visionneuse-pas="1"]').click();
   await p.waitForTimeout(200);
-  verifie("le bouton tourne de dix degrés", (await vue(p)).includes("130"));
+  verifie("le bouton tourne de douze degrés", (await vue(p)).includes("132"));
 
   await curseur.focus();
   await p.keyboard.press("ArrowRight");
   await p.waitForTimeout(200);
-  verifie("les flèches du clavier tournent le monument", (await vue(p)).includes("140"));
+  verifie("les flèches du clavier tournent le monument", (await vue(p)).includes("144"));
 
-  await regle(350);
+  await regle(348);
   await p.locator('[data-visionneuse-pas="1"]').click();
   await p.waitForTimeout(200);
-  verifie("la rotation boucle de 350 à 0", (await vue(p)).includes("000"));
+  verifie("la rotation boucle de 348 à 0", (await vue(p)).includes("000"));
 
   await regle(180);
   const avant = await vue(p);
@@ -152,9 +152,17 @@ async function controlerVisite(navigateur) {
   verifie("sans JS : les commandes inutilisables sont masquées",
           !(await p.locator(".commandes").isVisible()));
   await p.goto(BASE + "/", { waitUntil: "networkidle" });
+  // Le compte était écrit 12 en dur, et la publication de la visite virtuelle
+  // l'a fait échouer pour une bonne raison : il y a une page de plus. Ce que ce
+  // contrôle veut dire, ce n'est pas « il y a douze liens », c'est « sans
+  // JavaScript, aucun lien du menu n'est escamoté ». C'est cela qu'il vérifie
+  // maintenant, et il survivra à la page suivante.
+  const liens = p.locator(".nav__lien");
+  const total = await liens.count();
+  let visibles = 0;
+  for (let i = 0; i < total; i++) if (await liens.nth(i).isVisible()) visibles++;
   verifie("sans JS : la navigation reste entièrement visible",
-          (await p.locator(".nav__lien").first().isVisible()) &&
-          (await p.locator(".nav__lien").count()) === 12);
+          total > 0 && visibles === total, `${visibles} liens visibles sur ${total}`);
   await ctx.close();
 
   // Économie de données
@@ -169,7 +177,7 @@ async function controlerVisite(navigateur) {
   await p.goto(BASE + "/visite/", { waitUntil: "networkidle" });
   await p.waitForTimeout(2500);
   verifie("économie de données : un tiers des vues seulement", demandes <= 14,
-          demandes + " vues sur 36");
+          demandes + " vues sur 30");
   verifie("économie de données : la rotation complète reste proposée",
           await p.locator("[data-visionneuse-complet]").isVisible());
   await ctx.close();
