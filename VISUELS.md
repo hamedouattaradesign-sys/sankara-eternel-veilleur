@@ -272,3 +272,43 @@ Le crédit du photographe s'ajoute à celui de l'œuvre, sans jamais le remplace
 
 > *SANKARA, L'ÉTERNEL VEILLEUR*, Hamed Ouattara, 2026, acier Corten.
 > Photographie : <nom>.
+
+
+---
+
+## La rotation de la visite virtuelle — comment elle a été traitée
+
+Les trente vues ont été photographiées à main levée au Parco Thomas Sankara,
+le 26 octobre 2026, en tournant autour de l'œuvre de gauche à droite, d'un pas
+régulier. Trente vues font un pas de 12°, et non les 36 vues au pas de 10° que
+l'échafaudage supposait : la page déclare son pas, le script et le contrôleur
+le lisent.
+
+Deux outils, dans cet ordre.
+
+```bash
+python3 outils/rotation_reperer.py  <dossier-des-vues>   # contrôle du repérage
+python3 outils/rotation_egaliser.py <dossier-des-vues>   # sortie dans statique/
+```
+
+`rotation_reperer.py` trouve le monument sur chaque vue à la couleur de l'acier
+Corten, par profil de colonnes. Lancé seul, il écrit les cotes relevées : c'est
+le contrôle à faire avant de produire quoi que ce soit.
+
+`rotation_egaliser.py` recentre, ramène la hauteur du monument à une valeur
+unique, et égalise la lumière. Trois choix y sont expliqués en tête de
+fichier, et ils ont tous les trois été obtenus en corrigeant une première
+version qui ne marchait pas :
+
+- le cadrage est **lissé sur cinq vues glissantes**, parce que le repérage a sa
+  propre imprécision et que la corriger vue par vue remet le tremblement ;
+- la lumière est mesurée sur une **bande basse du monument**, là où les quatre
+  faces portent des bossages. Prise à hauteur du portrait, elle mesurait du
+  vide noir sur deux faces et de l'acier sur deux autres, et la rotation se
+  mettait à battre au rythme des faces ;
+- la correction se fait **par courbe et non par facteur**. Multiplier pour
+  relever l'acier des vues à contre-jour brûlait l'herbe et le gravier.
+
+Ce qui n'est pas corrigé, et ne doit pas l'être : la direction de la lumière.
+Le soleil tournait pendant la prise de vue, et le relief des bossages se creuse
+puis s'adoucit. C'est vrai, et c'est le sujet de l'œuvre.
